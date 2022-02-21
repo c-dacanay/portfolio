@@ -27,15 +27,27 @@
     }
     details {
         padding-top: 5%;
+        cursor: grab;
     }
 
+    details > summary {
+        list-style-type: '◎';
+    }
+
+    details[open] > summary {
+        list-style-type: '◉'; 
+    }
+
+    a {
+        cursor: crosshair;
+    }
     h3 {
         margin: 0;
     }
 </style>
 <body>
 <h3>christina dacanay</h3>
-<p>→<a target="_parent" href="/about.html">about</a></p>
+<p>→<a target="_parent" href="/about.html"> about</a></p>
 
 <div class="nav_menu">
 <details open id="projects_menu"><summary>projects</summary>
