@@ -73,7 +73,7 @@ html, body {
     max-width: 750px;
 }
 
-iframe {
+#navbar {
     top: 0;
     left: 0;
     position: sticky;
