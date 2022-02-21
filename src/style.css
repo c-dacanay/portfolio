@@ -1,0 +1,73 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.present {
+    width: 65%;
+    background-color: azure;
+    display: block;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+.play {
+    padding-top: 0%;
+    overflow-y: scroll;
+}
+
+.project_info {
+    display: flex;
+    gap: 1em;
+    /* background-color: blanchedalmond; */
+}
+
+.project_details {
+    /* margin-top: 1em; */
+    width: 70%;
+    /* background-color: gainsboro; */
+    min-width: 250px;
+    flex-shrink: 1;
+}
+
+.project_desc {
+    flex-shrink: 2;
+}
+
+/* .playground {
+    background-color: lightsalmon;
+} */
+
+.play_desc {
+    top: 2em;
+    right: 2em;
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    writing-mode: vertical-rl;
+}
+
+#bio {
+    max-width: 750px;
+}
+
+iframe {
+    top: 0;
+    left: 0;
+    position: sticky;
+    width: 35%;
+    height: 100%;
+}
+
+
+

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cdacanay / nav</title>
+</head>
+<style>
+    html {
+        height: 100%;
+    }
+    body {
+        background-color: pink;
+        height: 95%;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_menu {
+        padding-top: 0;
+        height: 90%;
+    }
+    .submenu {
+        padding-left: 5%;
+    }
+    details {
+        padding-top: 5%;
+    }
+
+    h3 {
+        margin: 0;
+    }
+</style>
+<body>
+<h3>christina dacanay</h3>
+<p>→<a target="_parent" href="/about.html">about</a></p>
+
+<div class="nav_menu">
+<details open id="projects_menu"><summary>projects</summary>
+<div class="submenu">
+   ↪ <a target="_parent" href="/projects/pilled.html">pilled.online</a><br>
+   ↪ <a target="_parent" href="/projects/alex.html">a. l.oving e.x.ploration</a><br>
+   ↪ <a target="_parent" href="/projects/one.html">one amongst many</a><br>
+   ↪ <a target="_parent" href="/projects/tarot.html">t-ar-ot</a><br>
+   ↪ <a target="_parent" href="/projects/inperson.html">in person, in people</a><br>
+   ↪ <a target="_parent" href="/projects/stone.html">stone stacker</a><br>
+   ↪ <a target="_parent" href="/projects/window.html">window maker</a><br>
+</div>
+</details>
+
+<details open id="playgrounds_menu"><summary>playgrounds</summary>
+<div class="submenu">
+    ↪ <a target="_parent" href="/pages/code.html">code</a><br>
+    ↪ <a target="_parent" href="/pages/illos.html">illustration / design</a><br>
+    ↪ <a target="_parent" href="/pages/games.html">games</a><br>
+</div></details>
+
+<details id="about_menu"><summary>elsewhere</summary>
+    <div class="submenu">
+        ↪ <a href="">email</a><br>
+        ↪ <a href="">are.na</a><br>
+        ↪ <a href="">twitter</a><br>
+        ↪ <a href="">itch.io</a><br>
+        ↪ <a href="">instagram</a><br>
+        ↪ <a href="">github</a><br>
+    </div></details>
+</div>
+
+<div id="endnotes">
+<small>last updated 2/21/2022</small><br>
+<small>this website is hand-coded with no tracking or analytics</small>
+</div>
+
+</body>
+</html>
