@@ -5,37 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/theme.css">
     <title>cdacanay / nav</title>
 </head>
 <style>
     html {
         height: 100%;
     }
+
     body {
-        background-color: pink;
         height: 95%;
         margin: 5%;
+        margin-left: 10%;
         display: flex;
         flex-direction: column;
     }
     .nav_menu {
         padding-top: 0;
         height: 90%;
+        /* line-height: 1.5em; */
     }
     .submenu {
-        padding-left: 5%;
+        padding-left: 10%;
     }
     details {
         padding-top: 5%;
         cursor: grab;
     }
 
+    summary {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-indent: 5%;
+        line-height: 200%;;
+    }
+    
     details > summary {
         list-style-type: '◎';
     }
 
     details[open] > summary {
         list-style-type: '◉'; 
+        /* color: var(--bg); */
+        /* background-color: var(--hot); */
     }
 
     a {
@@ -44,13 +56,97 @@
     h3 {
         margin: 0;
     }
+
+    #name {
+        color: var(--dark);
+    }
+
+    #endnotes {
+        font-size: .5em;
+    }
+    /* mobile dropdown */
+    .dropbtn {
+    background-color: var(--bright);
+    color: var(--bg);
+    text-transform: lowercase;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    }
+
+    .dropdown {
+    display: inline-block;
+    }
+
+    .dropdown-content {
+    background-color: var(--bg);
+    padding-top: 5%;
+    padding-left: 16%;
+    width: 100%;
+        line-height: 150%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+        text-indent: 5%;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown a:hover {background-color: #ddd;}
+
+    .show {display: block;}
+
+    #mobile {
+        display: none;
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        body {
+            margin: 1em;
+            font-size: 12px !important;
+            display: flex;
+            flex-direction: row;
+            overflow-x: hidden;
+        }
+
+        .nav_menu, #endnotes, #header {
+            display: none;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        #drop > b {
+            font-size: 16px;
+            margin-top: 1em;
+            padding-bottom: 2em;
+        }
+
+        #mobile {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            align-items: baseline;
+            overflow-x:hidden;
+        };
+    
+
+}
 </style>
 <body>
-<h3>christina dacanay</h3>
+<div id="header">
+<h3><a target="_parent" href="/index.html" id="name">christina dacanay</a></h3>
 <p>→<a target="_parent" href="/about.html"> about</a></p>
-
+</div>
 <div class="nav_menu">
-<details open id="projects_menu"><summary>projects</summary>
+<details open id="projects_menu"><summary>     projects</summary>
 <div class="submenu">
    ↪ <a target="_parent" href="/projects/pilled.html">pilled.online</a><br>
    ↪ <a target="_parent" href="/projects/alex.html">a. l.oving e.x.ploration</a><br>
@@ -62,14 +158,14 @@
 </div>
 </details>
 
-<details open id="playgrounds_menu"><summary>playgrounds</summary>
+<details open id="playgrounds_menu"><summary>     playgrounds</summary>
 <div class="submenu">
     ↪ <a target="_parent" href="/pages/code.html">code</a><br>
     ↪ <a target="_parent" href="/pages/illos.html">illustration / design</a><br>
     ↪ <a target="_parent" href="/pages/games.html">games</a><br>
 </div></details>
 
-<details id="about_menu"><summary>elsewhere</summary>
+<details id="about_menu"><summary>     elsewhere</summary>
     <div class="submenu">
         ↪ <a href="">email</a><br>
         ↪ <a href="">are.na</a><br>
@@ -85,5 +181,58 @@
 <small>this website is hand-coded with no tracking or analytics</small>
 </div>
 
+
+<div id="mobile">
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"> ... </button>
+        <div id="drop" class="dropdown-content">
+            <b>projects</b><br><br>
+            <a target="_parent" href="/projects/pilled.html">pilled.online</a><br>
+            <a target="_parent" href="/projects/alex.html">a. l.oving e.x.ploration</a><br>
+            <a target="_parent" href="/projects/one.html">one amongst many</a><br>
+            <a target="_parent" href="/projects/tarot.html">t-ar-ot</a><br>
+            <a target="_parent" href="/projects/inperson.html">in person, in people</a><br>
+            <a target="_parent" href="/projects/stone.html">stone stacker</a><br>
+            <a target="_parent" href="/projects/window.html">window maker</a><br>
+
+            <b>playgrounds</b><br><br>
+            <a target="_parent" href="/pages/code.html">code</a><br>
+            <a target="_parent" href="/pages/illos.html">illustration / design</a><br>
+            <a target="_parent" href="/pages/games.html">games</a><br>
+<br><br><br><br>
+            <b><a href="mailto:christina@cdacanay.com">email</a> | <a href="https://twitter.com/stinadacanay">twitter</a> | <a href="https://www.instagram.com/studio.stina/">instagram</a></b> 
+        </div>
+      </div>
+
+      <div>
+        <h3>christina dacanay</h3>
+        <p>→<a target="_parent" href="/about.html"> about</a></p>
+        </div>
+
+</div>
 </body>
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("drop").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+</script>
+    
 </html>

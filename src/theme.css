@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600');
+
+:root {
+    /* color theme */
+    --dark: #333333;
+    --bright: #23907f;
+    --hot: #c20067;
+    --bg: #F7F8FA;
+}
+
+body {
+    color: var(--dark);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    word-wrap: break-word;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-block-end: 0;
+}
+
+a {
+    color: var(--bright);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hot);
+}
+
+a:visited {
+    color: var(--bright)
+}

@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    background-color: var(--bg);
 }
 
 .wrapper {
@@ -13,7 +14,6 @@ html, body {
 
 .present {
     width: 65%;
-    background-color: azure;
     display: block;
     padding-top: 5%;
     padding-left: 5%;
@@ -69,5 +69,34 @@ iframe {
     height: 100%;
 }
 
+@media screen and (max-width: 730px) {
+    .project_info {
+      display: block;
+    }
+}
+  
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 12px !important;
+        overflow-x: hidden;
+        /* float: left; */
+        /* margin-top: 15px; */
+    }
 
+    .wrapper {
+        display: block;
+    }
 
+    iframe {
+        font-size: 12px !important;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        display: block;
+    }
+
+    .present {
+        margin-top: 15%;
+    }
+
+}
