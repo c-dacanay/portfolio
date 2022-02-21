@@ -15,9 +15,9 @@ html, body {
 .present {
     width: 65%;
     display: block;
-    padding-top: 5%;
     padding-left: 5%;
-    padding-right: 15%;
+    padding-right: 10%;
+    overflow-y: scroll;
 }
 
 .play {
@@ -31,18 +31,28 @@ html, body {
     /* background-color: blanchedalmond; */
 }
 
+.project_title {
+    margin-top: 5%;
+}
+
 .project_details {
     /* margin-top: 1em; */
     width: 70%;
     /* background-color: gainsboro; */
-    min-width: 250px;
+    min-width: 200px;
     flex-shrink: 1;
 }
 
-
+.project_img {
+    width: 80%;
+    max-height: 90vh;
+    transform: translate(12%);
+    margin-bottom: 1em;
+}
 
 .project_desc {
     flex-shrink: 2;
+    margin-bottom: 5%;
 }
 
 /* .playground {
@@ -71,7 +81,7 @@ iframe {
     height: 100%;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1000px) {
     .project_info {
       display: block;
     }
