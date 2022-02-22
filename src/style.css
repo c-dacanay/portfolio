@@ -22,6 +22,7 @@ canvas {
 .present {
     width: 65%;
     display: block;
+    padding-top: 2em;
     padding-left: 5%;
     padding-right: 10%;
     overflow-y: scroll;
@@ -37,10 +38,10 @@ canvas {
     gap: 1em;
     /* background-color: blanchedalmond; */
 }
-
+/* 
 .project_title {
     margin-top: 5%;
-}
+} */
 
 .project_details {
     /* margin-top: 1em; */

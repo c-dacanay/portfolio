@@ -15,15 +15,14 @@
 
     body {
         height: 95%;
-        margin: 5%;
         margin-left: 10%;
         display: flex;
         flex-direction: column;
+        padding-top: 2em;
     }
     .nav_menu {
-        padding-top: 0;
         height: 90%;
-        /* line-height: 1.5em; */
+        line-height: 1.5em;
     }
     .submenu {
         padding-left: 10%;
@@ -61,7 +60,13 @@
     #endnotes {
         font-size: .5em;
     }
+
+    #header {
+        margin: 0;
+        line-height: .8em;
+    }
     /* mobile dropdown */
+
     .dropbtn {
     background-color: var(--bright);
     color: var(--bg);
@@ -131,14 +136,12 @@
             align-items: baseline;
             overflow-x:hidden;
         };
-    
-
 }
 </style>
 <body>
 <div id="header">
 <h3><a target="_parent" href="/index.html" id="name">christina dacanay</a></h3>
-<p>→<a target="_parent" href="/about.html"> about</a></p>
+<p>↪<a target="_parent" href="/about.html"> about</a></p>
 </div>
 <div class="nav_menu">
 <details open id="projects_menu"><summary>     projects</summary>
@@ -162,12 +165,12 @@
 
 <details id="about_menu"><summary>     elsewhere</summary>
     <div class="submenu">
-        ↪ <a href="">email</a><br>
-        ↪ <a href="">are.na</a><br>
-        ↪ <a href="">twitter</a><br>
-        ↪ <a href="">itch.io</a><br>
-        ↪ <a href="">instagram</a><br>
-        ↪ <a href="">github</a><br>
+        ⤤ <a href="">email</a><br>
+        ⤤ <a href="">are.na</a><br>
+        ⤤ <a href="">twitter</a><br>
+        ⤤ <a href="">itch.io</a><br>
+        ⤤ <a href="">instagram</a><br>
+        ⤤ <a href="">github</a><br>
     </div></details>
 </div>
 
