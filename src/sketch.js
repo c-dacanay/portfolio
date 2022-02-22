@@ -17,10 +17,10 @@ function setup() {
 
 function draw() {
   
-  let strokex = map(mouseX, 50, width, 0, 255);
-  let strokey = map(mouseY, 100, height, 0, 255);
+  let strokex = map(mouseX, 100, width, 100, 255);
+  let strokey = map(mouseY, 100, height, 100, 255);
   strokeWeight(2);
-  stroke(strokey,strokex, 200, 10);
+  stroke(strokey,strokex, 220, 10);
 
   if (lace) {
     reset++
@@ -35,7 +35,7 @@ function draw() {
     rect(20, 20, rectSize + i, rectSize + i);
   }
 
-  if (reset > 1250) {
+  if (reset > 1000) {
     background(255);
     inc = random(0, 4);
     reset = 0;
