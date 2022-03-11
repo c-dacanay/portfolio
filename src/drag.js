@@ -1,4 +1,7 @@
+let topz = 0;
+
 function startDrag(e) {
+    topz++;
     // determine event object
     if (!e) {
         var e = window.event;
@@ -12,6 +15,9 @@ function startDrag(e) {
         offsetX = e.clientX;
         offsetY = e.clientY;
 
+    targ.style.zIndex = topz;
+    console.log(targ, targ.style.zIndex, topz)
+
     // assign default values for top and left properties
     if(!targ.style.left) { targ.style.left='0px'};
     if (!targ.style.top) { targ.style.top='0px'};
@@ -24,19 +30,38 @@ function startDrag(e) {
 
     // move div element
         document.onmousemove=dragDiv;
+        document.ondblclick=closeDiv;
 
 }
+
 function dragDiv(e) {
     if (!drag) {return};
     if (!e) { var e= window.event};
     var targ=e.target?e.target:e.srcElement;
+
     // move div element
     targ.style.left=coordX+e.clientX-offsetX+'px';
     targ.style.top=coordY+e.clientY-offsetY+'px';
     return false;
 }
+
 function stopDrag() {
     drag=false;
+}
+
+// function focus(e) {
+//     topz++ ;
+//     var targ=e.target?e.target:e.srcElement;
+
+//     targ.style.zIndez = topz;
+//     console.log(topz)
+//     console.log(targ.style.zIndex, 'zindex');
+
+// }
+
+function closeDiv(e) {
+    var targ=e.target?e.target:e.srcElement;
+    targ.style.display = 'none';
 }
 window.onload = function() {
     document.onmousedown = startDrag;

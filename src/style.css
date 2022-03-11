@@ -81,15 +81,51 @@ canvas {
     writing-mode: vertical-rl;
 }
 
-.play {
-    background-color: aqua;
-}
 
 .play_img {
     max-width: 80%;
     min-width: 0;
 }
 
+.drag {
+    max-width: 20%;
+    border-radius:15px;
+    position: absolute;
+    border: 2px solid #000000;
+    /* position: absolute; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    filter: grayscale(100%);
+}
+
+.drag:hover{
+    filter: none;
+    border: 2px solid var(--hot);
+}
+
+.ill_info{
+    padding-top: 5vh;
+    display: flex;
+}
+
+
+button {
+    color: var(--bright);
+    border: 2px solid var(--bright);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-indent: 5%;
+    line-height: 200%;
+    width: 100%;
+    background-color: #fff;
+    margin: 2em;
+}
+
+button:hover {
+    color: var(--hot);
+    border: 2px solid var(--hot);
+}
 .code_play {
     margin-top: 70vh;
 }
@@ -100,14 +136,6 @@ canvas {
 }
 
 
-.illo {
-    padding: 0px;
-    margin: 0px;
-    font-size: 0px;
-    line-height: 0px;
-    position: absolute;
-    z-index: 0;
-}
 
 .illo img{
     width: 50%;
@@ -126,10 +154,6 @@ canvas {
     filter: grayscale(0%);
 }
 
-.drag {
-    position: absolute;
-    height: auto;
-}
 /* .play_img:hover {
     filter: drop-shadow(5px 5px 0px var(--hot));
 } */

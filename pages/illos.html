@@ -9,30 +9,31 @@
     <title>cdacanay / code playground</title>
     <script type="text/javascript" src="../src/drag.js"></script>
 <script>
+
+  //set top and left coords
   window.addEventListener('load', () => {
     let images = document.getElementsByClassName("drag");
     let winWidth = window.innerWidth;
     let winHeight = window.innerHeight;
 
     setImgs(images)
+
     function setImgs() {
-      // console.log(images)
+      console.log(images)
       for (i in images) {
           let thisImg = images[i]
 
           randomTop = getRandomNumber(0, winHeight/2);
-          randomLeft = getRandomNumber(0, winWidth/2);
-
+          randomLeft = getRandomNumber(200, winWidth);
 
           // update top and left position
           thisImg.style.top = randomTop +"px";
           thisImg.style.left = randomLeft +"px";
-          console.log(thisImg, 'thisimg');
       }
     }
 
     function getRandomNumber(min, max) {
-        return Math.random() * (max - min) + 50;
+        return Math.random() * (max - min) + 100;
         }
   })
 </script>
@@ -44,22 +45,23 @@
     <div class="play_desc"> <h3>illustration playground</h3>
         <p> ✎ drawings, renders, doodles ❤</p>          
     </div>
+    <div class ="ill_info">
+    <button>illustration</button>
+    <button>visual design</button>
+    <button>book</button>
+  </div>
+      <img src="/src/images/illo/100.png" class="drag">
+      <img src="/src/images/illo/zine.jpeg" class="drag">
+      <img src="/src/images/illo/toon2.png" class="drag">
+      <img src="/src/images/illo/polly0.png" class="drag">
+      <img src="/src/images/illo/shape1.png0067.png" class="drag">
+      <img src="/src/images/illo/DDC-insta-square-full.jpeg" class="drag">
+      <img src="/src/images/illo/DDC-insta-story-1.jpeg" class="drag">
+      <img src="/src/images/illo/Mermaids_CV.jpeg" class="drag">
+      <img src="/src/images/illo/mitski_RGB_lo.jpeg" class="drag">
+      <img src="/src/images/illo/stvincent.jpeg" class="drag">
+      <img src="/src/images/illo/poster_fp.jpeg" class="drag">
 
-    
-    <!-- <div class="playground">  -->
-      <img src="/src/images/illo/100.png" class="drag" id="1">
-        <!-- <div class="illo"><img src="/src/images/illo/100.png" class="drag" id="1"></div>
-        <div class="illo"><img src="/src/images/illo/zine.jpeg"class="drag" id="2"></div>
-        <div class="illo"><img src="/src/images/illo/toon2.png"class="drag" id="3"></div>
-        <div class="illo"><img src="/src/images/illo/polly0.png" class="drag" id="4"></div>
-        <div class="illo"><img src="/src/images/illo/shape1.png0067.png" class="drag" id="5"></div>
-        <div class="illo"><img src="/src/images/illo/DDC-insta-square-full.jpeg" class="drag" id="6"></div>
-        <div class="illo"><img src="/src/images/illo/DDC-insta-story-1.jpeg" class="drag" id="7"></div>
-        <div class="illo"><img src="/src/images/illo/Mermaids_CV.jpeg" class="drag" id="8"></div>
-        <div class="illo"><img src="/src/images/illo/stvincent.jpeg" class="drag" id="9"></div>
-        <div class="illo"><img src="/src/images/illo/mitski_RGB_lo.jpeg" class="drag" id="10"></div>
-        <div class="illo"><img src="/src/images/illo/poster_fp.jpeg" class="drag" id="11"></div> -->
-    <!-- </div> -->
 </div>
 </div>
 </body>
