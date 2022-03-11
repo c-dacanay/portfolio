@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/theme.css">
     <link rel="stylesheet" href="/src/style.css">
+    <style>     
+    
+    details {
+      width: 100%;
+      display: inline;
+      /* background-color: pink; */
+    }
+    summary {
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+  
+  details > summary {
+      list-style-type: '◎';
+  }
+
+  details[open] > summary {
+      list-style-type: '◉'; 
+      color: var(--hot);
+  }
+  </style>
     <title>cdacanay / code playground</title>
     <script type="text/javascript" src="../src/drag.js"></script>
 <script>
@@ -13,6 +34,9 @@
   //set top and left coords
   window.addEventListener('load', () => {
     let images = document.getElementsByClassName("drag");
+    let twod = document.getElementsByClassName("twod");
+    let threed = document.getElementsByClassName("threed");
+    let design = document.getElementsByClassName("design");
     let winWidth = window.innerWidth;
     let winHeight = window.innerHeight;
 
@@ -34,8 +58,9 @@
 
     function getRandomNumber(min, max) {
         return Math.random() * (max - min) + 100;
-        }
+      }
   })
+
 </script>
 </head>
 <body>
@@ -46,21 +71,24 @@
         <p> ✎ drawings, renders, doodles ❤</p>          
     </div>
     <div class ="ill_info">
-    <button>illustration</button>
-    <button>visual design</button>
-    <button>book</button>
-  </div>
-      <img src="/src/images/illo/100.png" class="drag">
-      <img src="/src/images/illo/zine.jpeg" class="drag">
-      <img src="/src/images/illo/toon2.png" class="drag">
-      <img src="/src/images/illo/polly0.png" class="drag">
-      <img src="/src/images/illo/shape1.png0067.png" class="drag">
-      <img src="/src/images/illo/DDC-insta-square-full.jpeg" class="drag">
-      <img src="/src/images/illo/DDC-insta-story-1.jpeg" class="drag">
-      <img src="/src/images/illo/Mermaids_CV.jpeg" class="drag">
-      <img src="/src/images/illo/mitski_RGB_lo.jpeg" class="drag">
-      <img src="/src/images/illo/stvincent.jpeg" class="drag">
-      <img src="/src/images/illo/poster_fp.jpeg" class="drag">
+    <!-- summary -->
+    <details><summary>2d</summary>
+   hihi </details>
+    <details><summary>3d</summary>
+    hihi </details>
+    <details><summary>design</summary>
+      hihi </details>
+    </div>
+    <!-- defaults -->
+    <img src="/src/images/illo/100.png" class="drag">
+    <img src="/src/images/illo/zine.jpeg" class="drag">
+    <img src="/src/images/illo/toon2.png" class="drag">
+    <img src="/src/images/illo/polly0.png" class="drag">
+    <img src="/src/images/illo/shape1.png0067.png" class="drag">
+    <img src="/src/images/illo/DDC-insta-story-1.jpeg" class="drag">
+    <img src="/src/images/illo/Mermaids_CV.jpeg" class="drag">
+    <img src="/src/images/illo/mitski_RGB_lo.jpeg" class="drag">
+    <img src="/src/images/illo/stvincent.jpeg" class="drag">
 
 </div>
 </div>

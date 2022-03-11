@@ -15,6 +15,7 @@ function startDrag(e) {
         offsetX = e.clientX;
         offsetY = e.clientY;
 
+    // top z-index
     targ.style.zIndex = topz;
     console.log(targ, targ.style.zIndex, topz)
 
@@ -49,18 +50,9 @@ function stopDrag() {
     drag=false;
 }
 
-// function focus(e) {
-//     topz++ ;
-//     var targ=e.target?e.target:e.srcElement;
-
-//     targ.style.zIndez = topz;
-//     console.log(topz)
-//     console.log(targ.style.zIndex, 'zindex');
-
-// }
-
 function closeDiv(e) {
     var targ=e.target?e.target:e.srcElement;
+    if (targ.className != 'drag') {return};
     targ.style.display = 'none';
 }
 window.onload = function() {
