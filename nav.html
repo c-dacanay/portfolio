@@ -18,7 +18,6 @@
         margin-left: 10%;
         display: flex;
         flex-direction: column;
-        padding-top: 2em;
     }
     .nav_menu {
         height: 85%;
@@ -27,8 +26,9 @@
     .submenu {
         padding-left: 10%;
     }
+
     details {
-        padding-top: 5%;
+        padding-top: 1rem;
         cursor: crosshair;
     }
 
@@ -37,10 +37,11 @@
     }
 
     summary {
+        text-transform: capitalize;
         font-weight: bold;
         font-size: 1.2em;
         text-indent: 5%;
-        line-height: 200%;;
+        line-height: 200%;
     }
     
     details > summary {
@@ -50,9 +51,13 @@
     details[open] > summary {
         list-style-type: '◉'; 
         color: var(--hot);
-        /* background-color: var(--hot); */
     }
 
+    .submenu {
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
     a {
         cursor: crosshair;
     }
@@ -66,39 +71,40 @@
     }
 
     #header {
+        
         line-height: .8em;
     }
     /* mobile dropdown */
 
     .dropbtn {
-    background-color: var(--bright);
-    color: var(--bg);
-    text-transform: lowercase;
-    padding: 1em;
-    border: none;
-    cursor: pointer;
+        background-color: var(--bright);
+        color: var(--bg);
+        text-transform: lowercase;
+        padding: 1em;
+        border: none;
+        cursor: pointer;
     }
 
     .dropdown {
-    display: inline-block;
+        display: inline-block;
     }
 
     .dropdown-content {
-    background-color: var(--bg);
-    padding-top: 5%;
-    padding-left: 16%;
-    width: 100%;
+        background-color: var(--bg);
+        padding-top: 5%;
+        padding-left: 16%;
+        width: 100%;
         line-height: 150%;
-    display: none;
-    position: absolute;
-    z-index: 1;
+        display: none;
+        position: absolute;
+        z-index: 1;
     }
 
     .dropdown-content a {
         text-indent: 5%;
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
     }
 
     .show {display: block;}
@@ -114,6 +120,7 @@
             display: flex;
             flex-direction: row;
             overflow-x: hidden;
+            float: left;
         }
 
         .nav_menu, #endnotes, #header {
@@ -132,7 +139,6 @@
 
         #mobile {
             padding: 0;
-            width: 100%;
             display: flex;
             flex-direction: row;
             gap: 2em;
@@ -144,7 +150,7 @@
 <body>
 <div id="header">
 <h3><a target="_parent" href="/index.html" id="name">christina dacanay</a></h3>
-<p>↪<a target="_parent" href="/about.html"> about</a></p>
+<p>↪<a target="_parent" href="/about.html" id="about">about</a></p>
 </div>
 <div class="nav_menu">
 <details open id="projects_menu"><summary>     projects</summary>
