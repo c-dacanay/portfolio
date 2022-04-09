@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="/src/style.css">
     <style>     
     
+    body {
+      overflow: hidden;
+    }
     details {
       width: 100%;
       display: inline;
+      cursor: crosshair;
       /* background-color: pink; */
     }
+
+    details:hover {
+      color: var(--hot);
+    }
+    
     summary {
       font-weight: bold;
       font-size: 1.2em;
@@ -26,11 +35,13 @@
       list-style-type: '◉'; 
       color: var(--hot);
   }
+
   </style>
     <title>cdacanay / code playground</title>
     <script type="text/javascript" src="../src/drag.js"></script>
 <script>
 
+  //Drag around
   //set top and left coords
   window.addEventListener('load', () => {
     let images = document.getElementsByClassName("drag");
@@ -47,8 +58,8 @@
       for (i in images) {
           let thisImg = images[i]
 
-          randomTop = getRandomNumber(0, winHeight/2);
-          randomLeft = getRandomNumber(200, winWidth);
+          randomTop = getRandomNumber(0, winHeight*.6);
+          randomLeft = getRandomNumber(200, winWidth*.8);
 
           // update top and left position
           thisImg.style.top = randomTop +"px";
@@ -78,8 +89,10 @@
     hihi </details>
     <details><summary>design</summary>
       hihi </details>
+      <details><summary>zines</summary>
+        hihi </details>
     </div>
-    <!-- defaults -->
+    <!-- starting images -->
     <img src="/src/images/illo/100.png" class="drag">
     <img src="/src/images/illo/zine.jpeg" class="drag">
     <img src="/src/images/illo/toon2.png" class="drag">

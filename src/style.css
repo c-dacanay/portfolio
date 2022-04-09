@@ -31,6 +31,7 @@ canvas {
 .play {
     padding-top: 0%;
     overflow-y: scroll;
+    /* overflow: hidden;  */
     padding-right: 10em;
     /* background-color: beige; */
 }
@@ -103,7 +104,7 @@ canvas {
 }
 
 .ill_info{
-    padding-top: 5em;
+    padding-top: 3em;
     /* display: flex; */
     /* gap: 5em; */
     display: flex;
