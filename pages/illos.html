@@ -75,14 +75,6 @@
     let winWidth = window.innerWidth;
     let winHeight = window.innerHeight;
   
-    // console.log(arttypes)
-    
-    // arttypes.forEach(arttypes => {
-    //   arttypes.addEventListener("click", function displayArt(e){
-    //     console.log('clicked');
-        
-    //   })
-    // })
     setImgs(images)
 
     //set drag on images
@@ -104,19 +96,6 @@
         return Math.random() * (max - min) + 100;
       }
 
-    //load a gallery
-    function showGallery(e){
-      for (g in galleries) {
-        let thisg = galleries[g];
-        thisg.style.display = 'none';
-      }
-
-      images.style.display = 'none';
-
-      console.log('done')
-
-
-    }
   })
 
 </script>
@@ -128,16 +107,7 @@
     <div class="play_desc"> <h3>illustration playground</h3>
         <p> ✎ drawings, renders, doodles ❤</p>          
     </div>
-    <!-- <div class ="ill_info"> -->
-    <!-- summary -->
-    <!-- <details><summary>illustration</summary></details>
-    <details><summary>3d</summary></details>
-    <details><summary>design</summary></details>
-      <details><summary>zines</summary></details>
-    </div> -->
-<!-- 3D -->
-    <!-- <img src="/src/images/illo/3d/blender.png">
-    <img class="threed" src="/src/images/illo/3d/6blender.png"> -->
+
     <div class="gallery">
       <img class="twod" src="/src/images/illo/mitski_RGB_lo.jpeg">
     </div>
@@ -168,8 +138,6 @@
     <img class="threed" src="/src/images/illo/3d/27blender.png">
     <img class="threed" src="/src/images/illo/3d/28blender.png">
   </div>
-
-
 
     <!-- starting images -->
     <img src="/src/images/illo/100.png" class="drag">
