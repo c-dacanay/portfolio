@@ -11,6 +11,7 @@
     body {
       overflow: hidden;
     }
+
     details {
       width: 100%;
       display: inline;
@@ -21,20 +22,42 @@
       color: var(--hot);
     }
 
+    .ill_info{
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
     summary {
       font-weight: bold;
       font-size: 1.2em;
+      line-height: 200%;
   }
   
     details > summary {
       list-style-type: '◎';
+      padding-right: 2em;
   }
 
     details[open] > summary {
       list-style-type: '◉'; 
+      padding-right: 2em;
       color: var(--hot);
   }
 
+  .gallery {
+    /* width: 70%; */
+    background-color: red;
+    display: none;  
+    flex-flow: row wrap;
+    object-fit: cover;
+    /* justify-content: space-evenly; */
+  }
+
+  .threed, .twod {
+    width: 12em;
+    padding: .5em;
+  }
   </style>
     <title>cdacanay / code playground</title>
     <script type="text/javascript" src="../src/drag.js"></script>
@@ -47,13 +70,23 @@
     let twod = document.getElementsByClassName("twod");
     let threed = document.getElementsByClassName("threed");
     let design = document.getElementsByClassName("design");
+    let galleries = document.getElementsByClassName("gallery");
+    let arttypes = document.querySelectorAll("details");
     let winWidth = window.innerWidth;
     let winHeight = window.innerHeight;
-
+  
+    // console.log(arttypes)
+    
+    // arttypes.forEach(arttypes => {
+    //   arttypes.addEventListener("click", function displayArt(e){
+    //     console.log('clicked');
+        
+    //   })
+    // })
     setImgs(images)
 
+    //set drag on images
     function setImgs() {
-      console.log(images)
       for (i in images) {
           let thisImg = images[i]
 
@@ -66,9 +99,24 @@
       }
     }
 
+    //get random number
     function getRandomNumber(min, max) {
         return Math.random() * (max - min) + 100;
       }
+
+    //load a gallery
+    function showGallery(e){
+      for (g in galleries) {
+        let thisg = galleries[g];
+        thisg.style.display = 'none';
+      }
+
+      images.style.display = 'none';
+
+      console.log('done')
+
+
+    }
   })
 
 </script>
@@ -80,17 +128,49 @@
     <div class="play_desc"> <h3>illustration playground</h3>
         <p> ✎ drawings, renders, doodles ❤</p>          
     </div>
-    <div class ="ill_info">
+    <!-- <div class ="ill_info"> -->
     <!-- summary -->
-    <details><summary>2d</summary>
-   hihi </details>
-    <details><summary>3d</summary>
-    hihi </details>
-    <details><summary>design</summary>
-      hihi </details>
-      <details><summary>zines</summary>
-        hihi </details>
+    <!-- <details><summary>illustration</summary></details>
+    <details><summary>3d</summary></details>
+    <details><summary>design</summary></details>
+      <details><summary>zines</summary></details>
+    </div> -->
+<!-- 3D -->
+    <!-- <img src="/src/images/illo/3d/blender.png">
+    <img class="threed" src="/src/images/illo/3d/6blender.png"> -->
+    <div class="gallery">
+      <img class="twod" src="/src/images/illo/mitski_RGB_lo.jpeg">
     </div>
+
+    <div class="gallery">
+    <img class="threed" src="/src/images/illo/3d/0blender.png">
+    <img class="threed" src="/src/images/illo/3d/1blender.png">
+    <img class="threed" src="/src/images/illo/3d/2blender.png">
+    <img class="threed" src="/src/images/illo/3d/4blender.png">
+    <img class="threed" src="/src/images/illo/3d/5blender.png">
+    <img class="threed" src="/src/images/illo/3d/8blender.gif">
+    <img class="threed" src="/src/images/illo/3d/9blender.gif">
+    <img class="threed" src="/src/images/illo/3d/10blender.gif">
+    <img class="threed" src="/src/images/illo/3d/11blender.gif">
+    <img class="threed" src="/src/images/illo/3d/12blender.gif">
+    <img class="threed" src="/src/images/illo/3d/13blender.gif">
+    <img class="threed" src="/src/images/illo/3d/14blender.gif">
+    <img class="threed" src="/src/images/illo/3d/15blender.gif">
+    <img class="threed" src="/src/images/illo/3d/17blender.png">
+    <img class="threed" src="/src/images/illo/3d/21blender.png">
+    <img class="threed" src="/src/images/illo/3d/18blender.png">
+    <img class="threed" src="/src/images/illo/3d/19blender.png">
+    <img class="threed" src="/src/images/illo/3d/20blender.png">
+    <img class="threed" src="/src/images/illo/3d/22blender.png">
+    <img class="threed" src="/src/images/illo/3d/23blender.png">
+    <img class="threed" src="/src/images/illo/3d/25blender.png">
+    <img class="threed" src="/src/images/illo/3d/26blender.png">
+    <img class="threed" src="/src/images/illo/3d/27blender.png">
+    <img class="threed" src="/src/images/illo/3d/28blender.png">
+  </div>
+
+
+
     <!-- starting images -->
     <img src="/src/images/illo/100.png" class="drag">
     <img src="/src/images/illo/zine.jpeg" class="drag">

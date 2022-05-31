@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro');
 
 :root {
     /* color theme */
@@ -10,11 +10,13 @@
     --bright: #1a7a6c;
     --hot: #c20067;
     --bg: #F7F8FA;
+    --serif: 'EB Garamond', 'Times New Roman', Times, serif;
+    --sans: "Inter", Arial, Helvetica, sans-serif;
+    /* --sans: "Source Serif Pro", Arial, sans-serif; */
 }
 
 body {
     color: var(--dark);
-    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
     font-size: 1.4rem;
     word-wrap: break-word;
 }
