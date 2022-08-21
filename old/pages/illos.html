@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/theme.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <style>     
+    
+    body {
+      overflow: hidden;
+    }
+
+    details {
+      width: 100%;
+      display: inline;
+      cursor: crosshair;
+    }
+
+    details:hover {
+      color: var(--hot);
+    }
+
+    .ill_info{
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+    summary {
+      font-weight: bold;
+      font-size: 1.2em;
+      line-height: 200%;
+  }
+  
+    details > summary {
+      list-style-type: '◎';
+      padding-right: 2em;
+  }
+
+    details[open] > summary {
+      list-style-type: '◉'; 
+      padding-right: 2em;
+      color: var(--hot);
+  }
+
+  .gallery {
+    /* width: 70%; */
+    background-color: red;
+    display: none;  
+    flex-flow: row wrap;
+    object-fit: cover;
+    /* justify-content: space-evenly; */
+  }
+
+  .threed, .twod {
+    width: 12em;
+    padding: .5em;
+  }
+
+  #illo_desc {
+    margin-bottom: 8em;
+}
+  </style>
+    <title>cdacanay / code playground</title>
+    <script type="text/javascript" src="../src/drag.js"></script>
+<script>
+
+  //Drag around
+  //set top and left coords
+  window.addEventListener('load', () => {
+    let images = document.getElementsByClassName("drag");
+    let galleries = document.getElementsByClassName("gallery");
+    let winWidth = window.innerWidth;
+    let winHeight = window.innerHeight;
+  
+    setImgs(images)
+
+    //set drag on images
+    function setImgs() {
+      for (i in images) {
+          let thisImg = images[i]
+
+          randomTop = getRandomNumber(0, winHeight*.4);
+          randomLeft = getRandomNumber(200, winWidth*.8);
+
+          // update top and left position
+          thisImg.style.top = randomTop +"px";
+          thisImg.style.left = randomLeft +"px";
+      }
+    }
+
+    //get random number
+    function getRandomNumber(min, max) {
+        return Math.random() * (max - min) + 100;
+      }
+
+  })
+
+</script>
+</head>
+<body>
+    <div class="wrapper">
+<iframe id="navbar" frameBorder="0" src="../nav.html"></iframe>
+<div class="present play">
+    <div class="play_desc"> <h3>illustration playground</h3>
+        <p> ✎ drawings, renders, doodles ❤</p>          
+    </div>
+    
+    <div id="illo_desc"><p>As an illustrator I've worked for places like Nautilus Magazine</p>
+    <div class="gallery">
+      <img class="twod" src="/src/images/illo/mitski_RGB_lo.jpeg">
+    </div>
+
+    <div class="gallery">
+    <img class="threed" src="/src/images/illo/3d/0blender.png">
+    <img class="threed" src="/src/images/illo/3d/1blender.png">
+    <img class="threed" src="/src/images/illo/3d/2blender.png">
+    <img class="threed" src="/src/images/illo/3d/4blender.png">
+    <img class="threed" src="/src/images/illo/3d/5blender.png">
+    <img class="threed" src="/src/images/illo/3d/8blender.gif">
+    <img class="threed" src="/src/images/illo/3d/9blender.gif">
+    <img class="threed" src="/src/images/illo/3d/10blender.gif">
+    <img class="threed" src="/src/images/illo/3d/11blender.gif">
+    <img class="threed" src="/src/images/illo/3d/12blender.gif">
+    <img class="threed" src="/src/images/illo/3d/13blender.gif">
+    <img class="threed" src="/src/images/illo/3d/14blender.gif">
+    <img class="threed" src="/src/images/illo/3d/15blender.gif">
+    <img class="threed" src="/src/images/illo/3d/17blender.png">
+    <img class="threed" src="/src/images/illo/3d/21blender.png">
+    <img class="threed" src="/src/images/illo/3d/18blender.png">
+    <img class="threed" src="/src/images/illo/3d/19blender.png">
+    <img class="threed" src="/src/images/illo/3d/20blender.png">
+    <img class="threed" src="/src/images/illo/3d/22blender.png">
+    <img class="threed" src="/src/images/illo/3d/23blender.png">
+    <img class="threed" src="/src/images/illo/3d/25blender.png">
+    <img class="threed" src="/src/images/illo/3d/26blender.png">
+    <img class="threed" src="/src/images/illo/3d/27blender.png">
+    <img class="threed" src="/src/images/illo/3d/28blender.png">
+  </div>
+
+    <!-- starting images -->
+    <img src="/src/images/illo/100.png" class="drag">
+    <img src="/src/images/illo/zine.jpeg" class="drag">
+    <img src="/src/images/illo/toon2.png" class="drag">
+    <img src="/src/images/illo/polly0.png" class="drag">
+    <img src="/src/images/illo/shape1.png0067.png" class="drag">
+    <img src="/src/images/illo/DDC-insta-story-1.jpeg" class="drag">
+    <img src="/src/images/illo/Mermaids_CV.jpeg" class="drag">
+    <img src="/src/images/illo/mitski_RGB_lo.jpeg" class="drag">
+    <img src="/src/images/illo/stvincent.jpeg" class="drag">
+
+</div>
+</div>
+</body>
+</html>
