@@ -1,0 +1,95 @@
+/* ~~~ ILLUSTRATIONS GALLERY ~~~ */
+.g-relative {
+    /* display: none; */
+    height: 150vw;
+}
+.g-relative > img {
+    position: absolute;
+}
+
+#i1 {
+    width: 20vw;
+    height: auto;
+    top: 10px;
+    left: 0px;
+    z-index: 2;
+}
+
+#i2 {
+    width: 30vw;
+    top: 0px;
+    left: 15vw;
+}
+
+#i3 {
+    width: 20vw;
+    top: 20vw;
+    left: 22vw;
+}
+
+#i4 {
+    width: 18vw;
+    top: 32vw;
+    left: 1vw;
+} 
+
+#i5 {
+    width: 18vw;
+    top: 42vw;
+} 
+
+#i6 {
+    width: 18vw;
+    top: 52vw;
+    left: 25vw;
+} 
+
+#i7 {
+    width: 23vw;
+    top: 62vw;
+    left: 0vw;
+}
+
+#i8 {
+    width: 18vw;
+    top: 72vw;
+    left: 25vw;
+} 
+
+#i9 {
+    width: 18vw;
+    top: 87vw;
+    z-index: 1;
+} 
+
+#i10 {
+    width: 18vw;
+    top: 102vw;
+    left: 0vw;
+    z-index: 2;
+} 
+
+#i11 {
+    width: 25vw;
+    top: 90vw;
+    left: 23vw;
+} 
+
+#i12 {
+    width: 24vw;
+    top: 121vw;
+    left: -3vw;
+    z-index: 2;
+} 
+
+#i13 {
+    width: 20vw;
+    top: 128vw;
+    left: 22vw;
+    z-index: 1;
+} 
+
+/* ~~~ 3D GALLERY ~~~ */
+#three-gallery > img {
+    width: calc(41vw / 3);
+}
