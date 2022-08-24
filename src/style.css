@@ -3,7 +3,7 @@
     --h: 'EB Garamond', serif;
 }
 
-body {
+html, body {
     font-family: var(--p);
     margin: 0;
     padding: 0;
@@ -139,13 +139,14 @@ h2 {
 .abtframe {
     border: 1px black solid;
     margin: 2em;
-    margin-top: 3.5em;
+    margin-top: 1.5em;
     margin-right: 3em;
     height: calc(74vh);
     display: flex;
     padding: 2em;
     gap: 2em;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     transition: border-radius 2s;
 }
 
@@ -155,7 +156,6 @@ h2 {
 }
 
 .abtinfo {
-    flex: 2;
     max-width: 500px;
     border-left: 1px black solid;
     padding-left: 2em;
@@ -164,7 +164,11 @@ h2 {
 
 #abtimg {
     max-width: 450px;
-    flex: 2;
+    /* flex: 1; */
+}
+
+#abtimg > img {
+    border-radius: 100em;
 }
 
 #email {
@@ -233,7 +237,7 @@ h2 {
     padding: 1em;
     border: 1px black solid;
     overflow-y: scroll;
-
+    scroll-behavior: smooth;
 }
 
 .p-content {
@@ -340,6 +344,7 @@ h2 {
     margin-bottom: 1.2em;
     display: flex;
     flex-direction: column;
+    transition-delay: 2ms;
     transition: border-radius 2s;
     flex-basis: calc(100vw / 3.75);
 }
