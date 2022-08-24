@@ -199,6 +199,21 @@ h2 {
     content: ' ☲ '
 }
 
+.texture::after {
+    content: ' 〄 '
+}
+
+.web::after {
+    content: ' ✦ '
+}
+
+.p5::after {
+    content: ' ⚘ '
+}
+
+.max::after {
+    content: ' ⚙︎ '
+}
 
 
 /* ~~~ PLAYGROUNDS ~~~ */
@@ -272,15 +287,14 @@ h2 {
     color: white;
 }
 
-.gallery {
-    padding-top: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5em;
-    position: relative;
-    justify-content: space-evenly;
+#p-art > a {
+    text-decoration: none;
+    color: white;
 }
 
+#p-code > a {
+    text-decoration: none;
+}
 
 .playground:nth-child(2){
     background-color: black;
