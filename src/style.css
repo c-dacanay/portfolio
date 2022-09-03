@@ -26,6 +26,17 @@ h2 {
     font-size: 1.25em;
 }
 
+a {
+    color: #000;
+    /* text-decoration: none; */
+    transition: color .5s;
+}
+
+a:hover {
+    transition: color .5s;
+    color: rgb(164, 159, 159);
+}
+
 /* ~~~ NAV ~~~ */
 .nav {
     position: fixed;
@@ -45,9 +56,10 @@ h2 {
 
 }
 
-.topnav-right > a {
+.topnav-right > a, .topnav > a {
     padding: 2em;
     min-width: 160px;
+    text-decoration: none;
 
 }
 
@@ -70,35 +82,35 @@ h2 {
 }
 
 /* ~~~ NAV / EMOJIS ~~~ */
-.wave::after {
+.wave::before {
     content: ' 👋🏽 '
 }
-.pill::after {
+.pill::before {
     content: ' 💊 '
 }
-.ml::after {
+.ml::before {
     content: ' 🪴 '
 }
 
 .ml {
     letter-spacing: -0.01em;
 }
-.alex::after {
+.alex::before {
     content: ' 🥰 '
 }
-.rock::after {
+.rock::before {
     content: ' 🪨 '
 }
-.winmaker::after {
+.winmaker::before {
     content: ' 🌃 '
 }
-.twine::after {
+.twine::before {
     content: ' 📝 '
 }
-.oam::after {
+.oam::before {
     content: ' 🌌 '
 }
-.tarot::after {
+.tarot::before {
     content: ' 🃏 '
 }
 
@@ -177,11 +189,17 @@ h2 {
     text-transform: uppercase;
 }
 
+#email:hover {
+    background-color: rgb(164, 159, 159);
+    color: white;
+    border: 1px white solid;
+    /* transition: background-color 1s; */
+}
 #contact {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #contact > p {
@@ -191,31 +209,31 @@ h2 {
 
 /* ~~~ PLAYGROUNDS / EMOJI ~~~ */
 
-.illos::after {
+.illos::before {
     content: ' ✎ '
 }
 
-.threed::after {
+.threed::before {
     content: ' ⌱ '
 }
 
-.zines::after {
+.zines::before {
     content: ' ☲ '
 }
 
-.texture::after {
+.texture::before {
     content: ' 〄 '
 }
 
-.web::after {
+.web::before {
     content: ' ✦ '
 }
 
-.p5::after {
+.p5::before {
     content: ' ⚘ '
 }
 
-.max::after {
+.max::before {
     content: ' ⚙︎ '
 }
 
@@ -296,6 +314,11 @@ h2 {
     color: white;
 }
 
+#p-art > a:hover {
+    color: rgb(164, 159, 159);
+    transition: color .5s;
+
+}
 #p-code > a {
     text-decoration: none;
 }
