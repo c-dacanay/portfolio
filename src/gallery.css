@@ -37,6 +37,9 @@
     width: calc(100%/3.2);
 }
 
+#zinegallery > img:hover {
+    cursor: e-resize;
+}
 #i1 {
     width: 20vw;
     height: auto;
