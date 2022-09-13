@@ -9,15 +9,30 @@
 <title>christina dacanay / playground</title>
 </head>
 <body>
-<div class="nav">
-    <div class="topnav"><a href="./index.html">Christina Dacanay</a><div class="topnav-right m-hide"><a href="./index.html">Projects</a> | <a href="./playground.html">Playground</a> | <a href="./about.html">About</a></div></div> 
+    <div class="nav">
+        <div class="topnav"><a href="./index.html">Christina Dacanay</a>
+            <div class="topnav-right m-hide"><a href="./index.html">Projects</a> | <a
+                    href="./playground.html">Playground</a> | <a href="./about.html">About</a></div>
+                    
+                    <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+        </div>
+
+        <div class="m-nav d-hide" id="m-navi"><a href="./index.html">Projects</a><a
+            href="./playground.html">Playground</a> <a href="./about.html">About</a></div>
+
+
     <div class="playheader m-hide">
 
-<div class="p-nav" id="p-art"><a class="illos" href="#t-illo"></a><a class="threed" href="#t-threed"></a><a class="zines" href="#t-zine"></a></div>
-<div class="p-nav" id="p-code"><a class="texture" href="#t-tex"></a><a class="web" href="#t-web"></a><a class="p5" href="#t-p5"></a><a class="max" href="#t-max"></a></div>
+<div class="p-nav m-hide" id="p-art"><a class="illos" href="#t-illo"></a><a class="threed" href="#t-threed"></a><a class="zines" href="#t-zine"></a></div>
+
+<div class="p-nav m-hide" id="p-code"><a class="texture" href="#t-tex"></a><a class="web" href="#t-web"></a><a class="p5" href="#t-p5"></a><a class="max" href="#t-max"></a></div>
+
     </div>
-<div id="playwrapper">
-<div class="playground">
+    <div class="playheader l-hide">
+    <div class="p-nav2" id="p-art" onclick="switchPlayground(0)">✎ illustration</div><div class="p-nav2" id="p-code" onclick="switchPlayground(1)">⚙︎ code</div></div>
+    <div id="playwrapper">
+
+<div class="playground" id="illo-playground">
     <div class="p-title"><h2>illustration & design</h2><p>✎ drawings, renders, doodles ❤</p></div>
     <div class="p-content">
     <div class="p-section">
@@ -38,8 +53,6 @@
             <img id="i11" src="./src/images/illo/2d/4-zine.jpeg">
             <img id="i12" src="./src/images/illo/2d/4-stack.jpeg">
             <img id="i13" src="./src/images/illo/2d/4-eye.jpeg">
-            <!-- <img id="i14" src="./src/images/illo/2d/5-uni.jpeg">
-            <img id="i15" src="./src/images/illo/2d/5-mer.jpeg"> -->
         </div>
         <div class="p-section"><h1 class="threed" id="t-threed">3d</h1><small>I too learned Blender during quarantine.</small></div>    
         <img src="./src/images/illo/3d/test.gif">
@@ -71,16 +84,16 @@
         <div class="p-section"><h1 class="zines" id="t-zine">zines / comics</h1><small>
             Download any of my zines for free here.</small></div>
 
-            <div class="gallery">
-                <img src="./src/images/illo/zines/ft/ft_cover.jpg">
-                <img src="./src/images/illo/zines/fever/fever_cover.jpg">
-                <img src="./src/images/illo/zines/m1/molt1_cover.jpg">
-                <img src="./src/images/illo/zines/m2/molt2_cover.jpg">
+            <div class="gallery" id="zinegallery">
+                <img src="./src/images/illo/zines/ft/0.jpg" id="ft" onclick="rotateGallery('ft', 10)">
+                <img src="./src/images/illo/zines/fever/0.jpg" id="fever" onclick="rotateGallery('fever', 8)">
+                <img src="./src/images/illo/zines/m1/0.jpg" id="m1" onclick="rotateGallery('m1', 14)">
+                <img src="./src/images/illo/zines/m2/0.jpg" id="m2" onclick="rotateGallery('m2', 9)">
             </div>
 </div>
 
 </div>
-<div class="playground">
+<div class="playground m-hide" id="code-playground">
     <div class="p-title" id="code-title"><h2>code playground</h2><p>☁ learning, playing, drawing with code ☁☂</p></div>
 
     <div class="p-content">
@@ -137,5 +150,6 @@
 </div>
 </div>
 </div>
+<script src="/src/lil.js"></script>
 </body>
 </html>
