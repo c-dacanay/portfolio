@@ -24,7 +24,6 @@ html, body {
 /* ~~~ STYLING ~~~ */
 h1, h2, h3 {
     font-family: var(--h);
-    color: var(--dark);
     font-weight: lighter;
 }
 
@@ -33,12 +32,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 1.75em;
 }
 
 a {
     color: var(--dark);
-    /* text-decoration: none; */
     transition: color .5s;
 }
 
@@ -56,7 +54,7 @@ a:hover {
 .nav {
     position: fixed;
     background-color: white;
-    /* border-bottom: 1px solid black; */
+    z-index: 1;
 }
 .topnav {
     display: flex;
@@ -110,10 +108,6 @@ a:hover {
 .ml::before {
     content: ' 🪴 '
 }
-
-.ml {
-    letter-spacing: -0.01em;
-}
 .alex::before {
     content: ' 🥰 '
 }
@@ -132,6 +126,23 @@ a:hover {
 .tarot::before {
     content: ' 🃏 '
 }
+
+/* ~~~ PROJECT PAGES ~~~ */
+.pj-info {
+    max-width: 500px;
+    border-left: 1px black solid;
+    padding-left: 2em;
+    min-width: 400px;
+}
+
+.pj-frame {
+    justify-content: center;
+}
+
+.pj-frame > .img-container {
+    max-width: 500px;
+}
+
 
 /* ~~~ ABOUT ~~~ */
 .index-socials {
@@ -365,11 +376,13 @@ a:hover {
 }
 
 .code {
-    color: white;
+    color: white !important;
     border-bottom: 1px white solid !important;
 }
 
+
 #code-title {
+    color: white !important;
     left: calc(99vw - 65px);
 }
 
@@ -404,34 +417,18 @@ a:hover {
     border: 1px solid var(--dark);
     padding: 2em; 
     margin-bottom: 1.2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
     flex-basis: calc(100vw / 3.75);
-    height: 500px;
     transition-delay: 2ms;
     cursor: zoom-in;
+    z-index: 0;
 
 }
 
 .window:hover {
     background-color: var(--higlight)
-}
-
-/* .out:hover {
-    -webkit-transition: background-color 2s ease;
-    -moz-transition: background-color 2s ease;
-    -o-transition: background-color 2s ease;
-    transition: background-color 2s ease;
-    background-color: var(--link);
-    cursor: pointer;
-} */
-
-.out:hover > .project-desc > .project-link > a {
-    transition: font-size 300ms ease;
-    font-size: larger;
-    font-weight: bold;
-    color: blue;
 }
 
 .project-link {
@@ -460,7 +457,6 @@ a:hover {
 .img-container {
     width: 100%;
     height: calc(40vh);
-    position: relative;
     text-align: center;
 }
 
@@ -475,6 +471,8 @@ text-align: right;
 
 }
 
+
+/* cute lil curve */
 @keyframes curve-in {
     from { border-radius: 0em }
     to { border-radius: 1em }
@@ -484,7 +482,6 @@ text-align: right;
     animation-name: curve-in;
     animation-duration: .5s;
     border-radius: 1em;
-    /* cursor: e-resize; */
 }
 
 .window:hover {
