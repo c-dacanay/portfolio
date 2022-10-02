@@ -265,6 +265,10 @@ marquee {
     margin: 0;
 }
 
+.archive {
+    background-color: var(--light) !important;
+}
+
 .archive:hover {
     cursor: pointer;
 }
