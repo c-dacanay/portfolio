@@ -160,6 +160,11 @@ marquee {
     max-width: 500px;
 }
 
+.img-container > p {
+    padding-top: 0em;
+
+}
+
 
 /* ~~~ ABOUT ~~~ */
 .index-socials {
@@ -268,7 +273,6 @@ marquee {
     padding: 0em;
     margin: 0em;
 }
-
 details {
     padding: .25em;
     margin: .5em;
@@ -492,7 +496,8 @@ details > p {
 
 .collaborators{
     font-size: .75em;
-
+    opacity: .8;
+    /* line-height: 2em; */
 }
 
 .window > .img-container {
