@@ -4,12 +4,11 @@
 :root {
     --p: 'Work Sans', sans serif;
     --h: 'EB Garamond', serif;
-    --light: #F9FBEC;
-    /* --link: #FDF4EC;
-    --higlight: #F4FFFF;  */
+    --light: #fff3f0;
     --link: #F4FFFF;
     --higlight: #F9FBEC; 
     --dark: rgba(0, 0, 0, 0.75);
+    --out: #cad2ff;
 }
 
 html, body {
@@ -35,6 +34,19 @@ h2 {
     font-size: 1.75em;
 }
 
+h3 {
+    padding-top: 1em;
+    margin-bottom: 0em;
+}
+
+li {
+    padding-top: .5em;
+}
+
+ul {
+    margin-top: 0;
+    list-style-type: circle;
+}
 a {
     color: var(--dark);
     transition: color .5s;
@@ -86,11 +98,16 @@ a:hover {
     width: 100vw; 
     height: 2em;
     display: flex;
+    text-align: center;
     align-items: center;
+    justify-content: space-around;
     background-color: var(--light);
     /* flex: 0 0 100%; */
 }
 
+marquee {
+    text-align: center;
+}
 .emoji {
     width: calc(100vw / 9);
     text-align: center;
@@ -243,6 +260,30 @@ a:hover {
     margin: 0;
 }
 
+.archive:hover {
+    cursor: pointer;
+}
+
+.archive > h2 {
+    padding: 0em;
+    margin: 0em;
+}
+
+details {
+    padding: .25em;
+    margin: .5em;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    
+
+}
+
+details > p {
+    /* padding-left: 1em; */
+    font-size: small;
+}
+
 
 /* ~~~ PLAYGROUNDS / EMOJI ~~~ */
 
@@ -367,12 +408,17 @@ a:hover {
 
 .p-title {
  display: flex;
+ padding: 0;
  gap: 1em;
  writing-mode: vertical-rl;
  align-items: baseline;
  position: fixed;
  left: calc(99vw/2 - 65px);
  z-index: 10;
+}
+
+.p-title > h2 {
+    margin: 0;
 }
 
 .code {
@@ -428,7 +474,7 @@ a:hover {
 }
 
 .window:hover {
-    background-color: var(--higlight)
+    background-color: var(--higlight);
 }
 
 .project-link {
@@ -471,6 +517,10 @@ text-align: right;
 
 }
 
+.out:hover {
+    background-color: var(--out);
+    cursor: ne-resize;
+}
 
 /* cute lil curve */
 @keyframes curve-in {

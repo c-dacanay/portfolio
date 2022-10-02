@@ -7,6 +7,7 @@
     justify-content: space-evenly;
 }
 
+
 .g-detail {
     width: 100%;
     display: flex;
@@ -26,6 +27,11 @@
     font-size: 10px;
     flex: 4;
     
+}
+
+.pop {
+    color: white !important;
+
 }
 /* ~~~ ILLUSTRATIONS GALLERY ~~~ */
 
