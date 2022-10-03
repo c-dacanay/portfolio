@@ -3,15 +3,26 @@
 - [x] Hover States and Links Out
 - [x] Main: Style Cards
 - [x] Main: Soft Scroll
-- [ ] Main: Emoji Links Scroll Position
+- [ ] ~~Main: Emoji Links Scroll Position~~
 - [x] About: Social Media
-- [ ] About: Tooltips: Copy Email Address
-- [ ] Playground: Hover On Links
+- [x] About: Tooltips: Copy Email Address
+- [ ] ~~Playground: Hover On Links~~
 - [x] Playground: Cycle Through Comics on Click
-- [ ] Playground: fix headers
+- [x] Playground: fix headers
+- [ ] Alt text
+- [ ] Finalize colors
 
 ### Content:
-- [ ] Main: images for each card
-- [ ] Main: little tags
-- [ ] ITP Blog to wordpress
-- [ ] Playground: write header & links
+- [x] Main: images for each card
+- [ ]~~ Main: little tags~~
+- [x] ITP Blog to wordpress
+- [x] Playground: write header & links
+- [x] Images for pages
+- [ ] ~~Gallery js~~
+image.png
+
+### Mobile:
+- [ ] Main page
+- [ ] Project Pages
+- [ ] Menu
+

@@ -165,7 +165,14 @@ marquee {
 
 }
 
+.squeeze {
+    max-width: 100%;
+    display: flex;
+}
 
+.squeeze > img {
+    width: calc(100% / 3)
+}
 /* ~~~ ABOUT ~~~ */
 .index-socials {
     display: flex;
@@ -497,6 +504,12 @@ details > p {
     flex-grow: 5;
 }
 
+.project-out {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+
+}
 .collaborators{
     font-size: .75em;
     opacity: .8;
