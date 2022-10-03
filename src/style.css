@@ -4,11 +4,11 @@
 :root {
     --p: 'Work Sans', sans serif;
     --h: 'EB Garamond', serif;
-    --light: #fff3f0;
-    --link: #F4FFFF;
-    --higlight: #F9FBEC; 
+    --light: #c20067;
+    --bg: #fafafa;
+    --higlight: #fbebf4; 
     --dark: rgba(0, 0, 0, 0.75);
-    --out: #cad2ff;
+    --out: #23907f;
 }
 
 html, body {
@@ -18,6 +18,7 @@ html, body {
     scrollbar-width: none;  /* Hide Scroll on Firefox */
     height: 100%;
     width: 100%;
+    background-color: var(--bg);
 }
 
 /* ~~~ STYLING ~~~ */
@@ -49,12 +50,10 @@ ul {
 }
 a {
     color: var(--dark);
-    transition: color .5s;
 }
 
 a:hover {
-    transition: color .5s;
-    color: rgba(0, 0, 0, 0.45);
+    color: var(--out);
     cursor: ne-resize;
 }
 
@@ -101,7 +100,7 @@ a:hover {
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--light);
+    background-color: var(--higlight);
     /* flex: 0 0 100%; */
 }
 
@@ -193,7 +192,7 @@ marquee {
 }
 
 .aboutindex {
-    background-color: var(--light) !important;
+    background-color: var(--higlight) !important;
     color: black !important;
 }
 
@@ -277,7 +276,7 @@ marquee {
 }
 
 .archive {
-    background-color: var(--light) !important;
+    background-color: var(--higlight) !important;
 }
 
 .archive:hover {
@@ -352,6 +351,7 @@ details > p {
     border: 1px black solid;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    border-radius: 2em;;
 }
 
 .p-content {
@@ -386,7 +386,7 @@ details > p {
     height: 2em;
     display: flex;
     align-items: center;
-    background-color: var(--light);
+    background-color: var(--higlight);
     gap: 1em;
 }
 
@@ -491,7 +491,9 @@ details > p {
 }
 
 .window:hover {
-    background-color: var(--higlight);
+    transition: transform 300ms;
+    box-shadow: 3px 3px var(--light);
+    transform: translate(-.2em, -.2em);
 }
 
 .project-link {
@@ -501,6 +503,7 @@ details > p {
     display: flex;
     width: 100%;
     align-items: center;
+    
 }
 .project-title > h2 {
     margin: 0;
@@ -513,6 +516,7 @@ details > p {
     justify-content: center;
 
 }
+
 .collaborators{
     font-size: .75em;
     opacity: .8;
@@ -542,13 +546,27 @@ text-align: right;
 
 }
 
-.out:hover {
+.out-text {
+    /* margin-bottom: 2em; */
+    color: white;
+    padding: .2em .5em;
     background-color: var(--out);
+    border-radius: 2em;
+
+}
+
+.out:hover {
+    /* background-color: var(--out); */
     cursor: ne-resize;
+    background-color: white;
+    transition: transform 300ms;
+    border: 1px solid var(--dark);
+    box-shadow: 3px 3px var(--out) !important;
+    transform: translate(-.2em, -.2em);
 }
 
 .out:hover > small {
-    display: block;
+    display: none !important;
     text-align: center;
 }
 
@@ -566,11 +584,6 @@ text-align: right;
     border-radius: 1em;
 }
 
-.window:hover {
-    transition: transform 300ms;
-    box-shadow: 3px 3px black;
-    transform: translate(-.2em, -.2em);
-}
 .d-hide {
     display: none;
 }
@@ -617,6 +630,11 @@ text-align: right;
         margin: 1em 3em !important;
         height: 80vh;
         align-items: center;
+    }
+
+    .out-text {
+        margin-bottom: 2em;
+        display: block;
     }
 /* ~~~ M-NAV ~~~ */
     .nav {
