@@ -471,14 +471,13 @@ details > p {
     border: 1px solid var(--dark);
     padding: 2em; 
     margin-bottom: 1.2em;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
     flex-basis: calc(100vw / 3.75);
     transition-delay: 2ms;
     cursor: zoom-in;
     z-index: 0;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .window:hover {
@@ -486,7 +485,7 @@ details > p {
 }
 
 .project-link {
-    padding-top: 1em;
+    padding: 1em 0 1em 0;
 }
 .project-title {
     display: flex;
@@ -507,6 +506,7 @@ details > p {
 .window > .img-container {
    display: flex;
    align-items: end;
+   justify-content: center;
 }
 
 .img-container {
@@ -531,13 +531,20 @@ text-align: right;
     cursor: ne-resize;
 }
 
+.out:hover > small {
+    display: block;
+    text-align: center;
+}
+
+
+
 /* cute lil curve */
 @keyframes curve-in {
     from { border-radius: 0em }
     to { border-radius: 1em }
 }
 
-.window:hover, .abtframe:hover {
+.window:hover, .abtframe:hover, .window:hover > .img-container > img  {
     animation-name: curve-in;
     animation-duration: .5s;
     border-radius: 1em;
