@@ -9,7 +9,7 @@
 - [ ] ~~Playground: Hover On Links~~
 - [x] Playground: Cycle Through Comics on Click
 - [x] Playground: fix headers
-- [ ] Finalize colors
+- [x] Finalize colors
 
 ### Content:
 - [x] Main: images for each card

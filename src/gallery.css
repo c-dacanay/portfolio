@@ -34,7 +34,9 @@
 
 }
 /* ~~~ ILLUSTRATIONS GALLERY ~~~ */
-
+#illo-playground {
+    background-color: white;
+}
 .g-relative > img {
     position: absolute;
 }
