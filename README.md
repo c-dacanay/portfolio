@@ -9,7 +9,6 @@
 - [ ] ~~Playground: Hover On Links~~
 - [x] Playground: Cycle Through Comics on Click
 - [x] Playground: fix headers
-- [ ] Alt text
 - [ ] Finalize colors
 
 ### Content:
@@ -19,10 +18,10 @@
 - [x] Playground: write header & links
 - [x] Images for pages
 - [ ] ~~Gallery js~~
-image.png
+- [ ] Alt text
 
 ### Mobile:
-- [ ] Main page
-- [ ] Project Pages
-- [ ] Menu
+- [x] Main page
+- [x] Project Pages
+- [x] Menu
 
