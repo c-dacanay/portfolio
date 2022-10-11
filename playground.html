@@ -9,18 +9,17 @@
 <title>christina dacanay / playground</title>
 </head>
 <body>
+    <div class="nav">
         <div class="topnav"><a href="./index.html">Christina Dacanay</a>
             <div class="topnav-right m-hide"><a href="./index.html">Projects</a> | <a
                     href="./playground.html">Playground</a> | <a href="./about.html">About</a></div>
-                    
                     <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
-        </div>
 
         <div class="m-nav d-hide" id="m-navi"><a href="./index.html">Projects</a><a
-            href="./playground.html">Playground</a> <a href="./about.html">About</a></div>
+            href="./playground.html">Playground</a> <a href="./about.html">About</a></div></div>
 
 
-    <div class="playheader m-hide">
+    <div class="playheader">
 
 <div class="p-nav m-hide" id="p-art"><a class="illos" href="#t-illo"></a><a class="threed" href="#t-threed"></a><a class="zines" href="#t-zine"></a></div>
 
@@ -32,15 +31,15 @@
     <div id="playwrapper">
 
 <div class="playground" id="illo-playground">
-    <div class="p-title"><h2>illustration & design</h2><p>✎ drawings, renders, doodles ❤</p></div>
+    <div class="p-title m-hide"><h2>illustration & design</h2><p>✎ drawings, renders, doodles ❤</p></div>
     <div class="p-content">
     <div class="p-section">
 
         <h1 class="illos" id="t-illo">illustration</h1><small>
         I mostly draw for myself nowadays :)</small></div>
-        <div class="gallery g-relative" style="height: 150vw;">
+        <div class="gallery g-relative" id="illo-rel">
             <img id="i1" src="./src/images/illo/2d/1mits.jpeg" alt="An illustration of the musician Mitski">
-            <img id="i2" src="./src/images/illo/2d/1me.png" alt="Illustration of Christina and her dog">
+            <img class="m-hide d-hide" id="i2" src="./src/images/illo/2d/1me.png" alt="Illustration of Christina and her dog">
             <img id="i3" src="./src/images/illo/2d/1vin.jpg" alt="An illustration of the musician St. Vincent">
             <img id="i4" src="./src/images/illo/2d/2-1plornt.jpg" alt="An illustration of a stylized plant">
             <img id="i5" src="./src/images/illo/2d/2-2plornt.jpg" alt="An illustration of a stylized plant">
@@ -93,7 +92,7 @@
 
 </div>
 <div class="playground m-hide" id="code-playground">
-    <div class="p-title" id="code-title"><h2>code playground</h2><p>☁ learning, playing, drawing with code ☁☂</p></div>
+    <div class="p-title m-hide" id="code-title"><h2>code playground</h2><p>☁ learning, playing, drawing with code ☁☂</p></div>
 
     <div class="p-content">
         <div class="p-section code"><h1 class="texture" id="t-tex">machine learning</h1><small><a class="pop" href="./ml5.html" target="_self">My work with ml5.js</a> convinced me that we need artists and amateurs to engage with machine learning. We can't only listen to salesmen, and anyway, it's pretty fun. <a class="pop" href="https://cdacanay.wordpress.com/category/making-art-with-gans/" target="_blank">See more</a>.</small></div>
@@ -115,9 +114,9 @@
             <div class="gallery">
                 <div class="g-detail"><p>Albers Toy</p> <small>This is a small opacity toy you can play with. <a class="pop" href="https://c-dacanay.github.io/hand-held/css-toy/" target="_blank">Play with it</a>.</small></div>
                 <img src="./src/images/code/2-opacity.gif" alt="an animation of rotating colored squares of variable opacities">
-                <img src="./src/images/code/2-albers1.png" alt="an animation of rotating colored squares of variable opacities">
+                <div class="g-lace"><img src="./src/images/code/2-albers1.png" alt="an animation of rotating colored squares of variable opacities">
                 <img src="./src/images/code/2-albers2.png" alt="an animation of rotating colored squares of variable opacities">
-                <img src="./src/images/code/2-albers3.png" alt="an animation of rotating colored squares of variable opacities">
+                <img src="./src/images/code/2-albers3.png" alt="an animation of rotating colored squares of variable opacities"></div>
                 <div class="g-detail"><p>Lace Generator</p> <small>An interactive lace generator. <a class="pop" href="https://editor.p5js.org/cdacanay/full/FWdkPkY7/" target="_blank">Play with it</a>.</small></div>
                 <img src="./src/images/code/2-lace10.png" alt="a black and white image with some generated lace patterns">
                 <div class="g-lace"><img src="./src/images/code/2-lace11.png" alt="a black and white image with some generated lace patterns">

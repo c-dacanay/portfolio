@@ -29,6 +29,9 @@
     
 }
 
+#illo-rel {
+    height: 150vw;
+}
 .pop {
     color: white !important;
 
@@ -199,9 +202,15 @@
     z-index: 2;
 }
 
+
+/* ~~~ DESKTOP ~~~ */
 @media only screen and (max-width: 1050px){
+    .gallery > img {
+        flex-basis: 45%;
+    }
     .g-relative {
         position:static;
+        height: auto !important;
 
     }
     .g-relative > img {
@@ -210,10 +219,43 @@
         top: auto !important;
         left: auto !important;
         object-fit: cover;
+        height: auto !important;
     }
 
-    .m-hide {
+    #illo-rel {
+        height: auto !important;
+    }
+
+    .playheader {
         display: none;
     }
+
+}
+
+
+
+/* ~~~ MOBILE ~~~ */
+@media only screen and (max-width: 690px){
+.gallery {
+    gap: 1em;
+}
+
+.gallery > img {
+    flex-basis: 100%;
+    object-fit: cover;
+}
+
+.g-relative {
+    position:static;
+    height: auto !important;
+}
+
+.g-relative > img {
+    position: static;
+    width: 30vw;
+    top: auto !important;
+    left: auto !important;
+    object-fit: cover;
+}
 
 }
