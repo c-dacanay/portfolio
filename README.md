@@ -18,10 +18,14 @@
 - [x] Playground: write header & links
 - [x] Images for pages
 - [ ] ~~Gallery js~~
-- [ ] Alt text
+- [x] Alt text
 
 ### Mobile:
 - [x] Main page
 - [x] Project Pages
 - [x] Menu
+
+### Finishing Touches:
+- [ ] Meta tags
+- [ ] Favicon
 
