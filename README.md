@@ -28,4 +28,5 @@
 ### Finishing Touches:
 - [ ] Meta tags
 - [ ] Favicon
+- [ ] URLs here and there.
 

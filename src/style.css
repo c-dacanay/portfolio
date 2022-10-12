@@ -80,7 +80,7 @@ a:hover {
     width: 100vw;
     height: 30px;
     padding: 1.5vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark);
 
 }
 
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .moji {
-    border: 1px solid black;
+    border: 1px solid var(--dark);
     border-top: none;
     width: 100vw; 
     height: 2em;
@@ -105,7 +105,7 @@ a:hover {
     align-items: center;
     justify-content: space-around;
     /* background-color: var(--higlight); */
-    background-color: black;
+    background-color: var(--dark);
 
     /* flex: 0 0 100%; */
 }
@@ -157,7 +157,7 @@ marquee > small {
 /* ~~~ PROJECT PAGES ~~~ */
 .pj-info {
     max-width: 500px;
-    border-left: 1px black solid;
+    border-left: 1px var(--dark) solid;
     padding-left: 2em;
     min-width: 400px;
 }
@@ -206,7 +206,7 @@ marquee > small {
 
 .aboutindex {
     background-color: var(--higlight) !important;
-    color: black !important;
+    color: var(--dark) !important;
 }
 
 .aboutindex:hover {
@@ -229,7 +229,7 @@ marquee > small {
 
 /* ~~~ ABOUT / INDEX ~~~ */
 .abtframe {
-    border: 1px black solid;
+    border: 1px var(--dark) solid;
     margin: 2em;
     margin-top: 1.5em;
     margin-right: 3em;
@@ -259,7 +259,7 @@ marquee > small {
 
 .abtinfo {
     max-width: 500px;
-    border-left: 1px black solid;
+    border-left: 1px var(--dark) solid;
     padding-left: 2em;
     min-width: 400px;
 }
@@ -366,7 +366,7 @@ details > p {
     margin-right: 1em;
     margin-top: 1.5em;
     padding: 1em;
-    border: 1px black solid;
+    border: 1px var(--dark) solid;
     overflow-y: scroll;
     scroll-behavior: smooth;
     border-radius: 2em;;
@@ -380,7 +380,7 @@ details > p {
     display: flex;
     gap: 3em;
     align-items: center;
-    border-bottom: 1px black solid;
+    border-bottom: 1px var(--dark) solid;
     height: 5em;
     z-index: 10;
 }
@@ -398,7 +398,7 @@ details > p {
 }
 
 .playheader {
-    border: 1px solid black;
+    border: 1px solid var(--dark);
     border-top: none;
     width: 100vw; 
     height: 2em;
@@ -418,7 +418,7 @@ details > p {
 }
 
 #p-art {
-    background-color: black;
+    background-color: var(--dark);
     height: 100%;
     color: white;
 }
@@ -438,7 +438,7 @@ details > p {
 }
 
 .playground:nth-child(2){
-    background-color: black;
+    background-color: var(--dark);
     color: white;
 }
 
@@ -513,6 +513,10 @@ details > p {
     box-shadow: 3px 3px var(--light);
     transform: translate(-.2em, -.2em);
 }
+
+.window:hover > .project-desc > .project-link > a {
+    color: var(--out) !important;
+} 
 
 .project-link {
     padding: 1em 0 1em 0;
@@ -683,7 +687,7 @@ text-align: right;
         display: flex !important;
         z-index: 1000;
         position: fixed;
-        border: 1px black solid;
+        border: 1px var(--dark) solid;
         animation: menusmooth 200ms ease-out forwards;
     }
 
@@ -849,10 +853,6 @@ text-align: right;
 }    
 
 /* ~~~ TOOLS ~~~ */
-
-.d-hide {
-    display: none;
-}
 
 .debug {
     border:1px solid red;
