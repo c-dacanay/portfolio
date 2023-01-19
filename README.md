@@ -1,4 +1,5 @@
 ## TODOS: 
+- [ ] Playground menu bug on mobile idk??
 - [x] Style Headers Links
 - [x] Hover States and Links Out
 - [x] Main: Style Cards
