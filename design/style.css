@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root {
+    --sans: 'Work Sans', sans serif;
+    --serif: 'EB Garamond', serif;
+    --light: #c20067;
+    --bg: #f1f1f1;
+    --higlight: #fbebf4; 
+    --black: #292B2C;
+    --out: #23907f;
+}
+
+html, body {
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+h1, h2, h3, h4, section, p {
+    font-family: var(--serif);
+}
+
+section > p {
+    font-size: 1.7em;
+    line-height: 150%;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--light);
+    transition: color .25s;
+}
+
+a:hover {
+    color: var(--light);
+    transition: .25s;
+}
+
+.wrapper {
+    display: flex;
+    gap: 1em;
+    height: 98vh;
+}
+#object {
+    width: 30vw;
+    background-color: #23907f;
+}
+#content {
+ width: 55vw;
+}
+
+p {
+    font-family: var(--p);
+}
