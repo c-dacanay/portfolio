@@ -16,6 +16,10 @@ html, body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* GENERAL TYPOGRAPHY */
 h1, h2, h3, section, p, li {
@@ -66,16 +70,17 @@ a:hover {
 
 #object {
     width: 35vw;
-    background-image: url("./src/home.gif");
+    background-image: url("./src/books.png");
     background-position-x: calc(var(--mouse-x, 0) * 75%);
     background-position-y: calc(var(--mouse-y, 0) * 100%);
     background-size: 200%;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .content {
  max-width: 50em;
  padding: 1em;
- overflow-y: auto;
 }
 
 #attribution {
@@ -107,12 +112,20 @@ a:hover {
     padding-top: 1em;
 }
 
+.casestudies {
+    display: flex;
+    gap: 3em;
+}
+
+.cover {
+    width: 150em;
+}
+
 details {
     font-size: 1.25em;
     padding: .5em 0;
     border-bottom: 1px var(--out) solid;
 }
-
 
 summary > small {
     color: var(--out);
