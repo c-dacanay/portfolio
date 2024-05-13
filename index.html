@@ -15,32 +15,28 @@
 
 </head>
 <body>
+    <div class="wrapper">
     <div class="nav">
         <div class="topnav"><a href="./index.html">Christina Dacanay</a>
-            <div class="topnav-right m-hide"><a href="./index.html">Projects</a> <a
-                    href="./playground.html">Playground</a> <a href="./about.html">About</a></div>
+            <div class="topnav-right m-hide"><a href="./index.html" class="here">Projects</a> 
+                <!-- <a href="./playground.html">Playground</a>  -->
+                    <a href="./about.html">About</a></div>
                     <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
         </div>
 
-        <div class="m-nav d-hide" id="m-navi"><a href="./index.html">Projects</a> <a
-            href="./playground.html">Playground</a> <a href="./about.html">About</a></div>
+        <div class="m-nav d-hide" id="m-navi">
+            <a href="./index.html">Projects</a> 
+            <!-- <a href="./playground.html">Playground</a> -->
+            <a href="./about.html">About</a></div>
 
 </div>
     <div id="mainframe">
-        <!-- ___ ABOUT ME ___ -->
-        <div class="window aboutindex" onclick="location.href='./about.html';">
-            <div id="aboutme">
-                <h1 class="wave">Hey there.</h1>
-                <div style="display:flex;">
-                <p>I'm Christina. I'm an designer, educator, and casual programmer based in Brooklyn, NY. <br><br>↪<a href="./about.html">learn more</a></p>
-                    </div>
-                    <div class="img-container" style="filter: grayscale(0%);">
-                        <img src="./src/images/illo/3d/office.png" alt="A 3d render of Christina's office in Brooklyn.">
-                        </div>
 
-                    
-                </div>
-        </div>
+            <div id="aboutme">
+                <h2>👋🏽 Hi there.</h2>
+                <p>I'm an interdiciplinary designer, educator, and front-end tinkerer based in Brooklyn, NY. I've been the Design Lead at <a target="_self" href="https://multiverse.com/">One More Multiverse</a>, a product designer at <a target="_self" href="https://www.codecademy.com/">Codecademy</a>, and an adjunct instructor at New York University.</p>
+            </div>
+
         <!-- ___ DESIGN ___ -->
         <!-- <div class="window out" onclick="window.open('./design/index.html', '_self');">
             <div class="project-title"><h2 class="design">Design Portfolio</h3></div>
@@ -50,23 +46,45 @@
             <div class="img-container cover"><img src="./design/src/home.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
         </div>
          -->
+        <div id="selected">
+        <h1>Selected Work</h1>
+            <div class="window" onclick="window.open('./p/ml5.html', '_self');">
+                <div class="project-title"><h2 class="hundred">One More Multiverse</h3></div>
+                <div class="project-desc"><p>A one of a kind virtual table top that helped storytellers bring their worlds to life.</p>
+                <div class="img-container cover"><img src="./src/images/hundred/cover.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
+            </div></div>
+            <div class="window" onclick="window.open('./p/ml5.html', '_self');">
+                <div class="project-title"><h2 class="hundred">🔒 Keyring</h3></div>
+                <div class="project-desc"><p>A small but mighty design system.</p>
+                <div class="img-container cover"><img src="./src/images/hundred/cover.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
+            </div></div>
+            <div class="window" onclick="window.open('./p/ml5.html', '_self');">
+                <div class="project-title"><h2 class="hundred">🔒 Yazebas Online</h3></div>
+                <div class="project-desc"><p>A hand crafted play experience for one of the most unique ttrpgs on the market.</p>
+                <div class="img-container cover"><img src="./src/images/hundred/cover.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
+            </div></div>
+            <div class="window" onclick="window.open('./p/ml5.html', '_self');">
+                <div class="project-title"><h2 class="hundred">🔒 Codecademy</h3></div>
+                <div class="project-desc"><p>A carefully tailored syllabi and reward system for online learners.</p>
+                <div class="img-container cover"><img src="./src/images/hundred/cover.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
+            </div></div>
+            <div class="window" onclick="window.open('./p/ml5.html', '_self');">
+                <div class="project-title"><h2 class="hundred">Webtoys</h3></div>
+                <div class="project-desc"><p>prototypes, web art, and interactive toys.</p>
+                <div class="img-container cover"><img src="./src/images/hundred/cover.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
+            </div></div></div>
+
+        <div id="archive">
+        <h1>Archive</h1>
         <!-- ___ 100 DAYS ___ -->
-        <div class="window out" onclick="window.open('https://c-dacanay.github.io/100webtoys/', '_self');">
+        <!-- <div class="window out" onclick="window.open('https://c-dacanay.github.io/100webtoys/', '_self');">
             <div class="project-title"><h2 class="hundred">100 days of webtoys</h3><small class="out-text">external</small></div>
             <div class="project-desc"><p>One hundred consecutive days of learning and playing with code.</p>
                 <div class="l-align project-link" >⤤ <a target="_self" href="https://c-dacanay.github.io/100webtoys/">100 days of webtoys</a></div>
             </div>
             <div class="img-container cover"><img src="./src/images/hundred/cover.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
-        </div>
+        </div> -->
 
-        <!-- ___ PILLED ___ -->
-        <div class="window out" onclick="window.open('http://pilled.online', '_self');">
-            <div class="project-title"><h2 class="pill">pilled.online</h3><small class="out-text">external</small></div>
-            <div class="project-desc"><p>A research project about fragmenting realities and toxic online communities.</p>
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://pilled.online/">pilled.online</a></div>
-            </div>
-            <div class="img-container cover"><img src="./src/images/pilled/cover.gif" class="project_img" alt="A gif of a red pill floating in 3d space."></div>
-        </div>
 
         <!-- ___ ML5.JS ___ -->
         <div class="window" onclick="window.open('./p/ml5.html', '_self');">
@@ -75,6 +93,15 @@
                 <div class="l-align project-link" >⤤ <a target="_self" href="https://ml5js.org/">ml5.org</a></div>          
                 </div>
                 <div class="img-container cover"><img src="./src/images/ml5/cover.png" class="project_img" alt="A website screenshot that reads Friendly Machine Learning for the Web."></div>
+        </div>
+
+         <!-- ___ PILLED ___ -->
+         <div class="window out" onclick="window.open('http://pilled.online', '_self');">
+            <div class="project-title"><h2 class="pill">pilled.online</h3><small class="out-text">external</small></div>
+            <div class="project-desc"><p>A research project about fragmenting realities and toxic online communities.</p>
+                <div class="l-align project-link" >⤤ <a target="_self" href="https://pilled.online/">pilled.online</a></div>
+            </div>
+            <div class="img-container cover"><img src="./src/images/pilled/cover.gif" class="project_img" alt="A gif of a red pill floating in 3d space."></div>
         </div>
 
         <!-- ___ ALEX ___ -->
@@ -86,21 +113,21 @@
                 <div class="img-container cover"><img src="./src/images/alex/cover.png" class="project_img" alt="A screen shot of a simulated dating text conversation with relationship variables above."></div>
         </div>
         <!-- ___ STONE STACKER ___ -->
-        <div class="window out" onclick="window.open('https://c-dacanay.github.io/hand-held/final/', '_self');">
+        <!-- <div class="window out" onclick="window.open('https://c-dacanay.github.io/hand-held/final/', '_self');">
              <div class="project-title"><h2 class="rock" id=>stone stacker</h2><small class="out-text">external</small></div>
             <div class="project-desc"><p>A web toy to make stone carins in the desktop.</p>
                 <div class="l-align project-link" >⤤ <a target="_self" href="https://c-dacanay.github.io/hand-held/final/">stone stacker</a>
             </div></div>
                 <div class="img-container cover"><img src="./src/images/stones/1.png" class="project_img" alt="A stack of SVG stone shapes."></div>
-        </div>
+        </div> -->
         <!-- ___ WINDOW MAKER ___ -->
-        <div class="window out" onclick="window.open('https://c-dacanay.github.io/hand-held/window-maker/', '_self');">
+        <!-- <div class="window out" onclick="window.open('https://c-dacanay.github.io/hand-held/window-maker/', '_self');">
              <div class="project-title"><h2 class="winmaker">window maker</h2><small class="out-text">external</small></div>
             <div class="project-desc"><p>A picrew-inspired toy to share your view from quarantine.</p>
                 <div class="l-align project-link" >⤤ <a target="_self" href="https://c-dacanay.github.io/hand-held/window-maker/">window maker</a></div>
             </div>
                 <div class="img-container cover"><img src="./src/images/windows/1.png" class="project_img" alt="Illustrated images of windows."></div>
-        </div>
+        </div> -->
         <!-- ___ ONE AMONGST MANY ___ -->
         <div class="window" onclick="window.open('./p/oam.html', '_self');">
              <div class="project-title"><h2 class="oam">one amongst many</h2></div>
@@ -127,8 +154,9 @@
                 <div class="img-container cover"><img src="./src/images/tarot/3.gif" class="project_img" alt="An animated Death tarot card being held to the camera in AR."></div>
 
         </div>
+
         <!-- ___ ARCHIVE ___ -->
-        <div class="window archive">
+        <!-- <div class="window archive">
              <div class="project-title"><h2>🅰🆁🅲🅷🅸🆅🅴✿</h2></div>
             <h3>projects</h3>
                 <ul>
@@ -137,24 +165,24 @@
                     <li><a href="https://docs.google.com/spreadsheets/d/1ztuJ9LrIlZX06W0vXjvLOQz7cchbyUmUiEcvUpXq4a4/edit#gid=1361098479" target="_self">e-birthday, no video</a>, a quarantine party</li>
                     <li><a href="https://cdacanay.wordpress.com/2020/04/13/2020-4-13-the-absent-gardener/" target="_self">the absent gardener</a>, an experiment with genetic algorithms</li>
                     
-                </ul>
+                </ul> -->
 
-            <h3>jobs</h3>
+            <!-- <h3>jobs</h3>
             <ul>
                 <li>research resident @ <a href="https://tisch.nyu.edu/itp" target="_self">ITP NYU</a></li>
                 <li>product design @ <a href="https://www.codecademy.com/" target="_self">codecademy</a><br><small> ⤷ email me for case studies</small></li>
                 <li>book design & art direction @ <a href="https://www.penguinrandomhouse.com/" target="_self">PRH</a></li>
                 <li>long, winding story <a href="https://docs.google.com/spreadsheets/d/1vT8mrtgjzzZ-FnLiG5MM0N5Y4u2g3sbDXI92mhg6eQA/edit#gid=0" target="_self">here</a><small>... or <a href="https://www.linkedin.com/in/christina-dacanay-55272918/" target="_self">linkedin</a></small>. </li>
-            </ul>
+            </ul> -->
 
         </div>
-        <div class="bottom">
-                <small> ✶ this website is hand-coded by me with no tracking or analytics ✶<br>
-                    ✶ last updated: 1/19/23 ✶ thanks for stopping by! ✶
-                </small>
-              </div>
         </div>
-    </div>
+    </div></div>
+    <div class="bottom">
+        <small> ✶ this website is hand-coded by me with no tracking or analytics ✶<br>
+            ✶ last updated: 5/2024 ✶ thanks for stopping by! ✶
+        </small>
+      </div></div>
     <script src="/src/lil.js"></script>
 </body>
 </html>

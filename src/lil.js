@@ -1,19 +1,17 @@
-console.log("wanderer, there is no road, the road is made by walking")
-
+console.log("wanderer, there is no road, the road is made by walking - antonio machado")
+var ct = 0;
 function showMobileMenu() {
     let x = document.getElementById("m-navi")
     x.classList.toggle("change")
 }
 
 // Cycle through zines on click
-let counter = 0;
 function rotateGallery(gallery, length) {
-    counter++;
-    let x = `./src/images/illo/zines/`+gallery+`/`+counter+`.jpg`;
+    ct++;
+    let x = `./src/images/illo/zines/`+gallery+`/`+ct+`.jpg`;
     document.getElementById(gallery).src = x;
-    // console.log(x)
-    if (counter >= length) {
-        counter = 0;
+    if (ct >= length) {
+        ct = 0;
     }
 }
 
