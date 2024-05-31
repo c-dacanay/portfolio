@@ -7,38 +7,84 @@
     <link rel="stylesheet" href="../src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.svg">
-    <title>christina dacanay / one amongst many</title>
+    <title>Christina Dacanay / ml5.js</title>
 </head>
 
 <body>
-    <div class="nav">
-        <div class="topnav"><a href="../index.html">Christina Dacanay</a>
-            <div class="topnav-right m-hide"><a href="../index.html">Projects</a> <a
-                    href="../playground.html">Playground</a> <a href="../about.html">About</a></div>
-                    <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
-        </div>
-
-        <div class="m-nav d-hide" id="m-navi"><a href="../index.html">Projects</a><a
-            href="../playground.html">Playground</a> <a href="../about.html">About</a></div>
-
-
-        <div class="moji m-hide">
-        </div>
-        <div class="abtframe pj-frame">
-            <div class="img-container"><img class src="../src/images/one/1.jpeg" alt="A dark image with a number of illuminated orbs hanging from the ceiling.">
-                       <div class="project-out"> <p>⤤ <a href="https://oneamongstmany.com/" target="_blank">website</a></p>
-                        <p>⤤ <a href="https://cdacanay.wordpress.com/2019/12/23/2019-12-23-one-amongst-many-connecting-womxn-in-computing/" target="_blank">documentation</a></p></div>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="topnav"><a href="../index.html">Christina Dacanay</a>
+                <div class="topnav-right m-hide"><a href="../index.html" class="here">Projects</a>
+                    <!-- <a href="./playground.html">Playground</a>  -->
+                    <a href="../about.html">About</a>
+                </div>
+                <div class="m-menu" onclick="showMobileMenu(this)">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
 
-            <div class="pj-info">
-                <h1 class="oam">one amongst many</h1>
-                <div class="collaborators">ROLE: Project Manager, Designer, Creative Technologist<br><br>
-                    COLLABORATORS: Tina Rungsawang, Shirley Wu</div>
-
-                <p>One Amongst Many is a 6 week multi-disciplinary design project that includes: experience design, installation, physical computing, usability testing, user interviews, visual communication design, and fabrication.</p> <p>It is a spacial data visualization that represents 16 womxn who have contributed to the history of computing. The three of us all felt distinctly alone in our journey to computing, but there have always been role models to be discovered. This project is our attempt to literally illuminate the histories of womxn in computing that have been diminished or erased.</p>
+            <div class="m-nav d-hide" id="m-navi">
+                <a href="./index.html">Projects</a>
+                <!-- <a href="./playground.html">Playground</a> -->
+                <a href="./about.html">About</a>
             </div>
-                
+
         </div>
+    </div>
+
+    <div class="pj-frame">
+        <div class="pj-info">
+            <img class="imghero" src="../src/images/one/1.jpeg"
+                alt="A dark image with a number of illuminated orbs hanging from the ceiling.">
+            <h1>One Amongst Many</h1>
+            <h3>Overview</h3>
+            <div class="collaborators"><b>Role:</b> Visual Design, Fabrication, Project Management, Copywriting, Illustration<br>
+                <b>Collaborators:</b> Tina Rungsawang, Shirley Wu
+            </div>
+
+            <p>One Amongst Many: Connecting Women in Computing is a 6 week multi-disciplinary design project completed in collaboration with Tina Rungsawang and Shirley Wu.</p>
+            <p>As women in the computing field, we felt the need to address the fact that so many astonishing milestones within computer science were accomplished by women. This is such a little-known fact to the vast majority of people, even to the ones within our field. We wanted to create something that would both inform and inspire others, especially young women, to have the courage to pursue great things in areas that are perceived to be male-dominant.</p>
+            <p>This physical data visualization installation was created to honor 16 women who have had monumental achievements in computing history. Illuminated orbs containing biographical information about the women are suspended from the ceiling; they are placed chronologically in a field based on their times of accomplishment, and their z-heights are correlated to how well known they are through their number of Wikipedia backlinks. When picked up by the audience, each orb will light up to maximum brightness while also prompting other orbs within its cohort to also shine. All orbs start off at near complete dimness. The more times each orb has been interacted with, the brighter its neutral state gets over time, giving the entire installation a visualization of its recent interactions.
+            </p>
+            <p>Information on each woman can be found on  <a href="https://oneamongstmany.com/" target="_blank">https://oneamongstmany.com/</a>.</p>
+
+            <h3>Project Timeline</h3>
+            <img class="blend" src="https://images.squarespace-cdn.com/content/v1/59eefbef8c56a85dc3905f39/1579816312957-46OWYHTSCOQVHRGVAXCV/one-amongst-many-timeline-03.jpg?format=2500w">
+
+            <h3>Concept</h3>
+            <p>Shirley reached out to Tina and I to collaborate on a broad ambition she had while at ITP: to create a physical data visualization. It didn’t take long for us to settle on our subject the history of women in computing. Acknowledging and celebrating the women in computing who have been diminished throughout history seemed like a worthwhile pursuit in our first semester at ITP. Data visualizations are by nature educational and we wanted to bring that education a step further with a physical experience, and an opportunity to count one’s self among the women featured in the piece.</p>
+            <p>We collectively challenged ourselves to try things we had never attempted to do before (in code, electronics, fabrication, installation). We brainstormed with the ideals in mind: unlimited time, space, resources, but keeping in mind that we needed to be flexible. This allowed us to dream big and adapt quickly.</p>
+
+            <h3>Brainstorming & First Prototype</h3>
+            <p>Our research was two-pronged: the data for women in computing was scraped from Wikipedia. We also compiled interactive installations and art to inspire us. One piece that stood out was Judith G Levy’s Memory Cloud. We loved the visual effect of the ‘cloud’ in space, and the interaction of investigating. This magnification encourages users to look closer, inspect, and have a personal relationship with the photographs in the cloud. We wanted to emulate this inspection, and so the idea of a field of objects that were interactive became integral to our vision.</p>
+            <p>Shirley did the bulk of the data collection, which you can read about here (link incoming). We had a list of about 30 women we wanted to highlight, and we painstakingly voted on who we felt should be represented in this small test case. We tended toward women who were generally less known and had impactful accomplishments.</p>
+            <p>We also investigated many different materials we could use for our data points. Fillable Christmas ornaments presented themselves as a great option because they were 1) easily affordable, 2) aesthetically pleasing, 3) we were able to easily open and close them to access the components inside.</p>
+
+            <img class="imghero" src="https://images.squarespace-cdn.com/content/v1/59eefbef8c56a85dc3905f39/1579818788033-3ID9LY8K0XE293FFS3JX/sketch-orb-initial.JPG?format=2500w">
+            <div class="imgwrapper">
+                <img style="height: 20em; width: calc(44vw/2);" src="https://i0.wp.com/cdacanay.wordpress.com/wp-content/uploads/2019/12/ad62d-img_8322.jpg?w=4000&h=&crop=1&ssl=1">
+                <img style="height: 20em; width: calc(44vw/2);" src="https://i0.wp.com/cdacanay.wordpress.com/wp-content/uploads/2019/12/0087d-img_1075.jpeg?w=4000&h=&crop=1&ssl=1"></div>
+
+            
+            <h3>Playtest</h3>
+            <p>We collected feedback from advisors and peers by demonstrating a low-fidelity prototype. We offered no direction during this stage to see how users interacted with the objects, and if they understood our system. We also asked interview questions after the experience and had many helpful conversations.            </p>
+            <div class="imgwrapper" style="height: 20em;">
+            <img src="https://images.squarespace-cdn.com/content/v1/59eefbef8c56a85dc3905f39/1579821553411-ZPYLD5186QT4XNS0R5LA/playtest-interaction-01.gif?format=1500w">
+            <img src="https://images.squarespace-cdn.com/content/v1/59eefbef8c56a85dc3905f39/1579821661014-WRR663RU5LF4B071YBAX/playtest-interaction-02.gif?format=1500w">
+            <img src="https://images.squarespace-cdn.com/content/v1/59eefbef8c56a85dc3905f39/1579821826041-WW0SBB9R4GZMKMKL5JNT/playtest-interaction-03.gif?format=1500w">
+        </div>
+            <!-- <h3>Links</h3>
+            <div class="project-out">
+                <p>⤤ <a href="https://oneamongstmany.com/" target="_blank">website</a></p>
+                <p>⤤ <a href="https://cdacanay.wordpress.com/2019/12/23/2019-12-23-one-amongst-many-connecting-womxn-in-computing/"
+                        target="_blank">documentation</a></p>
+            </div> -->
+        </div>
+
+    </div>
+
     </div>
 
 
