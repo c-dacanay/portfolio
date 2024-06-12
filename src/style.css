@@ -3,6 +3,7 @@
 :root {
     --serif: 'Newsreader', serif;
     --mono: 'Inconsolata', monospace;
+    --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --light: #c20067;
     --bg: #FFFFF9;
     --higlight: #fbebf4; 
@@ -32,23 +33,23 @@ h1 {
 }
 
 h2 {
-    font-family: var(--mono);
+    font-family: var(--sans);
     font-weight: 100;
     font-size: 2.488rem;
 }
 
 h3 {
-    font-family: var(--mono);
+    font-family: var(--sans);
     font-size: 1.724rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 300;
     margin-bottom: .5em;
 }
 
 h4 {
-    font-family: var(--mono);
+    font-family: var(--sans);
     font-size: 1.42rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 300;
 }
 
@@ -92,7 +93,7 @@ a:hover {
     position: fixed;
     background-color: var(--bg);
     z-index: 2;
-    font-family: var(--mono);
+    font-family: var(--sans);
 }
 .topnav {
     display: flex;
@@ -210,9 +211,14 @@ width: 100% !important;
     margin-bottom: -1em;
 }
 
+#aboutme {
+    display: flex;
+    width: 65rem;
+    /* justify-content: space-around; */
+    /* background-color: red; */
+}
 
-
-#aboutme > p {
+#abouttext > p {
     font-family: var(--serif);
     font-size: 1.44rem;
     /* font-weight: 400; */
@@ -221,6 +227,11 @@ width: 100% !important;
     max-width: 620px;
 }
 
+#aboutme > img {
+    justify-content: end;
+    max-width: 10rem;
+    padding: 2rem;
+}
 /* #aboutme > p > a { */
     /* font-weight: 300; */
     /* font-style: italic; */
@@ -459,7 +470,8 @@ details > p {
 /* ~~~ FRAMES ~~~ */
 .wrapper {
     display: flex;
-    width: 100%;
+    max-width: 100%;
+    
 }
 
 .fade {
@@ -473,7 +485,7 @@ details > p {
     flex-flow: column;
     padding: 1.5em;
     gap: 4em;
-    width: 65vw;
+    /* width: 65vw; */
     padding: 5em 0 0 10em;
     margin: 0 0 5em 0;
     justify-content: left;
@@ -536,7 +548,7 @@ details > p {
     z-index: 0;
     display: none;
     position: fixed;
-    bottom: 16%;
+    bottom: 1%;
     right: 5%;
     width: 40vw;
 }
