@@ -2,17 +2,17 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./src/designstyle.css">
+    <link rel="stylesheet" href="./src/styles.css">
     <meta charset="UTF-8">
 
     <link rel="icon" href="favicon.svg" type="image/x-icon">
     <title> Christina Dacanay </title>
-    <meta name="description" content="Christina Dacanay is a Creative Director based in New York. " />
-    <meta property="og:image" content="src/preview.png">
+    <meta name="description" content="Christina Dacanay is a multi-diciplinary designer based in New York. " />
+    <meta property="og:image" content="src/images/webtoys/stones.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
-    <script type="text/javascript" src="./src/sidescroll.js"></script>
+     <script type="text/javascript" src="./src/lil.js"></script>
 
 </head>
 
@@ -22,346 +22,197 @@
     <div class="nav">
         <div class="topnav"><a href="./index.html" class="active">Christina Dacanay</a>
             <div class="topnav-right m-hide">
-                <a href="./index.html">Work</a> 
+                <a href="./index.html">Work</a>
                 <!-- <a href="./playground.html">Playground</a> -->
-                    <a href="./about.html">About</a></div>
+                <a href="./about.html">About</a>
+            </div>
 
-                    <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+            <div class="m-menu" onclick="showMobileMenu(this)">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
 
         <div class="m-nav d-hide" id="m-navi">
             <a href="./index.html">Projects</a>
             <!-- <a href="./playground.html">Playground</a>  -->
-            <a href="./about.html">About</a></div>
+            <a href="./about.html">About</a>
+        </div>
 
 
 
-    <div id="page">
-        <div class="window c0 img_wrap">
+        <div id="page">
+            <div class="window abtwindow">
                 <div class="abtwindow">
-                    <p class="hi">👋🏽 Hi there!<br> I'm Christina.</p>
+                    <p class="greeting">👋🏽 Hi there!<br> I'm Christina.</p>
                     <p class="abtme"> I'm a multi-diciplinary designer that loves to experiment with technology,
                         form, and interaction.
 
-                        <br> <br>Previously Design Lead at One More Multiverse, Product Design at Codecademy, and adjunct faculty at New York University.
+                        <br> <br>Previously Design Lead at One More Multiverse, Product Design at Codecademy, and
+                        adjunct faculty at New York University.
                     </p>
                     <p>↪ <a href="./about.html">Learn More</a></p>
-                    <p id="email">tina.dacanay@gmail.com</p>
-            
-                <p class="credit"> Christina Dacanay
-                    ✶ 2024 ✶ hand coded with no tracking or analytics<br>
-                    Elsewhere:
-                    <a href="">instagram</a> /
-                    <a href="">twitter</a> /
-                    <a href="">itch.io</a> /
-                    <a href="">are.na</a><br></p>   
+                    <p id="email">📮 tina.dacanay@gmail.com</p>
+
+                    <p class="credit"> Christina Dacanay
+                        ✶ 2024 ✶ hand coded with no tracking or analytics<br>
+                        Elsewhere:
+                        <a href="https://www.instagram.com/studio.stina">instagram</a> /
+                        <a href="https://stinabean.itch.io/">itch.io</a> /
+                        <a href="https://www.are.na/c-d-umyzieztf18/channels">are.na</a><br>
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- ___ OMM ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <!-- <div class="projTitle">Case Study #1</div> -->
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" id="animated" src="src/images/omm/cover.gif">
+                        </div>
+
+                        <p class="pname"> Building a One of Kind <br>Virtual Tabletop </p>
+
+
+                        <div class="descrip">
+                            <p class="psub">One More Multiverse</p>
+                            <p class="pskills"> Product Strategy<br>
+                                Design Management<br>
+                                Experience Design
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- ___ YAZEBAS ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <!-- <div class="projTitle">Case Study #2</div> -->
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/yazebas/cover.png">
+                        </div>
+                        <p class="pname"> Crafting Surprises in<br> Emergent Gameplay </p>
+                        <div class="descrip">
+                            <p class="psub">One More Multiverse</p>
+                            <p class="pskills"> Product Design<br>
+                                Product Strategy<br>
+                                Research & Planning
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ___ CODECADEMY ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <!-- <div class="projTitle">Case Study #3</div> -->
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/ccademy/cover.png">
+                        </div>
+                        <p class="pname"> Reinventing <br>Learner-Centered Syllabi</p>
+                        <div class="descrip">
+                            <p class="psub">Codecademy</p>
+                            <p class="pskills"> User Testing<br>
+                                UX Design<br>
+                                Visual Design
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ___ MANA ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/key/cover.png">
+                        </div>
+                        <p class="pname"> Growing a<br> Design System</p>
+                        <div class="descrip">
+                            <p class="psub">One More Multiverse</p>
+                            <p class="pskills">Design Leadership <br> System Design<br>
+                                UI Design<br>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ___ OAM ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/one/cover.png">
+                        </div>
+                        <p class="pname"> Creating a Physical<br>Data Visualization</p>
+                        <div class="descrip">
+                            <p class="psub">Personal Collaboration</p>
+                            <p class="pskills"> Project Management<br>
+                                Fabrication<br>
+                                Visual Design
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ___ T-AR-OT ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" style="height: 400px; object-fit:cover;" src="src/images/tarot/1.gif">
+                        </div>
+                        <p class="pname"> Experimenting with<br>Augmented Reality</p>
+                        <div class="descrip">
+                            <p class="psub">Personal Collaboration</p>
+                            <p class="pskills"> Motion Design<br>
+                                Vuforia </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <!-- ___ WEBTOYS ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" style="width:90%" src="src/images/webtoys/cover.gif">
+                        </div>
+                        <p class="pname"> Webtoy Playground</p>
+                        <div class="descrip">
+                            <p class="psub">Various</p>
+                            <p class="pskills"> Web Development<br>
+                                2D/3D Animation<br>
+                                Illustration</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ___ BACK ___ -->
+            <div class="end">
+                <p id="getback">↤</p>
             </div>
         </div>
 
 
-        <!--__________Project 1: Interactive Film__________-->
-        <div class="window c1 img_wrap">
-            <a href="./p/omm.html" class="content">
-                <div class="projTitle">Case Study #1 </div>
-                <div class="projContent">
-                    <div class="imgContainer">
-                        <img class="homeCover" id="animated" src="src/images/omm/cover.gif">
-                    </div>
-
-                    <p class="pn1"> Building a Virtual Tabletop </p>
-                    <div class="descrip">
-                        <div class="pskills b2">
-                            <p class="b2"> Narrative Design
-                                <br> Interactive Film/3d
-                                <br> Sound Design
-                            </p>
-                        </div>
-                        <div class="pskills3">
-                            <p class="b2">Independent:
-                                <br>Doors We Open
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-
-        <!--__________Project 2: Mojo_________-->
-        <div class="window c1 img_wrap">
-            <a href="mojo.html" class="content">
-                <div class="projTitle">Ø2 </div>
-                <div class="projContent">
-
-                    <div class="imgContainer img03">
-
-                        <img class="homeCover" id="animated" src="assets/01a_MOJO/01_cover.png">
-
-
-                        <img class="homeCover" id="static" src="assets/01a_MOJO/01_cover.png">
-
-
-                    </div>
-
-                    <p class="pn1"> Establishing the First <br>Sports Stock Market </p>
-                    <div class="descrip">
-                        <svg class="pskills0 mHide" width="69" height="60">
-                            <use href="#lineStart" />
-                        </svg>
-                        <div class="pskills b2">
-                            <p class="b2"> Design Management
-                                <br> Brand & UX
-                                <br> Business Strategy
-                            </p>
-                        </div>
-                        <div class="pContainer"><svg class="pskills2 marg30" width="69" height="12">
-                                <use href="#arrow" />
-                            </svg></div>
-                        <div class="pskills3">
-                            <p class="b2">Mojo
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-
-
-        <!--__________Project 3: AI Test Kitchen__________-->
-        <div class="window c1 img_wrap">
-            <a href="aitestkitchen.html" class="content">
-                <div class="projTitle">Ø3 </div>
-                <div class="projContent">
-
-                    <div class="imgContainer img03">
-
-                        <img class="homeCover" id="animated" src="assets/01b_AITK/01_cover.png">
-                        <img class="homeCover" id="static" src="assets/01b_AITK/01_cover.png">
-
-
-                    </div>
-
-                    <p class="pn1"> Experimenting with <br>Large Languge Models </p>
-                    <div class="descrip">
-                        <svg class="pskills0 mHide" width="69" height="60">
-                            <use href="#lineStart" />
-                        </svg>
-                        <div class="pskills b2">
-                            <p class="b2"> Speculative Product Design
-                                <br> AI/LLMS
-                            </p>
-                        </div>
-                        <div class="pContainer"><svg class="pskills2 marg30" width="69" height="12">
-                                <use href="#arrow" />
-                            </svg></div>
-                        <div class="pskills3">
-                            <p class="b2">Google Creative Lab:
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-
-
-
-        <!--__________   Project 4: Mailchimp____________________-->
-        <div class="window c2 img_wrap">
-
-            <a href="courier.html" class="content">
-                <div class="projTitle">Ø4 </div>
-                <div class="projContent">
-                    <div class="imgContainer img01"> <img class="homeCover" src="assets/01_MCP/01m_cover.jpg"
-                            class="projImage01"></div>
-                    <p class="pn1"> Launching a <br> New Media Site </p>
-                    <div class="descrip">
-                        <svg class="pskills0 mHide" width="69" height="60">
-                            <use href="#lineStart" />
-                        </svg>
-                        <div class="pskills b2">
-                            <p class="b2"> Experience Design
-                                <br> Motion Design
-                                <br> Experience Strategy
-                            </p>
-                        </div>
-                        <div class="pContainer"><svg class="pskills2 marg30" width="69" height="12">
-                                <use href="#arrow" />
-                            </svg></div>
-                        <div class="pskills3">
-                            <p class="b2">Mailchimp
-                                <br>X Courier
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-
-
-        </div>
-
-
-
-
-
-        <!--__________   Project 5: Juice____________________-->
-        <div class="window c4 img_wrap">
-            <a href="juice.html" class="content">
-                <div class="projTitle">Ø5</div>
-                <div class="projContent">
-
-                    <div class="imgContainer img02">
-                        <img class="homeCover" id="animated" src="assets/02_JUICE/02j_cover.gif">
-                        <img class="homeCover" id="static" src="assets/02_JUICE/02j_cover.png">
-                    </div>
-
-                    <p class="pn1"> Reinventing <br>Your Data Plan </p>
-
-                    <div class="descrip">
-                        <svg class="pskills0 mHide" width="69" height="60">
-                            <use href="#lineStart" />
-                        </svg>
-                        <div class="pskills b2">
-                            <p class="b2"> Experience Design
-                                <br> Motion Design
-                                <br> Experience Strategy
-                            </p>
-                        </div>
-                        <div class="pContainer"><svg class="pskills2 marg30" width="69" height="12">
-                                <use href="#arrow" />
-                            </svg></div>
-                        <div class="pskills3">
-                            <p class="b2">Verizon </p>
-                        </div>
-                    </div>
-
-                </div>
-            </a>
-
-
-
-        </div>
-
-
-
-        <!--__________   Project 6: Samsung____________________-->
-        <div class="window c3 img_wrap">
-
-            <a href="note8.html" class="content">
-
-                <div class="projTitle">Ø6</div>
-
-                <div class="projContent">
-                    <div class="imgContainer img04">
-                        <img class="homeCover" id="animated" src="assets/04_SAMSUNG/04s_cover.gif">
-                        <img class="homeCover" id="static" src="assets/04_SAMSUNG/04s_cover.png">
-                    </div>
-
-                    <p class="pn1"> Introducing <br> Galaxy Note 8</p>
-                    <div class="descrip">
-                        <svg class="pskills0 mHide" width="69" height="60">
-                            <use href="#lineStart" />
-                        </svg>
-                        <div class="pskills b2">
-                            <p class="b2"> Experience Design
-                                <br> 3D Animation
-                                <br> Art Direction
-                            </p>
-                        </div>
-                        <div class="pContainer"><svg class="pskills2 marg30" width="69" height="12">
-                                <use href="#arrow" />
-                            </svg></div>
-                        <div class="pskills3">
-                            <p class="b2">Samsung </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-
-        </div>
-
-        <!--__________   Project 7: Hawke____________________-->
-        <div class="window c5 img_wrap">
-            <a href="txb.html" class="content">
-                <div class="projTitle">Ø7 </div>
-                <div class="projContent">
-                    <div class="imgContainer img05">
-
-                        <img class="homeCover" src="assets/05_HAWKE/05h_cover.png" class="projImage"
-                            style="width:100%;">
-                    </div>
-                    <p class="pn1"> Building a Transaction <br> Banking Platform</p>
-                    <div class="descrip">
-                        <svg class="pskills0 mHide" width="69" height="60">
-                            <use href="#lineStart" />
-                        </svg>
-                        <div class="pskills b2">
-                            <p class="b2"> Design Management
-                                <br>Ways of Working
-                                <br> Experience Design
-
-                            </p>
-                        </div>
-                        <div class="pContainer"><svg class="pskills2 marg30" width="69" height="12">
-                                <use href="#arrow" />
-                            </svg></div>
-                        <div class="pskills3">
-                            <p class="b2">Goldman Sachs </p>
-                        </div>
-                    </div>
-                </div>
-
-            </a>
-
-        </div>
-
-        <!--__________   Project 8: G-Tech____________________-->
-        <div class="window c6 img_wrap">
-            <a href="gteam.html" class="stack5 content">
-                <div class="projTitle">Ø8 </div>
-
-
-                <div class="projContent">
-                    <div class="imgContainer img06">
-                        <img class="homeCover" id="animated" src="assets/06_GTEAM/06g_cover.gif">
-                        <img class="homeCover" id="static" src="assets/06_GTEAM/06g_cover.png">
-                    </div>
-                    <p class="pn1"> Defining Brand Motion </p>
-                    <div class="descrip">
-                        <svg class="pskills0 mHide" width="69" height="60">
-                            <use href="#lineStart" />
-                        </svg>
-                        <div class="pskills b2">
-                            <p class="b2">Motion Design
-
-                            </p>
-                        </div>
-                        <div class="pContainer"><svg class="pskills2 marg30" width="69" height="12">
-                                <use href="#arrow" />
-                            </svg></div>
-                        <div class="pskills3">
-                            <p class="b2">Western Digital </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <!--div onclick = "location.href = 'motion.html';" class = "stack6 mHide">
-										   				<div class = "imgContainer img06"> <img src="assets/06_GTEAM/motion2.png" class= "projImage" style="width:70%;"></div>
-							</div-->
-
-        </div>
-
-
-
-
         <div class="mobileFooter dHide">
-            <p class="b2"> Drop me a note:</p>
+            <p class="pskills"> Drop me a note:</p>
             <p id="emailCopy">j.mw.shen@gmail.com</p>
             <!--div class="tooltip mobiletool" >
 						<div ontouchstart="copyDivToClipboard()" onmouseout="outFunc()" class = "abc">
@@ -372,14 +223,14 @@
 					</div-->
 
         </div>
-        <div class="socialMobile dHide mHide ">
+        <!-- <div class="socialMobile dHide m-hide ">
             <a href="https://www.linkedin.com/in/jessshen/" target="_blank"><img class="social1"
                     src="assets/social/linkedin.png"></a>
             <a href="https://www.linkedin.com/in/jessshen/" target="_blank"><img class="social1"
                     src="assets/social/wnw.png"></a>
             <a href="https://www.instagram.com/jes.sh/" target="_blank"><img class="social1"
                     src="assets/social/insta.png"></a>
-        </div>
+        </div> -->
         <p class="credit dHide"> Design & Development © Christina Dacanay 2021</p>
     </div>
 
