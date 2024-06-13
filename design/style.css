@@ -70,7 +70,7 @@ a:hover {
 
 #object {
     width: 35vw;
-    background-image: url("./src/books.png");
+    background-image: url("./src/home.gif");
     background-position-x: calc(var(--mouse-x, 0) * 75%);
     background-position-y: calc(var(--mouse-y, 0) * 100%);
     background-size: 200%;

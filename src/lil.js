@@ -1,3 +1,4 @@
+
 console.log("wanderer, there is no road, the road is made by walking - antonio machado")
 var ct = 0;
 function showMobileMenu() {
