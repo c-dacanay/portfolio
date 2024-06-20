@@ -1,162 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="icon" href="./favicon.svg">
-    <script src="/src/lil.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>christina dacanay</title>
 
-    <meta property="og:image"
-    content="https://github.com/c-dacanay/hand-held/blob/master/final/assets/preview.png?raw=true" />
-  <meta name="description" content="christina dacanay: design, drawings, and code">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./src/style.css">
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <title> Christina Dacanay </title>
+    <meta name="description" content="Christina Dacanay is a multi-diciplinary designer based in New York. " />
+    <meta property="og:image" content="src/images/webtoys/stones.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+     <script type="text/javascript" src="./src/lil.js"></script>
 
 </head>
-<body>
-    <div class="wrapper">
-    <div class="nav">
-        <div class="topnav"><a href="./index.html">Christina Dacanay</a>
-            <div class="topnav-right m-hide">
-                <a href="./index.html">Work</a> 
-                <!-- <a href="./playground.html">Playground</a> -->
-                    <a href="./about.html">About</a></div>
 
-                    <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+
+<body>
+
+    <div class="nav">
+        <div class="topnav"><a href="./index.html" class="active">Christina Dacanay</a>
+            <div class="topnav-right m-hide">
+                <a href="./index.html">Work</a>
+                <!-- <a href="./playground.html">Playground</a> -->
+                <a href="./about.html">About</a>
+            </div>
+
+            <div class="m-menu" onclick="showMobileMenu(this)">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
 
-        <div class="m-nav d-hide" id="m-navi"><a href="./index.html">Projects</a><a
-            href="./playground.html">Playground</a> <a href="./about.html">About</a></div>
+        <div class="m-nav d-hide" id="m-navi">
+            <a href="./index.html">Projects</a>
+            <!-- <a href="./playground.html">Playground</a>  -->
+            <a href="./about.html">About</a>
+        </div>
 
 
-    <!-- <div class="moji m-hide">
-        <marquee scrollamount="2" direction="up" style="top: -10px;"><small> ✶ ✧ ✶ ✧ ✶ ✧ ✶ ✧ ✶ ✧ ✶</small></marquee>
-        <marquee scrollamount="2" direction="down"><small> ✺ * ✺ * ✺ * ✺ * ✺ * ✺</small></marquee>
-        <marquee scrollamount="2" direction="up"><small> ٭ * ٭ * ٭ * ٭ * ٭ * ٭ * ٭</small></marquee>
 
-    </div> -->
-</div>
-    <div id="mainframe">
-        <!-- ___ ABOUT ME ___ -->
-        <div class="window aboutindex" onclick="location.href='./about.html';">
-            <div id="aboutme">
-                <h1 class="wave">Hey there.</h1>
-                <div style="display:flex;">
-                <p>I'm Christina. I'm an designer, educator, and casual programmer based in Brooklyn, NY. <br><br>↪<a href="./about.html">learn more</a></p>
-                    </div>
-                    <div class="img-container" style="filter: grayscale(0%);">
-                        <img src="./src/images/illo/3d/office.png" alt="A 3d render of Christina's office in Brooklyn.">
+        <div id="page" class="fade">
+            <div class="window abtwindow">
+                <div class="abtwindow">
+                    <p class="greeting">👋🏽 Hi there!<br> I'm Christina.</p>
+                    <p class="abtme"> I'm a multi-diciplinary designer that loves to experiment with technology,
+                        form, and interaction.
+
+                        <br> <br>Previously Design Lead at One More Multiverse, Product Design at Codecademy, and
+                        adjunct faculty at New York University.
+                    </p>
+                    <p>↪ <a href="./about.html">Learn More</a></p>
+                    <p id="email">✦ tina.dacanay@gmail.com</p>
+
+                    <p class="credit"> Christina Dacanay
+                        ✶ 2024 ✶ hand coded with no tracking or analytics<br>
+                        Elsewhere:
+                        <a href="https://www.instagram.com/studio.stina">instagram</a> /
+                        <a href="https://stinabean.itch.io/">itch.io</a> /
+                        <a href="https://www.are.na/c-d-umyzieztf18/channels">are.na</a><br>
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- ___ OMM ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <!-- <div class="projTitle">Case Study #1</div> -->
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" id="animated" src="src/images/omm/cover.gif">
                         </div>
 
-                    
-                </div>
-        </div>
-        <!-- ___ 100 DAYS ___ -->
-        <div class="window out" onclick="window.open('https://c-dacanay.github.io/100webtoys/', '_self');">
-            <div class="project-title"><h2 class="hundred">100 days of webtoys</h3><small class="out-text">external</small></div>
-            <div class="project-desc"><p>One hundred consecutive days of learning and playing with code.</p>
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://c-dacanay.github.io/100webtoys/">100 days of webtoys</a></div>
+                        <p class="pname"> Building a One of Kind <br>Virtual Tabletop </p>
+
+
+                        <div class="descrip">
+                            <p class="psub">One More Multiverse</p>
+                            <p class="pskills"> Product Strategy<br>
+                                Design Management<br>
+                                Experience Design
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
             </div>
-            <div class="img-container cover"><img src="./src/images/hundred/cover.gif" class="project_img" alt="A gif of a space invader made out of checked and unchecked marks."></div>
-        </div>
 
-        <!-- ___ PILLED ___ -->
-        <div class="window out" onclick="window.open('http://pilled.online', '_self');">
-            <div class="project-title"><h2 class="pill">pilled.online</h3><small class="out-text">external</small></div>
-            <div class="project-desc"><p>A research project about fragmenting realities and toxic online communities.</p>
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://pilled.online/">pilled.online</a></div>
+            <!-- ___ YAZEBAS ___ -->
+            <div class="window c1">
+                <a href="./p/yazebas.html" class="content">
+                    <!-- <div class="projTitle">Case Study #2</div> -->
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/yazebas/cover.png">
+                        </div>
+                        <p class="pname"> Crafting Surprises in<br> Emergent Gameplay </p>
+                        <div class="descrip">
+                            <p class="psub">One More Multiverse</p>
+                            <p class="pskills"> Product Design<br>
+                                Product Strategy<br>
+                                Research & Planning
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="img-container cover"><img src="./src/images/pilled/cover.gif" class="project_img" alt="A gif of a red pill floating in 3d space."></div>
-        </div>
 
-        <!-- ___ ML5.JS ___ -->
-        <div class="window" onclick="window.open('./p/ml5.html', '_self');">
-             <div class="project-title"><h2 class="ml">ml5.js</h2></div>
-            <div class="project-desc"><p>An open source project creating friendly machine learning for the web.</p>  
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://ml5js.org/">ml5.org</a></div>          
-                </div>
-                <div class="img-container cover"><img src="./src/images/ml5/cover.png" class="project_img" alt="A website screenshot that reads Friendly Machine Learning for the Web."></div>
-        </div>
-
-        <!-- ___ ALEX ___ -->
-        <div class="window out" onclick="window.open('http://alovingexploration.com', '_self');">
-             <div class="project-title"><h2 class="alex">a. l.oving e.x.ploration</h2><small class="out-text">external</small></div>
-            <div class="project-desc"><p>A tenderly hand-coded relationship simulator.</p>
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://alovingexploration.com/">alovingexploration.com</a></div>
+            <!-- ___ CODECADEMY ___ -->
+            <div class="window c1">
+                <a href="./p/code.html" class="content">
+                    <!-- <div class="projTitle">Case Study #3</div> -->
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/ccademy/cover.png">
+                        </div>
+                        <p class="pname"> Reinventing <br>Learner-Centered Syllabi</p>
+                        <div class="descrip">
+                            <p class="psub">Codecademy</p>
+                            <p class="pskills"> User Testing<br>
+                                UX Design<br>
+                                Visual Design
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-                <div class="img-container cover"><img src="./src/images/alex/cover.png" class="project_img" alt="A screen shot of a simulated dating text conversation with relationship variables above."></div>
-        </div>
-        <!-- ___ STONE STACKER ___ -->
-        <div class="window out" onclick="window.open('https://c-dacanay.github.io/hand-held/final/', '_self');">
-             <div class="project-title"><h2 class="rock" id=>stone stacker</h2><small class="out-text">external</small></div>
-            <div class="project-desc"><p>A web toy to make stone carins in the desktop.</p>
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://c-dacanay.github.io/hand-held/final/">stone stacker</a>
-            </div></div>
-                <div class="img-container cover"><img src="./src/images/stones/1.png" class="project_img" alt="A stack of SVG stone shapes."></div>
-        </div>
-        <!-- ___ WINDOW MAKER ___ -->
-        <div class="window out" onclick="window.open('https://c-dacanay.github.io/hand-held/window-maker/', '_self');">
-             <div class="project-title"><h2 class="winmaker">window maker</h2><small class="out-text">external</small></div>
-            <div class="project-desc"><p>A picrew-inspired toy to share your view from quarantine.</p>
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://c-dacanay.github.io/hand-held/window-maker/">window maker</a></div>
+
+            <!-- ___ MANA ___ -->
+            <!-- <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/key/cover.png">
+                        </div>
+                        <p class="pname"> Growing a<br> Design System</p>
+                        <div class="descrip">
+                            <p class="psub">One More Multiverse</p>
+                            <p class="pskills">Design Leadership <br> System Design<br>
+                                UI Design<br>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+
+            <!-- ___ OAM ___ -->
+            <div class="window c1">
+                <a href="./p/oam.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" src="src/images/one/cover.png">
+                        </div>
+                        <p class="pname"> Creating a Physical<br>Data Visualization</p>
+                        <div class="descrip">
+                            <p class="psub">Personal Collaboration</p>
+                            <p class="pskills"> Project Management<br>
+                                Fabrication<br>
+                                Visual Design
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-                <div class="img-container cover"><img src="./src/images/windows/1.png" class="project_img" alt="Illustrated images of windows."></div>
-        </div>
-        <!-- ___ ONE AMONGST MANY ___ -->
-        <div class="window" onclick="window.open('./p/oam.html', '_self');">
-             <div class="project-title"><h2 class="oam">one amongst many</h2></div>
-            <div class="project-desc"><p>A spacial data visualization of women who have contributed to the history of computing.</p>
-                <div class="l-align project-link" >⤤ <a target="_self" href="https://oneamongstmany.com/">oneamongstmany.com</a> | ⤤ <a target="_self" href="https://pilled.online/">docs</a></div>
-                </div>
-                <div class="img-container cover"><img src="./src/images/one/cover.png" class="project_img" alt="A photo of a person tilting and reading a pink and blue orb."></div>
-        </div>
 
-        <!-- ___ IN PERSON, IN PEOPLE ___ -->
-        <div class="window out" onclick="window.open('https://stinabean.itch.io/in-person-in-people', '_self');">
-             <div class="project-title"><h2 class="twine">in person, in people</h2><small class="out-text">external</small></div>    
-                <div class="project-desc"><p>A fictional gallery walkthrough cataloguing the few salvaged works a prolific artist.</p>
-                    <div class="l-align project-link" >⤤ <a target="_self" href="https://c-dacanay.github.io/hand-held/window-maker/">itch.io game</a></div>
-                </div>
-                <div class="img-container cover"><img src="./src/images/inperson/cover.png" class="project_img" alt="A collection of black and white instax photos."></div>
-        </div>
-
-        <!-- ___ T-AR-OT ___ -->
-        <div class="window" onclick="window.open('./p/tarot.html', '_self');">
-             <div class="project-title"><h2 class="tarot">t-ar-ot</h2></div>
-            <div class="project-desc"><p> <p>An AR experiment with the major arcana.</p>
+            <!-- ___ T-AR-OT ___ -->
+            <div class="window c1">
+                <a href="./p/tarot.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" style="height: 450px; object-fit:cover;" src="src/images/tarot/1.gif">
+                        </div>
+                        <p class="pname"> Experimenting with<br>Augmented Reality</p>
+                        <div class="descrip">
+                            <p class="psub">Personal Collaboration</p>
+                            <p class="pskills"> Motion Design<br>
+                                Vuforia </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-                <div class="img-container cover"><img src="./src/images/tarot/3.gif" class="project_img" alt="An animated Death tarot card being held to the camera in AR."></div>
+
+            <!-- ___ WEBTOYS ___ -->
+            <div class="window c1">
+                <a href="./p/omm.html" class="content">
+                    <div class="projContent">
+                        <div class="imgContainer">
+                            <img class="cover" style="width:90%" src="src/images/webtoys/cover.gif">
+                        </div>
+                        <p class="pname"> Webtoy & Experiment<br>
+                            Playground</p>
+                        <div class="descrip">
+                            <p class="psub">Various</p>
+                            <p class="pskills"> Web Development<br>
+                                2D/3D Animation<br>
+                                Illustration</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ___ BACK ___ -->
+            <div class="end">
+                <p id="getback">↤</p>
+            </div>
+        </div>
+
+
+        <div class="mobileFooter dHide">
+            <p class="pskills"> Drop me a note:</p>
+            <p id="emailCopy">j.mw.shen@gmail.com</p>
+            <!--div class="tooltip mobiletool" >
+						<div ontouchstart="copyDivToClipboard()" onmouseout="outFunc()" class = "abc">
+						<p id = "emailCopy">j.mw.shen@gmail.com</p>   
+						<span class="tooltiptext tip2" id="myTooltip">  📋 Click to copy</span>
+						<svg class = "tooltiptext" width="180" height="40" ><use href="#tippy" /></svg>
+						</div>
+					</div-->
 
         </div>
-        <!-- ___ ARCHIVE ___ -->
-        <div class="window archive">
-             <div class="project-title"><h2>✶ ✧ archive ✧ ✶</h2></div>
-            <h3>projects</h3>
-                <ul>
-                    <li> <a href="https://cdacanay.wordpress.com/" target="_self">my blog</a> from graduate school</li>
-                    <li> <a href="https://stinabean.itch.io/a-home-years-ago" target="_self">a home, years ago</a>, a bitsy game</li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1ztuJ9LrIlZX06W0vXjvLOQz7cchbyUmUiEcvUpXq4a4/edit#gid=1361098479" target="_self">e-birthday, no video</a>, a quarantine party</li>
-                    <li><a href="https://cdacanay.wordpress.com/2020/04/13/2020-4-13-the-absent-gardener/" target="_self">the absent gardener</a>, an experiment with genetic algorithms</li>
-                    
-                </ul>
-
-            <h3>jobs</h3>
-            <ul>
-                <li>research resident @ <a href="https://tisch.nyu.edu/itp" target="_self">ITP NYU</a></li>
-                <li>product design @ <a href="https://www.codecademy.com/" target="_self">codecademy</a><br><small> ⤷ email me for case studies</small></li>
-                <li>book design & art direction @ <a href="https://www.penguinrandomhouse.com/" target="_self">PRH</a></li>
-                <li>long, winding story <a href="https://docs.google.com/spreadsheets/d/1vT8mrtgjzzZ-FnLiG5MM0N5Y4u2g3sbDXI92mhg6eQA/edit#gid=0" target="_self">here</a><small>... or <a href="https://www.linkedin.com/in/christina-dacanay-55272918/" target="_self">linkedin</a></small>. </li>
-            </ul>
-
-        </div>
-        <div class="bottom">
-                <small> ✶ this website is hand-coded by me with no tracking or analytics ✶<br>
-                    ✶ last updated: 1/19/23 ✶ thanks for stopping by! ✶
-                </small>
-              </div>
-        </div>
+        <!-- <div class="socialMobile dHide m-hide ">
+            <a href="https://www.linkedin.com/in/jessshen/" target="_blank"><img class="social1"
+                    src="assets/social/linkedin.png"></a>
+            <a href="https://www.linkedin.com/in/jessshen/" target="_blank"><img class="social1"
+                    src="assets/social/wnw.png"></a>
+            <a href="https://www.instagram.com/jes.sh/" target="_blank"><img class="social1"
+                    src="assets/social/insta.png"></a>
+        </div> -->
+        <p class="credit dHide"> Design & Development © Christina Dacanay 2021</p>
     </div>
-</div>
+
 </body>
+
 </html>

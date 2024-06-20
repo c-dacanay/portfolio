@@ -6,7 +6,7 @@
     --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --light: #c20067;
     --bg: #FFFFF9;
-    --higlight: #fbebf4; 
+    --higlight: #23907f; 
     --dark: rgba(0, 0, 0, 0.75);
     --out: #23907f;
 }
@@ -76,18 +76,30 @@ a:hover {
     cursor: ne-resize;
 }
 
+hr {
+    /* border: none; */
+    width: 100%;
+    border-top: 3px double #333;
+    color: #333;
+    /* overflow: visible; */
+    /* text-align: center; */
+    /* height: 5px; */
+  }
+  
+  hr::after {
+    background: #000;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+  }
+  
+
 .l-hide {
     display: none !important;
 } 
   
-.blend {
-    background-color: var(--bg);
-    mix-blend-mode: multiply;
-}
 
-.curve {
-    border-radius: 3em;
-}
 /* ~~~ NAV ~~~ */
 .nav {
     position: fixed;
