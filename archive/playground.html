@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./src/style.css">
+<link rel="stylesheet" href="./src/gallery.css">
+<script src="./src/lil.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./favicon.svg">
+<title>christina dacanay / playground</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="topnav"><a href="./index.html">Christina Dacanay</a>
+            <div class="topnav-right m-hide"><a href="./index.html">Projects</a> <a
+                    href="./playground.html">Playground</a> <a href="./about.html">About</a></div>
+                    <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+        <div class="m-nav d-hide" id="m-navi"><a href="./index.html">Projects</a><a
+            href="./playground.html">Playground</a> <a href="./about.html">About</a></div></div>
+
+
+    <div class="playheader">
+
+<div class="p-nav m-hide" id="p-art"><a class="illos" href="#t-illo"></a><a class="threed" href="#t-threed"></a><a class="zines" href="#t-zine"></a></div>
+
+<div class="p-nav m-hide" id="p-code"><a class="texture" href="#t-tex"></a><a class="web" href="#t-web"></a><a class="p5" href="#t-p5"></a><a class="max" href="#t-max"></a></div>
+
+    </div>
+    <div class="playheader l-hide">
+    <div class="p-nav2" id="p-art" onclick="switchPlayground(0)">✎ illustration</div><div class="p-nav2" id="p-code" onclick="switchPlayground(1)">⚙︎ code</div></div>
+    <div id="playwrapper">
+
+<div class="playground" id="illo-playground">
+    <div class="p-title m-hide"><h2>illustration & design</h2><p>✎ drawings, renders, doodles ❤</p></div>
+    <div class="p-content">
+    <div class="p-section">
+
+        <h1 class="illos" id="t-illo">illustration</h1><small>
+        I mostly draw for myself nowadays :)</small></div>
+        <div class="gallery g-relative" id="illo-rel">
+            <img id="i1" src="./src/images/illo/2d/1mits.jpeg" alt="An illustration of the musician Mitski">
+            <img class="m-hide" id="i2" src="./src/images/illo/2d/1me.png" alt="Illustration of Christina and her dog">
+            <img id="i3" src="./src/images/illo/2d/1vin.jpg" alt="An illustration of the musician St. Vincent">
+            <img id="i4" src="./src/images/illo/2d/2-1plornt.jpg" alt="An illustration of a stylized plant">
+            <img id="i5" src="./src/images/illo/2d/2-2plornt.jpg" alt="An illustration of a stylized plant">
+            <img id="i6" src="./src/images/illo/2d/2-3plornt.jpg" alt="An illustration of a stylized plant">
+            <img id="i7" src="./src/images/illo/2d/3-10x16.gif" alt="A gif of different album homages">
+            <img id="i8" src="./src/images/illo/2d/3-1.jpg" alt="An illustration of a stylized magic spell">
+            <img id="i9" src="./src/images/illo/2d/3-2.jpg" alt="An illustration of a stylized magic spell">
+            <img id="i10" src="./src/images/illo/2d/3-3.jpg" alt="An illustration of a stylized magic spell">
+            <img id="i11" src="./src/images/illo/2d/4-zine.jpeg" alt="An illustration a graphic snake">
+            <img id="i12" src="./src/images/illo/2d/4-stack.jpeg" alt="A rendering of a booklet">
+            <img id="i13" src="./src/images/illo/2d/4-eye.jpeg" alt="An illustration of two hands nearly holding each other between windows">
+        </div>
+        <div class="p-section"><h1 class="threed" id="t-threed">3d</h1><small>Experiments with Blender. I post most of them to <a href="https://www.instagram.com/studio.stina/" target="_blank">instagram</a>.</small></div>    
+        <img src="./src/images/illo/3d/test.gif">
+        <div class="gallery" id="three-gallery">
+            <img src="./src/images/illo/3d/26blend.png" alt="A 3d render of some trees">
+            <img src="./src/images/illo/3d/27blend.png" alt="A 3d render of 100 days of making">
+            <img src="./src/images/illo/3d/28blend.png" alt="A 3d render of a Polly Pocket campsite">
+            <img src="./src/images/illo/3d/4blend.png" alt="A 3d render of a fiddle toy in primary colors">
+            <img src="./src/images/illo/3d/11blend.gif" alt="A 3d render of some colorful blobs">
+            <img src="./src/images/illo/3d/6blend.png" alt="A 3d render of lotus blossoms with 2d shaders">
+            <img src="./src/images/illo/3d/7blend.gif" alt="A 3d render of a desk with two monitors and art on the wall">
+            <img src="./src/images/illo/3d/8blend.gif" alt="A 3d render of a rotating sword, cup, coin, and staff">
+            <img src="./src/images/illo/3d/9blend.gif" alt="A 3d render of plywood, pens, and a tape measurer"> 
+            <img src="./src/images/illo/3d/10blend.gif" alt="A 3d render of a hand cursor clicking on a square that turns different colors">
+            <img src="./src/images/illo/3d/12blend.gif" alt="A 3d render of a book person with animated pages">
+            <img src="./src/images/illo/3d/13blend.gif" alt="A 3d render of a blob with some particle effects"> 
+            <img src="./src/images/illo/3d/14blend.gif" alt="A 3d render of a cartoon planet with orbiting bodies">
+            <img src="./src/images/illo/3d/20blend.png" alt="A 3d render of light passing over a desk, with a cellphone lighting up">
+            <img src="./src/images/illo/3d/22blend.png" alt="A 3d render of a Polly Pocket campsite">
+            <img src="./src/images/illo/3d/23blend.png" alt="A 3d render of a number of ceramic shapes balanced on one another">
+            <img src="./src/images/illo/3d/24blend.png" alt="A 3d render of Christina's apartment in Baltimore">
+            <img src="./src/images/illo/3d/25blend.png" alt="A 3d render of Christina's dorm in college">
+            <img src="./src/images/illo/3d/1blend.png" alt="A 3d render of Christina's second apartment in Brooklyn">
+            <img src="./src/images/illo/3d/2blend.png" alt="A 3d render of a figure finding an obelisk on an alien planet">
+            <img src="./src/images/illo/3d/3blend.png" alt="A 3d render of a figure seeing a building in the distance">
+
+        </div>
+
+        <div class="p-section"><h1 class="zines" id="t-zine">zines / comics</h1><small>
+            Click to page through. You can download any of my zines for free <a href="https://stinabean.itch.io/" target="_blank">here</a>.</small></div>
+
+            <div class="gallery" id="zinegallery">
+                <img src="./src/images/illo/zines/ft/0.jpg" id="ft" onclick="rotateGallery('ft', 10)" alt="An illustrated zine called Fortune Teller">
+                <img src="./src/images/illo/zines/fever/0.jpg" id="fever" onclick="rotateGallery('fever', 8)" alt="An illustrated zine called Fever">
+                <img src="./src/images/illo/zines/m1/0.jpg" id="m1" onclick="rotateGallery('m1', 14)" alt="An illustrated zine called Molt 1">
+                <img src="./src/images/illo/zines/m2/0.jpg" id="m2" onclick="rotateGallery('m2', 9)" alt="An illustrated zine called Molt 2">
+            </div>
+</div>
+
+</div>
+<div class="playground m-hide" id="code-playground">
+    <div class="p-title m-hide" id="code-title"><h2>code playground</h2><p>☁ learning, playing, drawing with code ☁☂</p></div>
+
+    <div class="p-content">
+        <div class="p-section code"><h1 class="texture" id="t-tex">machine learning</h1><small><a class="pop" href="./p/ml5.html" target="_self">My work with ml5.js</a> convinced me that we need artists and amateurs to engage with machine learning. We can't only listen to salesmen, and anyway, it's pretty fun. <a class="pop" href="https://cdacanay.wordpress.com/category/making-art-with-gans/" target="_blank">See more</a>.</small></div>
+        <div class="g-detail"><p>texture collector</p> <small> I trained a StyleGan on nearly 3,000 photos of textures that I’ve been collecting for a decade. <a class="pop" href="https://cdacanay.wordpress.com/2021/03/15/2021-3-14-texture-stylegan/" target="_blank">Learn more</a>.</small></div>
+            <div class="gallery g-relative" style="height: 113vw;">
+                <img id="c1" src="./src/images/code/1-0fakes.jpeg" alt="a series of fake texture images generated by machine learning">
+                <img id="c2" src="./src/images/code/1-1.png" alt="a fake texture image">
+                <img id="c3" src="./src/images/code/1-2.jpeg" alt="a fake texture image">
+                <img id="c4" src="./src/images/code/1-3.jpeg" alt="a real texture image of a carpet">
+                <img id="c5" src="./src/images/code/1-4.png" alt="a real texture image of a stone tiled floor">
+                <img id="c6" src="./src/images/code/1-5.jpeg" alt="a fake texture image">
+                <img id="c7" src="./src/images/code/1-6.png" alt="a fake texture image">
+                <img id="c8" src="./src/images/code/1-7.png" alt="a real texture image of clouds">
+                <img id="c9" src="./src/images/code/1-8.jpeg" alt="a fake texture image">
+                <img id="c10" src="./src/images/code/1-9.png" alt="a fake texture image">
+                <img class="m-hide" src="./src/images/code/1.gif" alt="an animation of a walk through the machine learning model's latent space">
+            </div>
+        <div class="p-section code"><h1 class="web" id="t-web">webtoys</h1></div>
+            <div class="gallery">
+                <div class="g-detail"><p>Albers Toy</p> <small>This is a small opacity toy you can play with. <a class="pop" href="https://c-dacanay.github.io/hand-held/css-toy/" target="_blank">Play with it</a>.</small></div>
+                <img src="./src/images/code/2-opacity.gif" alt="an animation of rotating colored squares of variable opacities">
+                <div class="g-lace"><img src="./src/images/code/2-albers1.png" alt="an animation of rotating colored squares of variable opacities">
+                <img src="./src/images/code/2-albers2.png" alt="an animation of rotating colored squares of variable opacities">
+                <img src="./src/images/code/2-albers3.png" alt="an animation of rotating colored squares of variable opacities"></div>
+                <div class="g-detail"><p>Lace Generator</p> <small>An interactive lace generator. <a class="pop" href="https://editor.p5js.org/cdacanay/full/FWdkPkY7/" target="_blank">Play with it</a>.</small></div>
+                <img src="./src/images/code/2-lace10.png" alt="a black and white image with some generated lace patterns">
+                <div class="g-lace"><img src="./src/images/code/2-lace11.png" alt="a black and white image with some generated lace patterns">
+                <img src="./src/images/code/2-lace4.png" alt="a black and white image with some generated lace patterns">
+                <img src="./src/images/code/2-lace7.png" alt="a black and white image with some generated lace patterns"></div>
+            </div>
+            <div class="p-section code"><h1 class="p5" id="t-p5">p5.js</h1><small>
+                Experiments with Processing for the web. <a class="pop" href="https://cdacanay.wordpress.com/category/computational-media/" target="_blank">Learn more</a>.</small></div>
+                <div class="gallery">
+                    <img src="./src/images/code/3-summer.gif" alt="an animation of an illustrated lantern with programmed fireflies that flee a browser mouse">
+                    <img src="./src/images/code/3-aural1.png" alt="a black and white image of a series of circles that respond to audio">
+                    <img src="./src/images/code/3-aural2.png" alt="a black and white image of a series of circles that respond to audio">
+                    <img src="./src/images/code/3-walk.gif" alt="an animation of a rotating 3d random walker">
+                </div>
+            <div class="p-section code"><h1 class="max" id="t-max">max/msp/jitter</h1><small> Experiments with Max for interactive performance.
+                <a class="pop" href="https://cdacanay.wordpress.com/category/live-image-processing/" target="_blank">Learn more</a>.</small></div>
+                <div class="gallery">
+                    <img src="./src/images/code/4-face1.jpg" alt="an image of Christina with a sex robot overlaid over her own face">
+                    <img src="./src/images/code/4-face2.jpg" alt="an image of Christina with a sex robot overlaid over her own face">
+                    <img src="./src/images/code/4-face3.png" alt="an image of Christina with a sex robot overlaid over her own face">
+                    <img src="./src/images/code/4-max0.gif" alt="an animation of birds flocking in the sky with trails imposed over them">
+                    <img src="./src/images/code/4-max1.png" alt="a distorted image of a concert">
+                    <img src="./src/images/code/4-max2.png"  alt="a distorted image of a concert">
+                    <img src="./src/images/code/4-max3.png"  alt="a distorted image of two scenes from Ex Machina">
+                    <img src="./src/images/code/4-max4.png"  alt="a distorted image of Ghost in the Shell and Metropolis">
+                    <img src="./src/images/code/4-max5.png" alt="a distorted image of Ghost in the Shell and Metropolis">
+                </div>
+        </div>
+
+</div>
+
+</div>
+<script src="/src/lil.js"></script>
+</body>
+</html>

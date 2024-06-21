@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --sans: 'Roboto Condensed', sans serif;
+    --serif: 'Libre Baskerville', serif;
+    --light: #c20067;
+    --bg: #f1f1f1;
+    --higlight: #fbebf4; 
+    --black: #292B2C;
+    --out: #23907f;
+}
+
+html, body {
+    background-color: var(--bg);
+    color: var(--black);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* GENERAL TYPOGRAPHY */
+h1, h2, h3, section, p, li {
+    font-family: var(--serif);
+}
+
+h4, h5, details {
+    font-family: var(--sans);
+    font-weight: 400;
+}
+
+h1  {
+    font-weight: bold;
+}
+
+h1 > span {
+    font-style: italic;
+}
+
+/* MAIN TEXT */
+section > p {
+    font-size: 1.3em;
+    line-height: 175%;
+}
+
+
+a {
+    color: var(--out);
+    text-decoration: none;
+    transition: color .25s;
+}
+
+a:hover {
+    color: var(--light);
+    transition: .25s;
+    cursor:zoom-in;
+}
+
+/* GENERAL LAYOUT */
+.wrapper {
+    display: flex;
+    gap: 2em;
+}
+
+.height {
+    height: 100vh;
+}
+
+#object {
+    width: 35vw;
+    background-image: url("./src/home.gif");
+    background-position-x: calc(var(--mouse-x, 0) * 75%);
+    background-position-y: calc(var(--mouse-y, 0) * 100%);
+    background-size: 200%;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.content {
+ max-width: 50em;
+ padding: 1em;
+}
+
+#attribution {
+    padding-top: 3em;
+}
+
+#intro {
+    padding-top: 1em;
+}
+
+
+/* PROJECT LAYOUT */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 5px;
+}
+
+.header > small {
+    font-family: var(--sans);
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: var(--bg);
+}
+
+.p-title {
+    padding-top: 1em;
+}
+
+.casestudies {
+    display: flex;
+    gap: 3em;
+}
+
+.cover {
+    width: 150em;
+}
+
+details {
+    font-size: 1.25em;
+    padding: .5em 0;
+    border-bottom: 1px var(--out) solid;
+}
+
+summary > small {
+    color: var(--out);
+    font-size: .75em;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+h4 {
+    font-family: var(--sans);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--out);
+    margin-bottom: .5em;
+}
+
+h5 {
+    color: var(--out);
+    padding: 0;
+    margin: 0;
+    font-size: 1.25em;
+    min-width: 125px;
+}
+
+.sum {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+    font-size: 1em;
+    margin: 0em;
+    justify-content: left;
+}
+.sum > h5 {
+    flex: 1;
+}
+.sum > p, .sum > ul {
+    flex: 5;
+}
+.sum > ul {
+    padding-left: 1em;
+    list-style-type:circle;
+    line-height: 125%;
+}
+
+@media only screen and (max-width: 830px){ 
+    .wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #object {
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .content {
+        padding-top: 0;
+    }
+}

@@ -1,19 +1,54 @@
-console.log("wanderer, there is no road, the road is made by walking")
 
+console.log("wanderer, there is no road, the road is made by walking - antonio machado")
+
+//Scroll
+window.onload = function () {
+    console.log('I\'m here');
+    const backBtn = document.querySelector(".end");
+  
+      backBtn.addEventListener("click", () => {
+        page.scrollTo({
+          left: 1,
+          top: 1,
+          behavior: 'smooth'
+        });
+      });
+    
+    window.onscroll = function () {
+      console.log(document.body.getBoundingClientRect())
+      if (window.matchMedia("(min-width: 500px)").matches) {
+        let y = document.body.getBoundingClientRect().top;
+        page.scrollLeft = -y;
+      }
+  
+    };
+  
+    window.onresize = resize;
+    resize();
+  
+    function resize() {
+      const w = page.scrollWidth;
+      document.body.style.height = `${w}px`;
+  
+    }
+  };
+  
+
+
+//Mobile Menu
+var ct = 0;
 function showMobileMenu() {
     let x = document.getElementById("m-navi")
     x.classList.toggle("change")
 }
 
 // Cycle through zines on click
-let counter = 0;
 function rotateGallery(gallery, length) {
-    counter++;
-    let x = `./src/images/illo/zines/`+gallery+`/`+counter+`.jpg`;
+    ct++;
+    let x = `./src/images/illo/zines/`+gallery+`/`+ct+`.jpg`;
     document.getElementById(gallery).src = x;
-    // console.log(x)
-    if (counter >= length) {
-        counter = 0;
+    if (ct >= length) {
+        ct = 0;
     }
 }
 

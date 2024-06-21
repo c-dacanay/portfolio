@@ -7,41 +7,60 @@
     <link rel="stylesheet" href="../src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.svg">
-    <title>christina dacanay / t-ar-ot</title>
+    <title>Christina Dacanay / t-ar-ot</title>
 </head>
 
 <body>
-    <div class="nav">
-        <div class="topnav"><a href="../index.html">Christina Dacanay</a>
-            <div class="topnav-right m-hide"><a href="../index.html">Projects</a> <a
-                    href="../playground.html">Playground</a> <a href="../about.html">About</a></div>
-                    <div class="m-menu" onclick="showMobileMenu(this)"><div class="line"></div><div class="line"></div><div class="line"></div></div>
-        </div>
-
-        <div class="m-nav d-hide" id="m-navi"><a href="../index.html">Projects</a><a
-            href="../playground.html">Playground</a> <a href="../about.html">About</a></div>
-
-
-
-        <div class="moji m-hide">
-        </div>
-        <div class="abtframe pj-frame">
-            <div class="img-container" id="img-tall"><img src="../src/images/tarot/1.gif">
-                
-                <div class="squeeze"><img src="../src/images/tarot/death_small.gif"><img src="../src/images/tarot/star_small.gif"><img src="../src/images/tarot/tower_small.gif"></div>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="topnav"><a href="../index.html" class="active">Christina Dacanay</a>
+                <div class="topnav-right m-hide"><a href="../index.html" class="here">Projects</a>
+                    <!-- <a href="./playground.html">Playground</a>  -->
+                    <a href="../about.html">About</a>
+                </div>
+                <div class="m-menu" onclick="showMobileMenu(this)">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
 
-            <div class="pj-info">
-                <h1 class="tarot">t-ar-ot</h1>
-                <div class="collaborators">ROLE: Creative Technologist (aka Unity User), Designer<br><br>
-                    COLLABORATORS: Patrick Warren</div>
-
-                <p>T-AR-ot is an ongoing collaboration with Patrick Warren to bring the Major Arcana to life with augmented reality. As a test case we highlighted The Star, Death, and The Tower.</p> <p>This project uses Unity and Vuforia. </p>
+            <div class="m-nav d-hide" id="m-navi">
+                <a href="./index.html">Projects</a>
+                <!-- <a href="./playground.html">Playground</a> -->
+                <a href="./about.html">About</a>
             </div>
-                
+
         </div>
     </div>
+    <div class="pj-frame">
 
+        <div class="pj-info">
+            <div class="pj-details">
+                <div class="pj-stack">
+                    <p class="pname"> Experimenting with<br>Augmented Reality
+                    <p>T-AR-ot is an ongoing collaboration with Patrick Warren to bring the Major Arcana to life with
+                        augmented reality. As a test case, we focused on highlighting three significant cards: The Star, Death, and The Tower. We were interested in the potential of AR in enhancing traditional fortune telling practice, and the exciting opportunities for immersive and interactive user experiences in the realm of divination.</p>
+                    <p>This project uses Unity and Vuforia. </p>
+                </div>
+                <p class="pj-skills"> Motion Design<br>
+                    Experience Design<br>
+                    Unity<br>
+                </p>
+            </div>
+            <!-- <div class="img-container" id="img-tall"> -->
+            <img class="imghero" src="../src/images/tarot/1.gif">
+
+
+
+            <div class="imgwrapper">
+                <img class="wc3" src="../src/images/tarot/death_small.gif"><img class="wc3"
+                    src="../src/images/tarot/star_small.gif"><img class="wc3" src="../src/images/tarot/tower_small.gif">
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    </div>
 
     <script src="/src/lil.js"></script>
 
