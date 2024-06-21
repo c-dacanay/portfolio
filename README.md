@@ -1,12 +1,13 @@
 ## TODOS: 
 - [x] Main: Scroll issue
 - [x] Proj: OMM
-- [ ] Proj: Zeebs
+- [x] Proj: Zeebs
 - [ ] Proj: Code
 - [ ] Proj: Key
 - [x] Proj: OAM
 - [x] Proj: T-AR-Ot
-- [ ] Proj: Webtoys 
+- [x] Proj: Webtoys 
+- [ ] Webtoys: Filters
 - [ ] Mobile: Main
 - [ ] Mobile: Project Pages
 - [ ] Mobile: Menu

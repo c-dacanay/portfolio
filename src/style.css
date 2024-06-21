@@ -6,6 +6,7 @@
     --bg: #ffffff;
     /* --highlight: #fbebf4;  */
     --highlight: #e7f7f5; 
+    --soft: #f1f1f1;
     --mid: rgba(0, 0, 0, 0.5);
     --dark: rgba(0, 0, 0, 0.75);
     --out: #23907f;
@@ -163,6 +164,11 @@ hr {
     -o-animation: fadein 1.25s;
 }
 
+.spacer {
+    /* height: 200px !important; */
+    padding: 100px;
+    content: '✶';
+}
 .abtwindow {
     background-color: var(--highlight);
 }
@@ -275,14 +281,11 @@ p.psub {
 
 /* ~~~ ABOUT ~~~ */
 .abtframe {
-    /* border: 1px var(--dark) solid; */
     width: 100vw;
     display: flex;
-    /* flex-direction: column; */
     padding: 5em;
-    gap: 1em;
-    justify-content: center;
-    /* align-items: center; */
+    gap: 2em;
+    /* justify-content: center; */
 }
 
 #abtimg {
@@ -323,7 +326,6 @@ p.psub {
 }
 
 .pj-info > p {
-    
     max-width: 600px;
 }
 
@@ -331,7 +333,7 @@ p.psub {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 74vh !important;
+    height: 74vh;
     gap: 2em;
 }
 
@@ -410,6 +412,84 @@ p.psub {
     width: 100%;
     height: 100%;
   }
+
+/* ~~~ EXPERIMENTS ~~~ */
+
+.expflex {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1em;
+    width: 70vw;
+}
+
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.expwindow {
+    padding: 2em;
+    /* background-color: var(--bg); */
+    border: 1px solid var(--mid);
+    border-radius: 22px;
+    background-color: var(--soft)
+}
+
+.expwindow > a {
+    max-width: 100%;
+}
+
+details {
+    max-width: 100%;
+    border: 1px solid var(--highlight);
+    margin-top: 1em;
+    padding: .5em;
+    font-family: var(--mono);
+}
+
+.expwindow > img, .gallery {
+    padding-top: 1em;
+    max-width: 100%;
+}
+
+.exptitle {
+    display: flex;
+    align-items: baseline;
+}
+
+.exptitle > p {
+    margin: 0;
+    flex: 2;
+}
+
+.out-text {
+    font-family: var(--mono);
+    color: var(--out);
+    padding: .2em .5em;
+    border-radius: 2em;
+    border: 1px solid var(--out);
+}
+
+.out {
+    background-color: var(--bg);
+}
+.out:hover {
+    transition: transform 300ms;
+    box-shadow: 4px 4px var(--out);
+    transform: translate(-.1em, -.1em);
+    cursor: pointer;
+}
+
+#darkbg {
+    background-color: #f1f1f1;
+    height: inherit;
+}
+
 @media only screen and (max-width: 700px) {
     .expHeader {
         padding-left: 30px;
