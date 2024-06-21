@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 :root {
-    --light: #183b74;
+    --light: #c20067;;
     --bg: #ffffff;
     /* --highlight: #fbebf4;  */
     --highlight: #e7f7f5; 
@@ -115,6 +115,27 @@ hr {
 .mono {
     font-family: var(--mono);
 }
+
+/* details :) */
+p::selection {
+    background: var(--highlight);
+    color: var(--out);
+  }
+p::-moz-selection {
+background: var(--highlight);
+color: var(--out);
+}
+
+a::selection {
+    background-color: var(--highlight);
+    color: var(--light);
+}
+
+a::-moz-selection {
+    background: var(--highlight);
+    color: var(--light);
+    }
+    
 /* ~~~ NAV ~~~ */
 
 /* .m-nav {
