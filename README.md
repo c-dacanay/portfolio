@@ -2,7 +2,7 @@
 - [x] Main: Scroll issue
 - [x] Proj: OMM
 - [x] Proj: Zeebs
-- [ ] Proj: Code
+- [x] Proj: Code
 - [ ] Proj: Key
 - [x] Proj: OAM
 - [x] Proj: T-AR-Ot
