@@ -8,7 +8,7 @@
 - [x] Proj: T-AR-Ot
 - [x] Proj: Webtoys 
 - [ ] Webtoys: Filters
-- [ ] Mobile: Main
-- [ ] Mobile: Project Pages
-- [ ] Mobile: Menu
+- [x] Mobile: Main
+- [x] Mobile: Project Pages
+- [x] Mobile: Menu
 
