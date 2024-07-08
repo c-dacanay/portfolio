@@ -122,7 +122,7 @@ hr {
 
 /* details :) */
 p::selection {
-    background: var(--highlight);
+    background: var(--soft);
     color: var(--out);
   }
 p::-moz-selection {
@@ -282,11 +282,6 @@ p.psub {
     gap: 3em;
 }
 
-.pname {
-    /* background-color: pink; */
-    /* flex-grow: 3; */
-    width: 50%;
-}
 .descrip {
     /* background-color: red; */
     /* display: flex; */
@@ -299,7 +294,8 @@ p.psub {
 
 .img-container {
     /* flex-basis: 1; */
-    width: 740px;
+    width: 600px;
+    max-height: 100%;
 }
 
 .cover {
