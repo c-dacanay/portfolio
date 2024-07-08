@@ -2,36 +2,37 @@
 console.log("wanderer, there is no road, the road is made by walking - antonio machado")
 
 //Scroll
-window.onload = function () {
-    console.log('I\'m here');
-    const backBtn = document.querySelector(".end");
+// window.onload = function () {
+//     console.log('I\'m here');
+//     const backBtn = document.querySelector(".end");
   
-      backBtn.addEventListener("click", () => {
-        page.scrollTo({
-          left: 1,
-          top: 1,
-          behavior: 'smooth'
-        });
-      });
+//       backBtn.addEventListener("click", () => {
+//         page.scrollTo({
+//           left: 1,
+//           top: 1,
+//           behavior: 'smooth'
+//         });
+//       });
     
-    window.onscroll = function () {
-      console.log(document.body.getBoundingClientRect())
-      if (window.matchMedia("(min-width: 500px)").matches) {
-        let y = document.body.getBoundingClientRect().top;
-        page.scrollLeft = -y;
-      }
+//     window.onscroll = function () {
+//       console.log(document.body.getBoundingClientRect())
+//       if (window.matchMedia("(min-width: 500px)").matches) {
+//         console.log('hi')
+//         let y = document.body.getBoundingClientRect().top;
+//         page.scrollLeft = -y;
+//       }
   
-    };
+//     };
   
-    window.onresize = resize;
-    resize();
+//     window.onresize = resize;
+//     resize();
   
-    function resize() {
-      const w = page.scrollWidth;
-      document.body.style.height = `${w}px`;
+//     function resize() {
+//       const w = page.scrollWidth;
+//       document.body.style.height = `${w}px`;
   
-    }
-  };
+//     }
+//   };
   
 
 
