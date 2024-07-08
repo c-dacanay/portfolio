@@ -224,6 +224,11 @@ p.pskills, p.psub {
     margin-right: 10px;
 }
 
+#email::selection {
+    background: var(--light);
+    color: var(--bg)
+}
+
 p.credit {
     font-family: var(--mono);
     position: absolute;
