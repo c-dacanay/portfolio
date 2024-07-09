@@ -197,6 +197,9 @@ a::-moz-selection {
 .abtwindow {
     background-color: var(--highlight);   
     border-bottom: var(--dark) 1px solid;
+    align-items: flex-end;
+    justify-content: space-around;
+    /* justify-content: space-between; */
 }
 p.greeting {
     font-size: 60px;
@@ -207,6 +210,14 @@ p.greeting {
 p.abtme {
     font-size: 18px;
     width: 600px;
+}
+
+.headshot {
+    max-width: 80%;
+    filter: contrast(200%);
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    border-radius: 200em;
 }
 
 p.pskills, p.psub {
@@ -230,6 +241,8 @@ p.pskills, p.psub {
     background: var(--light);
     color: var(--bg)
 }
+
+
 
 p.credit {
     font-family: var(--mono);
