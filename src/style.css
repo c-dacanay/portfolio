@@ -214,12 +214,19 @@ p.abtme {
 
 .headshot {
     max-width: 80%;
-    filter: contrast(200%);
-    filter: grayscale(100%);
+    filter: grayscale(100%) blur(2px);
+    opacity: .2;
     mix-blend-mode: multiply;
     border-radius: 200em;
+    transition: all 500ms ease-in-out;
 }
 
+.headshot:hover {
+    filter: grayscale(0%) blur(0px);
+    opacity: 1;
+    /* mix-blend-mode: multiply; */
+    /* border-radius: 200em; */
+}
 p.pskills, p.psub {
     font-family: var(--mono);
     overflow-wrap: normal;
