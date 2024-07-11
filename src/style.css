@@ -224,8 +224,6 @@ p.abtme {
 .headshot:hover {
     filter: grayscale(0%) blur(0px);
     opacity: 1;
-    /* mix-blend-mode: multiply; */
-    /* border-radius: 200em; */
 }
 p.pskills, p.psub {
     font-family: var(--mono);
@@ -683,6 +681,16 @@ p.abtme {
         padding-top: 0px;
     }
 
+    .abtwindow {
+        height:fit-content;
+    }
+    .headshot {
+        display: none;
+    }
+
+    .cover {
+        max-width: 90vw !important;
+    }
     .window {
         border-bottom: 1px solid var(--dark);
         width: 92vw;
@@ -693,7 +701,16 @@ p.abtme {
     .content {
         padding: 0px 0px;
         border-left: none;
-        /* width: 40vw; */
+        height:fit-content !important;
+    }
+
+    .projContent {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    .img-container {
+        max-width: 90vw;
     }
 
     .descrip {
