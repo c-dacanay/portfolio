@@ -15,7 +15,7 @@
         <div class="nav">
             <div class="topnav"><a href="../index.html" class="active">Christina Dacanay</a>
                 <div class="topnav-right m-hide"><a href="../index.html" class="here">Projects</a>
-                    <!-- <a href="./playground.html">Playground</a>  -->
+                    <a href="./playground.html">Playground</a> 
                     <a href="../about.html">About</a>
                 </div>
                 <div class="m-menu" onclick="showMobileMenu(this)">
@@ -27,7 +27,7 @@
 
             <div class="m-nav d-hide" id="m-navi">
                 <a href="../index.html">Projects</a>
-                <!-- <a href="./playground.html">Playground</a> -->
+                <a href="./playground.html">Playground</a>
                 <a href="../about.html">About</a>
             </div>
 
@@ -38,7 +38,8 @@
             <div class="pj-details">
                 <div class="pj-stack">
                     <p class="pname"> Building a One of Kind <br>Virtual Tabletop </p>
-                    <p>One More Multiverse (OMM) was a highly ambitious platform for telling cinematic stories with tabletop games. We created custom gameplay experiences for Dungeons & Dragons, Blades in the Dark, and Yazeba's Bed and Breakfast. As OMM's Design Lead I led both Product Design and Playtesting efforts for the launch of the platform and releases of all three games.</p>
+                    <p>One More Multiverse (OMM) was a highly ambitious platform for telling cinematic stories with tabletop games. We created custom gameplay experiences for Dungeons & Dragons, Blades in the Dark, and Yazeba's Bed and Breakfast. As Design Lead and the sole UX designer I worked with product, a UI designer, and engineering to deliver flexible and powerful creative tools.</p>
+                    <p>I went through to define and design MVP launch, delivering detailed designs and flows for every part of the experience. We had over 20K DAU, 400k created game worlds, 1.7k bundles of user generated content, and an active discord with over 40k members.</p>
                 </div>
                 <p class="pj-skills"> <b>Design Lead</b><br>Product Strategy<br>
                     Design Management<br>
@@ -47,6 +48,33 @@
             </div>
             <img src="../src/images/omm/cover.gif" class="imghero"
                 alt="A gif of a space invader made out of checked and unchecked marks.">
+                <h3>Rebuilding Our Information Architecture</h3>
+                <p>As OMM planned to launch the alpha product out of closed beta it became essential to reorganize the HUD on our virtual table top. Due to a long phase of engineering led development the platform was bloated with tools that were difficult to discover and use. New users often needed to attend our staff-led tutorial events in order to get started. We wanted to use the opportunity to cut some deprecated features while also organizing the HUD to be able to reasonably scaffold features in the future.
+                </p>
+                <p>At the core of OMM’s experience is the mission to transform the way game masters and players could tell stories visually in the online space. Therefore the main challenge became how to balance clarity and flexibility with the array of creative tools that platform had to offer. We wanted to support all the creative needs of our storytellers while still making the tool accessible enough for new users to hop in and play. We also used the opportunity to genuinely assess legacy features and their viability with metrics and player usage.</p>
+
+                <h3>Feature Audit and Card Sort</h3>
+                <p>I created a feature map of all the features in the current HUD with their location on the screen, including modals and navigation items such as titles and submenus. Visualizing this map gave us a sense of the overwhelming amount of user choice presented when first opening the platform. I then began to categorize the features by their supposed use case, what level of the game that they modified, and when in the player journey these tools were expected to be used.</p>
+                <p>I took a semi-random sampling of 35 features to try and determine different types of categorization. In addition, I also observed a variety of expert and novice player try to achieve normal goals on the platform such as creating a new game (aka Verse), creating a character, rolling dice, and changing levels.</p>
+
+                <h4>Feedback & Observations</h4>
+                <p>The HUD has no discernible logic regarding what lives there, and players just needed to memorize what they needed and where it lived. The tool bar mostly has to do with the Creation Pod, but also User Settings and some level visibility. Our “Pods” feature had a variety of uses of mixed uses. This, in addition to the menu bar only having abstract icons and text on hover, makes navigating the menu bar a high cognitive cost. UX Writing was also is also an issue. Some features like Character Sheet are very clear, but many features had ambiguous names and unintuitive behaviors.</p>
+
+                <h4>Modifications</h4>
+                <p>We decided to organize content on the HUD by the part of the game state that they modify. That way certain features that only the Game Master can use would all be visible only on certain parts of the user interface, and players with limited agency would have a more streamlined and less confusing experience.</p>
+                <p>We collected feedback from 15 players by demonstrating a low-fidelity prototype. We offered no direction during this stage to see how users interacted with the objects, and if they understood our system. We also asked interview questions after the experience and had many helpful conversations.</p>
+
+                <h3>Wireframes & Development</h3>
+                <p>The implementation of the redesigned HUD for One More Multiverse (OMM) was a meticulously coordinated effort, leveraging the insights from our research and playtesting phases. The new HUD was incrementally rolled out, first to a select group of experienced users for beta testing and then to the wider user base. Throughout this process, we closely monitored user feedback and engagement metrics to ensure that the redesign was meeting our objectives. </p>
+                <p>Key metrics used to measure the efficacy of the new design included:</p>
+                <ol>
+                    <li>User Engagement: We tracked the average session length and observed a 35% increase, indicating that users were finding the platform easier to navigate and more engaging.</li>
+                    <li>**Community Tutorial Attendance:** The need for staff-led tutorial events decreased by 52%, demonstrating that new users were able to get started with the platform more independently.</li>
+                    <li>**Feature Utilization:** Post-implementation, there was a 40% increase in the use of creative tools and features, highlighting the improved discoverability and usability of the HUD.</li>
+                </div>ol>
+            <p>The redesigned HUD not only made it easier for new users to onboard but also empowered seasoned players to fully exploit the creative potential of OMM's tools. It also gave us an important opportunity to edit and reduce the number of features that were simply not important to users.</p>
+
+
             <div class="vidwrapper">
                 <iframe width="560" height="805" src="https://www.youtube.com/embed/jR4BKqpY4js?si=oFQgLRaPI-p_pCu9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
