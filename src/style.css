@@ -110,6 +110,9 @@ hr {
     font-family: var(--mono);
 }
 
+button {
+    font-family: var(--sans);
+}
 /* details :) */
 p::selection {
     background: var(--soft);

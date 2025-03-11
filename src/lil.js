@@ -65,3 +65,50 @@ function switchPlayground(playground) {
         codepg.classList.add('m-hide');
     }
 }
+
+//Filter buttons on playground
+let funBtn = document.getElementsByClassName("btn")
+let playProjects = document.getElementsByClassName("playproj")
+
+window.onload = function () {
+// all, fav, game, art, writing
+for (let i = 0; i < funBtn.length; i++) {
+    const el = funBtn[i];
+    el.addEventListener("click", () => {
+        toggleProjects(el.id)
+        console.log(el.id)
+    })
+    
+}
+}
+
+function toggleProjects(id) {
+    console.log(playProjects)
+    for (let i = 0; i < playProjects.length; i++) {
+        let project = playProjects[i]
+        project.style.display="block"
+        if (id === "all") {
+            //do nothing
+        } else {
+        if (project.classList.contains(id) ) {
+            console.log('got one', id)
+            } else {
+            project.style.display = "none"
+            console.log(project)
+            }
+    }
+    }
+
+}
+
+
+// funBtn.addEventListener("click", () => {
+//     console.log(id)
+// })
+
+// funBtn.forEach(element => {
+//     element.addEventListener("click", () => {
+//         console.log(element.id)
+//     })
+    
+// });

@@ -3,11 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <link rel="stylesheet" href="../src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="icon" href="../favicon.svg">
     <title>Christina Dacanay / Playground</title>
+   
+    <meta name="description" content="Christina Dacanay is a multi-diciplinary designer based in New York. " />
+    <meta property="og:image" content="src/images/webtoys/stones.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+     <script type="text/javascript" src="../src/lil.js"></script>
 </head>
 
 <body>
@@ -15,7 +23,7 @@
         <div class="nav">
             <div class="topnav"><a href="../index.html" class="active">Christina Dacanay</a>
                 <div class="topnav-right m-hide"><a href="../index.html" class="here">Projects</a>
-                    <!-- <a href="./playground.html">Playground</a>  -->
+                    <a href="./playground.html">Playground</a> 
                     <a href="../about.html">About</a>
                 </div>
                 <div class="m-menu" onclick="showMobileMenu(this)">
@@ -27,7 +35,7 @@
 
             <div class="m-nav d-hide" id="m-navi">
                 <a href="../index.html">Projects</a>
-                <!-- <a href="./playground.html">Playground</a> -->
+                <a href="./playground.html">Playground</a>
                 <a href="../about.html">About</a>
             </div>
 
@@ -39,18 +47,25 @@
                 <div class="pj-stack">
                     <p class="pname"> Webtoy & Experiment<br> Playground </p>
                     <p>A variety of experiments and side projects in generative media, narrative, games, and interactive
-                        art.<br><br><br><br> </p>
+                        art.                    
+                        <div class="btns m-hide">
+                            <button id="all" class="btn">all</button>
+                            <button id="fav" class="btn"> ✷ favorite</button>
+                            <button id="game" class="btn"> ⎌ game</button>
+                            <button id="art" class="btn"> ☄ art</button>
+                            <button id="writing" class="btn"> ⥉ writing</button></div>  </p>
+          
                 </div>
                 <p class="pj-skills"> <br>Web Development<br>
                     2D/3D Animation<br>
                     Illustration<br>
                 </p>
             </div>
+
             <div class="expflex">
                 <div class="col">
-
                     <!-- ___100 DAYS ___ -->
-                    <div class="expwindow out"
+                    <div class="playproj fav game art writing expwindow out"
                         onclick="window.open('https://c-dacanay.github.io/100webtoys/', '_self');">
 
                         <div class="exptitle">
@@ -60,7 +75,7 @@
                         <img src="../src/images/webtoys/100-2.gif">
                     </div>
                     <!-- WINDOW ___ -->
-                    <div class="expwindow out"
+                    <div class="playproj art fav expwindow out"
                         onclick="window.open('https://c-dacanay.github.io/hand-held/window-maker/', '_self');">
                         <div class="exptitle">
                             <p>Window Maker</p><small class="out-text">external site</small>
@@ -70,7 +85,7 @@
                     </div>
 
                     <!-- ___ ALEX ___ -->
-                    <div class="expwindow out" onclick="window.open('https://alovingexploration.com/', '_self');">
+                    <div class="playproj fav writing expwindow out" onclick="window.open('https://alovingexploration.com/', '_self');">
                         <div class="exptitle">
                             <p>a l.oving e.x.ploration</p><small class="out-text">external site</small>
                         </div>
@@ -79,7 +94,7 @@
                     </div>
 
                     <!-- ___ IN PERSON ___ -->
-                    <div class="expwindow out"
+                    <div class="playproj game writing art expwindow out"
                         onclick="window.open('https://stinabean.itch.io/in-person-in-people', '_self');">
                         <div class="exptitle">
                             <p>In Person, In People</p><small class="out-text">external site</small>
@@ -90,7 +105,7 @@
                     </div>
 
                     <!-- ___ LACE GENERATOR ___ -->
-                    <div class="expwindow">
+                    <div class="playproj art expwindow">
                         <div class="exptitle">
                             <p>Lace Generator</p>
                         </div>
@@ -107,7 +122,7 @@
                     </div>
 
                     <!-- ___ ORACLE ___ -->
-                    <div class="expwindow out"
+                    <div class="playproj art writing game expwindow out"
                         onclick="window.open('https://c-dacanay.github.io/100webtoys/90/', '_self');">
                         <div class="exptitle">
                             <p>The Oracle</p><small class="out-text">external site</small>
@@ -122,7 +137,7 @@
                 <div class="col">
 
                     <!-- ___ BLENDER ___ -->
-                    <div class="expwindow">
+                    <div class="playproj art fav expwindow">
                         <div class="exptitle">
                             <p>Blender Experiments</p>
                         </div>
@@ -140,7 +155,7 @@
                         </details>
                     </div>
                     <!-- ___STONE ___ -->
-                    <div class="expwindow out"
+                    <div class="playproj game expwindow out"
                         onclick="window.open('https://c-dacanay.github.io/hand-held/final/', '_self');">
                         <div class="exptitle">
                             <p>Stone Stacker</p><small class="out-text">external site</small>
@@ -150,7 +165,7 @@
                     </div>
 
                     <!-- ___ COLLECTOR ___ -->
-                    <div class="expwindow">
+                    <div class="playproj art fav expwindow">
                         <div class="exptitle">
                             <p>Texture Collector</p>
                         </div>
@@ -169,7 +184,7 @@
                     </div>
 
                     <!-- ___ CLEAR NIGHT ___ -->
-                    <div class="expwindow out"
+                    <div class="playproj game art writing expwindow out"
                         onclick="window.open('https://c-dacanay.github.io/100webtoys/74/', '_self');">
                         <div class="exptitle">
                             <p>One Clear Night</p><small class="out-text">external site</small>
@@ -179,7 +194,7 @@
                     </div>
 
                     <!-- ___ ARCHI ___ -->
-                    <div class="expwindow out"
+                    <div class="playproj expwindow out fav writing"
                         onclick="window.open('https://cdacanay.com/kapuluan', '_self');">
                         <div class="exptitle">
                             <p>The Archipelago</p><small class="out-text">external site</small>
@@ -196,7 +211,6 @@
     </div>
 
 
-    <script src="/src/lil.js"></script>
 
 </body>
 
