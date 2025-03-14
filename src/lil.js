@@ -71,7 +71,6 @@ let funBtn = document.getElementsByClassName("btn")
 let playProjects = document.getElementsByClassName("playproj")
 
 window.onload = function () {
-// all, fav, game, art, writing
 for (let i = 0; i < funBtn.length; i++) {
     const el = funBtn[i];
     el.addEventListener("click", () => {
