@@ -75,7 +75,7 @@ for (let i = 0; i < funBtn.length; i++) {
     const el = funBtn[i];
     el.addEventListener("click", () => {
         toggleProjects(el.id)
-        console.log(el.id)
+        console.log(el)
     })
     
 }
@@ -90,10 +90,10 @@ function toggleProjects(id) {
             //do nothing
         } else {
         if (project.classList.contains(id) ) {
-            console.log('got one', id)
+            // console.log('got one', id)
             } else {
             project.style.display = "none"
-            console.log(project)
+            // console.log(project)
             }
     }
     }
