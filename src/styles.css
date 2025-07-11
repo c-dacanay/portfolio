@@ -1,0 +1,171 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+
+@font-face {
+  font-family: 'Sigurd';
+  src: url('./fonts/Sigurd-Variable.woff2') format('woff2-variations');
+  font-weight: 100 900; /* Range for weights supported */
+  font-style: normal italic;   /* or normal italic, or range if supported */
+}
+
+:root {
+    --light: #c20067;;
+    --bg: #ffffff;
+    --highlight: #e7f7f5; 
+    --soft: #F1F0EE;
+    --mid: rgba(0, 0, 0, 0.5);
+    --dark: rgba(0, 0, 0, 0.75);
+    --out: #23907f;
+    --serif: 'Sigurd', serif;
+    --sans: 'Geist', Helvetica, Arial, sans-serif;
+    --mono: 'DM Mono', 'Courier New', mono;
+}
+
+/* Base styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: var(--sans);
+    line-height: 1.6;
+    color: var(--dark);
+    background: #fafafa;
+}
+
+/* Typography */
+h1 {
+    font-family: var(--serif);
+    margin: 0 0 1rem 0;
+    font-size: 4rem;
+    font-weight: 300;
+    font-variation-settings: "slnt" -9;
+    line-height: 100%;
+}
+
+#main h1 {
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+}
+
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: .5rem 0;
+    /* margin-top: 1.5rem; */
+}
+
+p {
+    margin: 0.75rem 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+#focus-areas p, .col p {
+    margin: 0 0 2rem 0;
+}
+
+#abtline {
+    font-size: 24px;
+    line-height: 170%;
+    margin-top: 0;
+}
+
+#main h1 {
+    margin: 0;
+}
+
+.status {
+    font-size: 18px;
+}
+/* Section styling */
+.section {
+    margin-bottom: 4rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    /* Or your desired container width */
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    gap: 4em;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+}
+
+
+.full {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#main {
+    padding: 10rem;
+    margin: 0 auto;
+}
+
+/* Connect links styling */
+.connect-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.connect-links a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional: staggered delay for fun */
+#info.fade-in {
+    animation-delay: 0.2s;
+}
+
+#focus-areas.fade-in {
+    animation-delay: 0.4s;
+}
+
+#connect.fade-in {
+    animation-delay: 0.6s;
+}
