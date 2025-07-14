@@ -13,9 +13,10 @@
 
 :root {
     --light: #c20067;;
-    --bg: #ffffff;
+    --bg: #fafafa;
     --highlight: #e7f7f5; 
     --soft: #F1F0EE;
+    --bglite: rgba(250, 250, 250, 0.8);
     --mid: rgba(0, 0, 0, 0.5);
     --dark: rgba(0, 0, 0, 0.75);
     --out: #23907f;
@@ -30,6 +31,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
+    cursor: pointer;
 }
 
 body {
@@ -56,7 +59,6 @@ h1 {
     line-height: 100%;
 }
 
-
 h3 {
     font-size: 1.25rem;
     font-weight: 500;
@@ -75,28 +77,31 @@ p {
     margin: 0 0 2rem 0;
 }
 
-#abtline {
+#main p {
     font-size: 24px;
     line-height: 170%;
     margin-top: 0;
 }
 
-#main h1 {
-    margin: 0;
+.serif {
+    font-family: var(--serif);
 }
 
-.status {
-    font-size: 18px;
-}
 /* Section styling */
 .section {
-    margin-bottom: 4rem;
-    padding: 1rem 0;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     max-width: 560px;
-    /* Or your desired container width */
-    margin: 0 auto;
+    margin: 0 5rem 10rem 5rem;
+    background-color: var(--bglite);
+    padding:10px;
+-moz-box-shadow:0px 0px 7px var(--bglite);
+-webkit-box-shadow:0px 0px 7px var(--bglite);
+box-shadow:0px 0px 7px var(--bglite);
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px; 
 }
 
 .row {
@@ -113,6 +118,14 @@ p {
     margin: 0;
 }
 
+#canvas {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 
 .full {
     height: 100vh;
@@ -121,23 +134,60 @@ p {
     justify-content: flex-end;
 }
 
+.connect-links {
+    display: flex;
+    gap: 1em;
+}
+
 #main {
     padding: 10rem;
     margin: 0 auto;
+    z-index: 100;
 }
 
-/* Connect links styling */
-.connect-links a {
-    display: inline-block;
-    margin-right: 1rem;
-    color: #0077cc;
+footer {
+  padding: 1rem 5rem;
+  background-color: var(--soft)
+}
+
+footer p {
+  font-size: .92rem;
+}
+
+
+a {
+    /* display: inline-block; */
+    /* margin-right: 1rem; */
+    /* margin: auto 1rem; */
+    color: var(--light);
     text-decoration: none;
     font-weight: bold;
 }
 
-.connect-links a:hover {
+a:hover {
     text-decoration: underline;
 }
+
+/* maybe button focus details */
+/* details :) */
+p::selection {
+    background: var(--soft);
+    color: var(--out);
+  }
+p::-moz-selection {
+background: var(--highlight);
+color: var(--out);
+}
+
+a::selection {
+    background-color: var(--highlight);
+    color: var(--light);
+}
+
+a::-moz-selection {
+    background: var(--highlight);
+    color: var(--light);
+    }
 
 /* Fade-in animation */
 .fade-in {
@@ -157,7 +207,6 @@ p {
     }
 }
 
-/* Optional: staggered delay for fun */
 #info.fade-in {
     animation-delay: 0.2s;
 }
@@ -169,3 +218,41 @@ p {
 #connect.fade-in {
     animation-delay: 0.6s;
 }
+
+
+.spin {
+    position: fixed;
+    animation: spin 4s linear infinite;
+    pointer-events: none;
+    /* z-index: 1000; */
+    z-index: 0;
+}
+
+#spin1 {
+      top: 0rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20rem;
+      animation: spin 4s linear infinite;
+      color: var(--out);
+}
+
+#spin2 {
+      top: -20rem;
+      /* left: 50%; */
+      transform: translateX(-50%);
+      font-size: 60rem;
+      animation: spin 16s linear infinite;
+      color: var(--highlight);
+      z-index: 1;
+}
+
+
+    @keyframes spin {
+      from {
+        transform: translateX(-50%) rotate(0deg);
+      }
+      to {
+        transform: translateX(-50%) rotate(360deg);
+      }
+    }

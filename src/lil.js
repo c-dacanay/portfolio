@@ -1,6 +1,7 @@
 
 console.log("wanderer, there is no road, the road is made by walking - antonio machado")
 
+
 //Scroll
 // window.onload = function () {
 //     console.log('I\'m here');
