@@ -338,11 +338,10 @@ p.psub {
 
 /* ~~~ ABOUT ~~~ */
 .abtframe {
-    width: 100vw;
     display: flex;
-    padding: 5em;
+    padding-top: 5em;
+    justify-content: center;
     gap: 2em;
-    /* justify-content: center; */
 }
 
 #abtimg {
@@ -351,6 +350,10 @@ p.psub {
     display: flex;
     flex-direction: column;
 
+}
+
+#abtimg img {
+    border-radius: 4em;
 }
 
 .abtinfo {
