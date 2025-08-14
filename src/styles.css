@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap'); */
 
 
 @font-face {
@@ -17,11 +17,11 @@
     --highlight: #e7f7f5; 
     --soft: #F1F0EE;
     --bglite: rgba(250, 250, 250, 0.8);
-    --mid: rgba(0, 0, 0, 0.5);
+    --mid: rgba(0, 0, 0, 0.4);
     --dark: rgba(0, 0, 0, 0.75);
     --out: #23907f;
     --serif: 'Sigurd', serif;
-    --sans: 'Geist', Helvetica, Arial, sans-serif;
+    --sans: 'Public Sans', Helvetica, Arial, sans-serif;
     --mono: 'DM Mono', 'Courier New', mono;
 }
 
@@ -147,7 +147,9 @@ border-radius: 4px;
 
 footer {
   padding: 1rem 5rem;
-  background-color: var(--soft)
+  background-color: var(--soft);
+  display: flex;
+  flex-flow: row;
 }
 
 footer p {
@@ -170,7 +172,7 @@ a:hover {
 
 /* maybe button focus details */
 /* details :) */
-p::selection {
+::selection {
     background: var(--soft);
     color: var(--out);
   }
@@ -219,40 +221,53 @@ a::-moz-selection {
     animation-delay: 0.6s;
 }
 
-
-.spin {
-    position: fixed;
-    animation: spin 4s linear infinite;
-    pointer-events: none;
-    /* z-index: 1000; */
-    z-index: 0;
+#projects {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px;
 }
 
-#spin1 {
-      top: 0rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 20rem;
-      animation: spin 4s linear infinite;
-      color: var(--out);
+.project-card {
+    padding: 1.5rem 0rem;
+    min-width: 150px;
+    flex: 0 0 29%;
 }
 
-#spin2 {
-      top: -20rem;
-      /* left: 50%; */
-      transform: translateX(-50%);
-      font-size: 60rem;
-      animation: spin 16s linear infinite;
-      color: var(--highlight);
-      z-index: 1;
+.project-card > a {
+    color: var(--dark);
 }
 
+a > p{
+    color: var(--mid);
+}
 
-    @keyframes spin {
-      from {
-        transform: translateX(-50%) rotate(0deg);
-      }
-      to {
-        transform: translateX(-50%) rotate(360deg);
-      }
+.project-card > a:hover {
+    text-decoration: none;
+}
+
+.preview-image {
+    background-color: #e2e2de;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 12px;
+    display: block;
+    padding-bottom: 65%;
+    transition: all .3s ease;
+    transition: all .4s ease !important;
+    width: 100%;
+}
+
+.preview-image:hover {
+        transform: scale(1.05);
     }
+
+.project-context {
+    display: flex;
+    color: var(--mid);
+}
+
+.dot::before {
+    display: inline;
+}

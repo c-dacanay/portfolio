@@ -1,4 +1,8 @@
 
+console.log("wanderer, there is no road, the road is made by walking - antonio machado")
+
+
+
 // The Nature of Code
 // Daniel Shiffman
 // http://natureofcode.com
@@ -17,10 +21,13 @@ function setup() {
   }
 }
 
+
 function draw() {
+
   background('#fafafa');
+
   flock.run();
-    flock.limitBoids(200);
+  flock.limitBoids(200);
 }
 
 function windowResized() {
@@ -54,13 +61,6 @@ Flock.prototype.limitBoids = function(max) {
     this.boids.splice(0, excess); 
   }
 }
-
-// The Nature of Code
-// Daniel Shiffman
-// http://natureofcode.com
-
-// Boid class
-// Methods for Separation, Cohesion, Alignment added
 
 function Boid(x, y) {
   this.acceleration = createVector(0, 0);
