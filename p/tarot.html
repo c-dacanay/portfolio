@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.svg">
     <title>Christina Dacanay / t-ar-ot</title>
@@ -12,11 +12,8 @@
 
 <body>
     <div class="wrapper">
-        <div class="nav">
-            <div class="topnav"><a href="../index.html" class="active">Christina Dacanay</a>
-                <div class="topnav-right m-hide"><a href="../index.html" class="here">Projects</a>
-                    <a href="./playground.html">Playground</a> 
-                    <a href="../about.html">About</a>
+                   <div class="nav">
+            <div class="topnav"><a onclick="history.back()" class="active">✶ Home</a>
                 </div>
                 <div class="m-menu" onclick="showMobileMenu(this)">
                     <div class="line"></div>
@@ -24,21 +21,14 @@
                     <div class="line"></div>
                 </div>
             </div>
-
-            <div class="m-nav d-hide" id="m-navi">
-                <a href="../index.html">Projects</a>
-                <a href="./playground.html">Playground</a>
-                <a href="../about.html">About</a>
-            </div>
-
         </div>
     </div>
-    <div class="pj-frame">
+    <div class="pj-frame fade-in">
 
         <div class="pj-info">
             <div class="pj-details">
                 <div class="pj-stack">
-                    <p class="pname"> Experimenting with<br>Augmented Reality
+                    <h1> Experimenting with Augmented Reality </h1>
                     <p>T-AR-ot is an ongoing collaboration with Patrick Warren to bring the Major Arcana to life with
                         augmented reality. As a test case, we focused on highlighting three significant cards: The Star, Death, and The Tower. We were interested in the potential of AR in enhancing traditional fortune telling practice, and the exciting opportunities for immersive and interactive user experiences in the realm of divination.</p>
                     <p>This project uses Unity and Vuforia. </p>
