@@ -1,7 +1,23 @@
 
 console.log("wanderer, there is no road, the road is made by walking - antonio machado")
 
+  console.log('hi')
+  // Save scroll before leaving page
+  window.addEventListener("beforeunload", () => {
+    sessionStorage.setItem("scroll-pos", window.scrollY);
+    console.log('hm')
+  });
 
+  // Restore scroll on load
+  window.addEventListener("DOMContentLoaded", () => {
+        console.log('hrm')
+    const pos = sessionStorage.getItem("scroll-pos");
+    if (pos) {
+         console.log(pos)
+      window.scrollTo(0, parseInt(pos, 10));
+      
+    }
+  });
 
 // The Nature of Code
 // Daniel Shiffman
@@ -25,7 +41,6 @@ function setup() {
 function draw() {
 
   background('#fafafa');
-
   flock.run();
   flock.limitBoids(200);
 }
@@ -67,7 +82,7 @@ function Boid(x, y) {
   this.velocity = createVector(random(-1, 1), random(-1, 1));
   this.position = createVector(x, y);
   this.r = 6.0;
-  this.maxspeed = 3;    // Maximum speed
+  this.maxspeed = 4;    // Maximum speed
   this.maxforce = 0.05; // Maximum steering force
 }
 
@@ -125,8 +140,8 @@ Boid.prototype.seek = function(target) {
 Boid.prototype.render = function() {
   // Draw a triangle rotated in the direction of velocity
   let theta = this.velocity.heading() + radians(90);
-  fill('#F1F0EE');
-  stroke('#F1F0EE');
+  fill('#e3e7e4ff');
+  stroke('#e3e7e4ff');
   push();
   translate(this.position.x, this.position.y);
   rotate(theta);
