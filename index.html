@@ -1,213 +1,135 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./src/style.css">
-    <meta charset="UTF-8">
-
-    <link rel="icon" href="favicon.svg" type="image/x-icon">
-    <title> Christina Dacanay </title>
-    <meta name="description" content="Christina Dacanay is a multi-diciplinary designer based in New York. " />
-    <meta property="og:image" content="src/images/webtoys/stones.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-     <script type="text/javascript" src="./src/lil.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christina Dacanay</title>
+  <link rel="stylesheet" href="src/styles.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+        <script src="./script.js"></script>
 
 </head>
-
-
 <body>
+<div id="canvas">
+</div>
+  <main class="fade-in">
+    <!-- <div class="spin" id="spin2">⟡</div> -->
+    <!-- <div class="spin" id="spin1">✴</div> -->
+    <div class="full">
 
-    <div class="nav">
-        <div class="topnav"><a href="./index.html" class="active">Christina Dacanay</a>
-            <div class="topnav-right m-hide">
-                <a href="./index.html">Projects</a>
-                <a href="./p/playground.html">Playground</a>
-                <a href="./about.html">About</a>
-            </div>
+        <div id="main">
+        <h1>Hi, I'm Christina,</h1>
+        <p>a designer and technologist living in Brooklyn, NY.</p>
 
-            <div class="m-menu" onclick="showMobileMenu(this)">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </div>
-
-        <div class="m-nav d-hide" id="m-navi">
-            <a href="./index.html">Projects</a>
-            <a href="./p/playground.html">Playground</a> 
-            <a href="./about.html">About</a>
-        </div>
-
-
-
-        <div id="page" class="fade">
-            <div class="window abtwindow">
-                <div>
-                    <p class="greeting">👋🏽 Hi there!<br> I'm Christina.</p>
-                    <p class="abtme"> I'm a multi-disciplinary product designer and design lead. <br>I love to bring order, beauty, and play to complex projects.
-
-                        <br> <br>Currently crafting joyful mobile games at <a href="https://www.talofagames.com/" target="blank">Talofa Games</a>.
-                    </p>
-                    <p>↪ <a href="./about.html">Learn More</a></p>
-                    <p id="email">✦ christina@cdacanay.com</p>
-                </div>
-                <div class="img-container">
-                <img src="/src/images/g3.gif" class="headshot"></div>
-            </div>
-
-
-            <!-- ___ OMM ___ -->
-            <div class="window c1">
-                <a href="./p/omm.html" class="content">
-                    <!-- <div class="projTitle">Case Study #1</div> -->
-                    <div class="projContent">
-                        <div class="img-container">
-                            <img class="cover" id="animated" src="src/images/omm/cover.gif">
-                        </div>
-                        <p class="pname"> Building a One of Kind <br>Virtual Tabletop </p>
-
-                        <div class="descrip">
-                            <p class="psub">One More Multiverse</p>
-                            <p class="pskills"> Product Strategy<br>
-                                Design Management<br>
-                                Experience Design<br>
-                                Web Design
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-
-            <!-- ___ YAZEBAS ___ -->
-            <div class="window c1">
-                <a href="./p/yazebas.html" class="content">
-                    <!-- <div class="projTitle">Case Study #2</div> -->
-                    <div class="projContent">
-                        <div class="img-container">
-                            <img class="cover" src="src/images/yazebas/cover.png">
-                        </div>
-                        <p class="pname"> Crafting Surprises in<br> Emergent Gameplay </p>
-                        <div class="descrip">
-                            <p class="psub">One More Multiverse</p>
-                            <p class="pskills"> Product Design<br>
-                                Product Strategy<br>
-                                Research & Planning
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ___ CODECADEMY ___ -->
-            <div class="window c1">
-                <a href="./p/code.html" class="content">
-                    <div class="projContent">
-                        <div class="img-container">
-                            <img class="cover" src="src/images/ccademy/cover.png">
-                        </div>
-                        <p class="pname"> Reinventing <br>Interactive Articles</p>
-                        <div class="descrip">
-                            <p class="psub">Codecademy</p>
-                            <p class="pskills"> User Testing<br>
-                                UX Design<br>
-                                Visual Design
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ___ MANA ___ -->
-            <!-- <div class="window c1">
-                <a href="./p/omm.html" class="content">
-                    <div class="projContent">
-                        <div class="imgContainer">
-                            <img class="cover" src="src/images/key/cover.png">
-                        </div>
-                        <p class="pname"> Growing a<br> Design System</p>
-                        <div class="descrip">
-                            <p class="psub">One More Multiverse</p>
-                            <p class="pskills">Design Leadership <br> System Design<br>
-                                UI Design<br>
-
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div> -->
-
-            <!-- ___ OAM ___ -->
-            <div class="window c1">
-                <a href="./p/oam.html" class="content">
-                    <div class="projContent">
-                        <div class="img-container">
-                            <img class="cover" src="src/images/one/cover.png">
-                        </div>
-                        <p class="pname"> Creating a Physical<br>Data Visualization</p>
-                        <div class="descrip">
-                            <p class="psub">Personal Collaboration</p>
-                            <p class="pskills"> Project Management<br>
-                                Fabrication<br>
-                                Visual Design
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ___ T-AR-OT ___ -->
-            <div class="window c1">
-                <a href="./p/tarot.html" class="content">
-                    <div class="projContent">
-                        <div class="img-container">
-                            <img class="cover" style="height: 100%; object-fit:cover;" src="src/images/tarot/1.gif">
-                        </div>
-                        <p class="pname"> Experimenting with<br>Augmented Reality</p>
-                        <div class="descrip">
-                            <p class="psub">Personal Collaboration</p>
-                            <p class="pskills"> Motion Design<br>
-                                Vuforia </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ___ WEBTOYS ___ -->
-            <div class="window c1">
-                <a href="./p/playground.html" class="content">
-                    <div class="projContent">
-                        <div class="img-container">
-                            <img class="cover" style="width:90%; object-fit:scale-down;" src="src/images/webtoys/cover.gif">
-                        </div>
-                        <p class="pname"> Webtoy & Experiment<br>
-                            Playground</p>
-                        <div class="descrip">
-                            <p class="psub">Various</p>
-                            <p class="pskills"> Web Development<br>
-                                2D/3D Animation<br>
-                                Illustration</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ___ BACK ___ -->
-            <div class="end">
-                <!-- <p id="getback" class="m-hide">↤</p> -->
-                <p class="credit"> Christina Dacanay
-                    ✶ 2025 ✶ hand coded with no tracking or analytics<br>
-                    elsewhere:
-                    <a href="https://www.instagram.com/studio.stina">instagram</a> /
-                    <a href="https://stinabean.itch.io/">itch.io</a> /
-                    <a href="https://www.are.na/c-d-umyzieztf18/channels">are.na</a><br>
-                </p>
-            </div>
-        </div>
+</div></div>
+    </div>
+    <div class="section" id="info">
+      <h1>About</h1>
+                  <div class="row">
+        <div class="col">
+        <h3>Currently</h3>
+        <p>UX/UI Designer @<br> <a href="" target="_blank">Talofa Games</a></p></div>
+        <div class="col">
+        <h3>Previously</h3>
+        <p>One More Multiverse, Codecademy, Penguin Random House <br></p></div></div>
+      <p>I’m your resident jack-of-all-trades: product designer, front-end tinkerer, illustrator, and design system maintainer. I’ve worked on projects across gaming, education, and creative tools and I am passionate about building experiences for learning, play, and creative collaboration.</p>
+      <p>Beyond digital design I’m a teacher, open-source project maintainer, tabletop roleplaying enthusiast. I'm also constantly making things with my hands.</p>
     </div>
 
-</body>
+    <div class="section">
+      <h1>Selected Work</h1>
+         <div id="projects">
+<!-- 
+          <div class="project-card">
+          <a href="">
+            <div class="preview-image" style="background-image: url('./src/images/omm/spells.gif')"></div>
+            <h3>Mobile Design System </h3>
+            <p class="project-info">Overhauled the game's design system and delivered mobile wireframing kits, while leading UI development to support a successful game launch.</p>
+            <div class="project-context">2024 ✶ Case Study ✶ 🔒</div>
+          </a>
+        </div> -->
 
+        <div class="project-card">
+          <a href="https://www.playmultiverse.com/" target="_blank">
+            <div class="preview-image" style="background-image: url('./src/images/omm/spells.gif')"></div>
+            <h3>One More Multiverse ↗</h3>
+            <p class="project-info">As design lead I stewarded the product vision at a YC-backed gaming platform and UGC marketplace that scaled to one million users.</p>
+            <div class="project-context">2021-24</div>
+          </a>
+        </div>
+
+          <div class="project-card">
+          <a href="./p/yazebas.html">
+            <div class="preview-image" style="background-image: url('./src/images/yazebas/mechanics.gif')"></div>
+            <h3>Virtual Tabletop Tools</h3>
+            <p class="project-info">Led the end-to-end design of a custom digital experience for a distinctive tabletop roleplaying game from concept to launch in under two months.</p>
+            <div class="project-context">2023 ✶ Case Study</div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="./p/code.html">
+            <div class="preview-image" style="background-image: url('./src/images/ccademy/syllabus.gif');"></div>
+            <h3>Syllabus Redesign</h3>
+            <p class="project-info">Improved the information architecture and parseability of Codecademy's syllabus. This included a robust system to support spaced repetition.</p>
+            <div class="project-context">2022 ✶ Case Study</div>
+          </a>
+        </div>
+
+          <div class="project-card">
+          <a href="https://oneamongstmany.com/" target="_blank">
+            <div class="preview-image" style="background-image: url('./src/images/one/grace.png')"></div>
+            <h3>One Amongst Many ↗</h3>
+            <p class="project-info">A physical, interactive data installation of women in computing. Built with Arduino, Neopixels, tilt sensors and digital fabrication. </p>
+            <div class="project-context">2019 ✶ Side Project</div>
+          </a>
+        </div>
+
+          <div class="project-card">
+          <a href="./p/playground.html">
+            <div class="preview-image" style="background-image: url('./src/images/g1.gif')"></div>
+            <h3>Personal Practice</h3>
+            <p class="project-info">Things made generally for myself for the love of the art, love of the software, or love of the game.  </p>
+            <div class="project-context">Ongoing, always</div>
+          </a>
+        </div>
+</div>
+</div>
+
+
+    <div class="section" id="focus-areas">
+      <h1>Deep Strengths</h1>
+      
+      <h3>Clear comms and visual storytelling</h3>
+      <p>I use visual design, motion, careful language, and clear presentations to ensure that ideas communicate well and build a shared understanding across teams.</p>
+
+      <h3>Creating structure in ambiguity</h3>
+      <p>I've been described as a PM-type who adds clarity and structure to opaque problems. I'm able to align team members, drive for decisions, and turn complex challenges into actionable steps.</p>
+
+      <h3>Working close with code</h3>
+      <p>As a designer who codes for fun I have a grasp of software systems and their constraints. I’m comfortable jumping in alongside my developers as needed, whether that’s building UI in prototypes or fixing small production bugs.</p>
+    
+
+      <h3>Collaboration as a craft</h3>
+      <p>I care deeply about building strong, trusting relationships with my teams. Great design isn’t done in a silo and my best work has always come from honest and challenging collaboration with talented people.</p>
+    </div>
+
+    <div class="section" id="connect">
+      <h1>Connect</h1>
+          <p>This site is less of a full portfolio and more like an extended bio. If you would like to read more about my work or shoot the breeze please reach out. &lt;3</p>
+      <div class="connect-links">
+        <a href="mailto:christina@cdacanay.com">email</a> ✴︎ 
+        <a href="https://www.are.na/christina-dacanay" target="_blank">are.na</a> ✴︎ 
+        <a href="https://www.linkedin.com/in/christina-dacanay-55272918/" target="_blank">linkedin</a> ✴︎ 
+        <a href="https://github.com/c-dacanay" target="_blank">github</a> 
+      </div>
+    </div>
+
+    <footer>
+  <p>2025 ✶ hand coded with no tracking or analytics ✶ set in Public Sans by the <a href="https://public-sans.digital.gov/" target="_blank">United States Web Design System</a> and <span class="serif" style="font-size: 1rem; font-weight: 600;">Sigurd</span> by <a href="" target="_blank">Blaze Type</a></p>
+</footer>
+
+  </main>
+</body>
 </html>

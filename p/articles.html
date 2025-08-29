@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../src/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.svg">
+    <title>Christina Dacanay / Codecademy</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="topnav"><a href="../index.html" class="active">Christina Dacanay</a>
+                <div class="topnav-right m-hide"><a href="../index.html" class="here">Projects</a>
+                    <a href="./playground.html">Playground</a> 
+                    <a href="../about.html">About</a>
+                </div>
+                <div class="m-menu" onclick="showMobileMenu(this)">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="m-nav d-hide" id="m-navi">
+                <a href="../index.html">Projects</a>
+                <a href="./playground.html">Playground</a>
+                <a href="../about.html">About</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="pj-frame fade">
+        <div class="pj-info">
+            <div class="pj-details">
+                <div class="pj-stack">
+                    <p class="pname">Reinventing <br>Interactive Articles</p>
+                    <p>Codecademy is a prominent interactive learning platform aimed at democratizing access to coding education. I spearheaded a collaboration with the learner experience and content platform teams to revamp the interactive articles, expanding the range of interactible elements and enhancing both their visual appeal and usability</p>
+                </div>
+                <p class="pj-skills"> <b>Product Designer</b><br>User Research<br>
+                    User Experience<br>
+                    UI Design<br>
+                </p>
+            </div>
+            <img src="../src/images/ccademy/firstsecond.png" class="imghero"
+                alt="A gif of a space invader made out of checked and unchecked marks.">
+        
+                <h3>The Challenge</h3>
+                <p>Interactive articles were significantly underutilized within Codecademy's learning ecosystem, necessitating a comprehensive redesign to align with the updated brand identity and to enhance the usability of embedded assessments. My goal was to transform these articles into a core, versatile component of Codecademy's educational offerings.</p>
+                
+                <h3>The Process</h3>
+                <p>The redesign targeted two primary problem areas:</p>
+                <p>1. <b>Readability and Design:</b> Articles suffered from poor readability due to centered, long line lengths and awkward design elements. Interactive sections were marked by bulky black boxes that spanned the entire screen. The challenge was to create a more seamless and integrated experience.</p>
+                    
+                   <p>2. <b>Assessment Interactions:</b> Embedded assessments had inconsistent and unclear interactions. Various content types, such as multiple-choice and free-response questions, were developed by different designers over the years. The goal was to unify these elements within the reading experience.</p>
+
+                   <hr>
+                   <h3>Discovery & Research</h3>
+                   <p>I conducted extensive user interviews with learners, curriculum developers, and content platform engineers. The research revealed a strong enthusiasm for improving article readability and a wide range of use cases for interactive articles within the curriculum.</p>
+                   <p>Additionally, I analyzed other editorial experiences with interactive elements, noting that our use of space was inefficient. Many successful examples featured assessment headers, boxed interactive areas, or numbered activities, contrasting with our zebra stripe approach.</p>
+                   <p>An audit of Codecademy's oldest and most unique interactive articles, conducted with curriculum developers, provided insights into the affordances and limitations for a major redesign.</p>
+
+                   <img src="../src/images/ccademy/research.png" class="imghero"
+                   alt="A gif of a space invader made out of checked and unchecked marks.">
+           
+
+                   <hr>
+                   <h3>The Process</h3>
+                   <p>Leveraging my background in publishing, I began by sketching various reading experiences, experimenting with line lengths and spacing to create a more familiar editorial style.</p>
+                   <p>For interactive sections, I developed subtle yet clear signals of interactivity. Each type of embedded assessment had its unique characteristics—some included hints, multiple steps, or unique buttons. It was crucial to unify these assessments wherever technically feasible, and to suggest future refactoring for out-of-scope elements. Accessibility and readability testing for both dark and light modes was integral to every proposed change.</p>
+                   <p>The redesigned articles featured more editorial line lengths and text sizes. Collaboration with engineers was key to accommodating the diverse ways curriculum developers had used assessments over the years. The dark mode design was prioritized, with light mode design adjustments waiting in the wings.</p>
+                   <p>This redesign was aligned with Codecademy's new design language, ensuring seamless integration with the primary learning environment.</p>
+                   <p>The redesign led to a 40% increase in average read times, indicating higher engagement levels. User testing and feedback indicated improved comprehension and retention, with learners reporting a more intuitive and enjoyable reading experience.</p>
+                   <img src="../src/images/ccademy/final.png" class="imghero"
+                   alt="A gif of a space invader made out of checked and unchecked marks.">
+           
+                   <hr>
+                   <h3>Takeaways</h3>
+                   <p>This project underscored the importance of cross-functional collaboration. Engineers like Ian Munro, with deep knowledge of the interactive articles' history, were instrumental in shaping the final designs. The integration of engineering and curriculum insights resulted in a seamless and effective learning experience.</p>
+                   <p>Looking ahead, there are additional UI enhancements I'd like to explore. Nonetheless, this project marks a significant milestone in Codecademy's evolution, and I am proud to have led the first major refactor of the interactive articles experience to align with our new brand identity.</p>
+                   <div class="spacer"></div>   
+    </div>
+    </div>
+
+
+    <script src="/src/lil.js"></script>
+
+</body>
+
+</html>
