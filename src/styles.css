@@ -145,14 +145,14 @@ p {
 .row {
   display: flex;
   flex: 1;
-  gap: 4em;
+  gap: 0em;
 }
 
 .col {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 0;
+  margin: .2em;
 }
 
 .full {
